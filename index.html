@@ -85,6 +85,29 @@
                 </div>
             </div>
 
+            <!-- Cabecera de Búsqueda Mágica -->
+            <div class="mb-6 relative animate__animated animate__fadeIn">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-indigo-400 dark:text-indigo-500" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="text" id="search-input" oninput="onSearchInput()"
+                    placeholder="Buscar en preguntas o respuestas..."
+                    class="block w-full pl-11 pr-4 py-3 border border-slate-200 dark:border-slate-700/80 rounded-2xl leading-5 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm font-medium transition-all duration-300 shadow-sm hover:shadow-md">
+                <button id="clear-search" onclick="clearSearch()"
+                    class="absolute inset-y-0 right-0 pr-4 flex items-center hidden text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition">
+                    <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
             <div class="mb-6">
                 <div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
                     <div id="bar" class="h-full bg-indigo-500 dark:bg-indigo-400 transition-all duration-500"
@@ -210,15 +233,17 @@
         }
 
         let currentIdx = 0;
-        let isReview = false;
+        let reviewMode = 'off'; // 'off', 'fails', 'smart'
         let isRandomOrder = false;
         let randomList = [];
         let streak = 0;
         let fails = JSON.parse(localStorage.getItem('malaga_fails') || '[]');
+        let failsCount = JSON.parse(localStorage.getItem('malaga_fails_count') || '{}');
         let selectedTemas = JSON.parse(localStorage.getItem('malaga_selected_temas') || 'null');
         let temaFilter = null; // null = todos los temas, [] = filtro activo
         let isDarkMode = localStorage.getItem('malaga_dark') === 'true';
         let isMuted = localStorage.getItem('malaga_muted') === 'true';
+        let textSearchQuery = '';
 
         // Sintetizador de audio para evitar problemas de carga o caché (PWA)
         const AudioContextOptions = window.AudioContext || window.webkitAudioContext;
@@ -325,20 +350,72 @@
             return shuffled;
         }
 
-        function render() {
-            let list = db;
+        // Normalizador rápido para ignorar acentos en las búsquedas
+        function normalizeText(text) {
+            return text ? text.toString().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : '';
+        }
 
-            // Aplicar filtro de temas
+        function onSearchInput() {
+            textSearchQuery = normalizeText(document.getElementById('search-input').value);
+            const clearBtn = document.getElementById('clear-search');
+            if (clearBtn) {
+                if (textSearchQuery) {
+                    clearBtn.classList.remove('hidden');
+                } else {
+                    clearBtn.classList.add('hidden');
+                }
+            }
+            currentIdx = 0; // Volver a la primera pregunta del filtro
+            render();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            onSearchInput();
+        }
+
+        function generateSmartList(baseList) {
+            let mapped = baseList.map(q => {
+                let weight = 1 + (failsCount[q.id] || 0) * 3;
+                if (fails.includes(q.id) && !(failsCount[q.id] > 0)) weight += 2;
+                let score = Math.pow(Math.random(), 1 / weight);
+                return { q, score };
+            });
+            mapped.sort((a, b) => b.score - a.score);
+            return mapped.map(item => item.q);
+        }
+
+        // Obtiene la lista base filtrada (sin ordenar secuencial o aleatoriamente)
+        function getFilteredList() {
+            let list = db;
             if (temaFilter !== null) {
                 list = list.filter(q => temaFilter.includes(q.tema));
             }
-
-            // Aplicar filtro de repaso
-            if (isReview) {
+            if (reviewMode === 'fails') {
                 list = list.filter(q => fails.includes(q.id));
             }
+            if (textSearchQuery !== '') {
+                list = list.filter(q => {
+                    return normalizeText(q.q).includes(textSearchQuery) ||
+                        normalizeText(q.a).includes(textSearchQuery) ||
+                        normalizeText(q.b).includes(textSearchQuery) ||
+                        normalizeText(q.c).includes(textSearchQuery) ||
+                        normalizeText(q.d).includes(textSearchQuery);
+                });
+            }
+            return list;
+        }
 
-            if (isRandomOrder) {
+        function render() {
+            let list = getFilteredList();
+
+            // Ordenamiento y Smart Review
+            if (reviewMode === 'smart') {
+                if (!randomList.length || randomList.length !== list.length) {
+                    randomList = generateSmartList(list);
+                }
+                list = randomList;
+            } else if (isRandomOrder) {
                 if (!randomList.length || randomList.length !== list.length) {
                     randomList = shuffleArray(list);
                 }
@@ -354,7 +431,9 @@
             const qTema = document.getElementById('q-tema');
 
             if (list.length === 0) {
-                qText.innerText = isReview ? "¡Felicidades! No tienes preguntas pendientes de repaso." : "Cargando preguntas...";
+                qText.innerText = textSearchQuery !== ''
+                    ? "No se encontraron preguntas que coincidan con la búsqueda."
+                    : (reviewMode === 'fails' ? "¡Felicidades! No tienes preguntas pendientes de repaso." : "Cargando preguntas...");
                 qNumber.innerText = "";
                 qTema.innerText = "";
                 container.innerHTML = "";
@@ -371,7 +450,11 @@
             qTema.innerText = q.tema ? `${temaDisplayName(q.tema)}: ${q.tema_title}` : '';
             const modeLabel = isRandomOrder ? '(ALEATORIO)' : '';
             const temaLabel = q.tema ? temaDisplayName(q.tema) : '';
-            statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReview ? '(MODO REPASO)' : ''} ${modeLabel}`.trim();
+
+            // Añadir indicación de resultado de búsqueda
+            let searchLabel = textSearchQuery !== '' ? `(FILTRADAS: ${list.length})` : '';
+            const isReviewBadge = reviewMode === 'fails' ? '(SÓLO FALLOS)' : (reviewMode === 'smart' ? '(INTELIGENTE)' : '');
+            statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReviewBadge} ${modeLabel} ${searchLabel}`.trim();
 
             // Aplicar colores dinámicos a la tarjeta
             const cardEl = document.getElementById('card');
@@ -434,8 +517,14 @@
                     }).showToast();
                 }
 
-                // Si acertamos en modo repaso, quitar de la lista de fallos
-                if (isReview) fails = fails.filter(f => f !== id);
+                // Si acertamos en modo repaso o inteligente, quitar de la lista de fallos
+                if (reviewMode !== 'off') fails = fails.filter(f => f !== id);
+
+                // Reducir contador de fallos
+                if (failsCount[id]) {
+                    failsCount[id] = Math.max(0, failsCount[id] - 1);
+                    if (failsCount[id] === 0) delete failsCount[id];
+                }
             } else {
                 btn.classList.replace('border-slate-200', 'border-red-500');
                 btn.classList.replace('dark:border-slate-700', 'dark:border-red-500');
@@ -457,6 +546,7 @@
                 playSound('wrong');
 
                 if (!fails.includes(id)) fails.push(id);
+                failsCount[id] = (failsCount[id] || 0) + 1;
 
                 // Mostrar la correcta
                 btns.forEach(b => {
@@ -475,6 +565,7 @@
             }
 
             localStorage.setItem('malaga_fails', JSON.stringify(fails));
+            localStorage.setItem('malaga_fails_count', JSON.stringify(failsCount));
             document.getElementById('streak').innerText = streak;
         }
 
@@ -508,25 +599,36 @@
         }
 
         function toggleReview() {
-            isReview = !isReview;
+            if (reviewMode === 'off') {
+                reviewMode = 'fails';
+            } else if (reviewMode === 'fails') {
+                reviewMode = 'smart';
+            } else {
+                reviewMode = 'off';
+            }
             currentIdx = 0;
             randomList = [];
             const btn = document.getElementById('rev-btn');
-            btn.innerText = isReview ? "REPASO: ON" : "REPASO: OFF";
-            btn.classList.toggle('bg-indigo-600');
-            btn.classList.toggle('text-white');
-            btn.classList.toggle('bg-slate-100');
-            btn.classList.toggle('text-slate-500');
+
+            btn.classList.remove('bg-indigo-600', 'text-white', 'bg-fuchsia-600', 'bg-slate-100', 'text-slate-500');
+
+            if (reviewMode === 'fails') {
+                btn.innerText = "REPASO: FALLOS";
+                btn.classList.add('bg-indigo-600', 'text-white');
+            } else if (reviewMode === 'smart') {
+                btn.innerText = "🧠 INTELIGENTE";
+                btn.classList.add('bg-fuchsia-600', 'text-white');
+            } else {
+                btn.innerText = "REPASO: OFF";
+                btn.classList.add('bg-slate-100', 'text-slate-500');
+            }
             render();
         }
 
         function next() {
-            let list = isReview ? db.filter(q => fails.includes(q.id)) : db;
-            if (isRandomOrder) {
-                if (!randomList.length || randomList.length !== list.length) {
-                    randomList = shuffleArray(list);
-                }
-                list = randomList;
+            let list = getFilteredList();
+            if (reviewMode === 'smart' || isRandomOrder) {
+                list = randomList; // La lista ya está calculada y guardada en render()
             }
             if (currentIdx < list.length - 1) {
                 currentIdx++;
@@ -821,6 +923,49 @@
                 alert('Estadísticas limpiadas correctamente');
             }
         }
+
+        // ==========================================
+        // Navegación por Gestos Táctiles (Swipes)
+        // ==========================================
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleGestures() {
+            const minSwipeDistance = 50; // distancia mínima para considerar swipe
+            if (touchEndX < touchStartX - minSwipeDistance) {
+                // Swipe a la izquierda -> Siguiente
+                animateCard('animate__slideInRight');
+                next();
+            }
+            if (touchEndX > touchStartX + minSwipeDistance) {
+                // Swipe a la derecha -> Anterior
+                animateCard('animate__slideInLeft');
+                prev();
+            }
+        }
+
+        function animateCard(animationClass) {
+            const card = document.getElementById('card');
+            // Reset de animaciones existentes
+            card.className = card.className.replace(/animate__\w+/g, '').replace('animate__animated', '').trim();
+            // Force reflow para reiniciar la animación
+            void card.offsetWidth;
+            // Añadir nuevas
+            card.classList.add('animate__animated', animationClass);
+        }
+
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            // Sólo actuar si se hizo el gesto sobre la tarjeta principal
+            if (e.target.closest('#card') || e.target.closest('#options')) {
+                handleGestures();
+            }
+        }, { passive: true });
+
     </script>
 </body>
 
