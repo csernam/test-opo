@@ -8,7 +8,7 @@ const db = [
         "d": "En Ayuntamientos de municipios de más de 20.000 habitantes y en las Diputaciones Provinciales.",
         "correct": "d",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@ const db = [
         "d": "Sólo puede convocarlas por iniciativa propia.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@ const db = [
         "d": "La fija el Pleno en sesión extraordinaria que habrá de convocar el Alcalde o Presidente dentro de los 30 días siguientes al de la sesión constitutiva de la Corporación.",
         "correct": "d",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@ const db = [
         "d": "Deberá efectuarse en las dependencias locales.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@ const db = [
         "d": "Cada 15 días como mínimo.",
         "correct": "d",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@ const db = [
         "d": "Siempre que concurra un tercio del número legal de miembros del mismo, y será presidido por el miembro de la Corporación de mayor antigüedad entre los presentes.",
         "correct": "b",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@ const db = [
         "d": "Ordinarias, extraordinarias y de carácter urgente.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@ const db = [
         "d": "Debe incluirse como primer punto del orden del día el pronunciamiento del Pleno sobre la urgencia. Si ésta no resulta apreciada por el Pleno, se levantará acto seguido la sesión.",
         "correct": "d",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@ const db = [
         "d": "Se convocan a solicitud de los concejales.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 10,
@@ -107,7 +107,7 @@ const db = [
         "d": "Durante el transcurso de la sesión, el Presidente podrá acordar interrupciones a su prudente arbitrio, únicamente para descanso en los debates.",
         "correct": "a",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 11,
@@ -118,7 +118,7 @@ const db = [
         "d": "Dentro de los 4 días siguientes a la petición.",
         "correct": "d",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 12,
@@ -129,7 +129,7 @@ const db = [
         "d": "Todos los residentes en territorio español.",
         "correct": "a",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 13,
@@ -140,7 +140,7 @@ const db = [
         "d": "En Municipios de hasta 5.000 habitantes.",
         "correct": "d",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 14,
@@ -151,7 +151,7 @@ const db = [
         "d": "Cesión por cualquier título del aprovechamiento de los bienes comunales.",
         "correct": "b",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 15,
@@ -162,7 +162,7 @@ const db = [
         "d": "En Ayuntamientos de municipios de más de 20.000 habitantes y en las Diputaciones Provinciales.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 16,
@@ -173,7 +173,7 @@ const db = [
         "d": "Se vuelve a votar, y si persiste el empate, se realiza una última votación.",
         "correct": "a",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 17,
@@ -184,7 +184,7 @@ const db = [
         "d": "El Reglamento Orgánico Municipal no podrá establecer otros medios de control y fiscalización de los órganos de gobierno.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 18,
@@ -195,7 +195,7 @@ const db = [
         "d": "El sistema normal será la votación secreta.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 19,
@@ -206,7 +206,7 @@ const db = [
         "d": "Dictamen (Artículo 97.1 del Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales, aprobado por RD 2568/1986, de 28 de noviembre)",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 20,
@@ -217,7 +217,7 @@ const db = [
         "d": "Los votos afirmativos son más de la mitad del número legal de miembros de la Corporación.",
         "correct": "a",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 21,
@@ -228,7 +228,7 @@ const db = [
         "d": "Podrá ser secreto el debate y votación de aquellos asuntos a que se refiere el artículo 18.1 de la Constitución Española, cuando así se acuerde por unanimidad.",
         "correct": "c",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 22,
@@ -239,7 +239,7 @@ const db = [
         "d": "Aquellas que tienen como punto del orden del día el pronunciamiento del Pleno sobre el motivo de la sesión.",
         "correct": "b",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 23,
@@ -250,7 +250,7 @@ const db = [
         "d": "Más de diez días.",
         "correct": "b",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 24,
@@ -261,7 +261,7 @@ const db = [
         "d": "dentro de los cinco días siguientes a aquel en que éste haya designado los miembros que la integran. Tema 2. Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos.",
         "correct": "a",
         "tema": 1,
-        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos"
+        "tema_title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos."
     },
     {
         "id": 26,
@@ -272,7 +272,7 @@ const db = [
         "d": "Si el vicio consistiera en incompetencia no determinante de nulidad, la convalidación podrá realizarse por el órgano competente siempre que no sea superior jerárquico del que dictó el acto viciado.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 27,
@@ -283,7 +283,7 @@ const db = [
         "d": "Exigirá la previa audiencia de cuantos aparezcan como interesados en el mismo.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 28,
@@ -294,7 +294,7 @@ const db = [
         "d": "Los actos que acepten pruebas propuestas por los interesados",
         "correct": "b",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 29,
@@ -305,7 +305,7 @@ const db = [
         "d": "Exclusivamente a lo dispuesto por la presente ley y será determinado y adecuado a los fines de aquéllos.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 30,
@@ -316,7 +316,7 @@ const db = [
         "d": "Si se trata de notificaciones, el titular de la competencia deberá autorizar una relación de las que haya dictado de forma escrita, con expresión de su contenido.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 31,
@@ -327,7 +327,7 @@ const db = [
         "d": "Recurso potestativo de reposición.",
         "correct": "c",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 32,
@@ -338,7 +338,7 @@ const db = [
         "d": "Los actos de las Administraciones Públicas sujetos al Derecho Administrativo serán ejecutivos con arreglo a lo dispuesto en la Ley de Régimen Jurídico del Sector Público.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 33,
@@ -349,7 +349,7 @@ const db = [
         "d": "Los pactos y convenios cuando una disposición reglamentaria así lo establezca.",
         "correct": "c",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 34,
@@ -360,7 +360,7 @@ const db = [
         "d": "Cuando produzcan efectos desfavorables al interesado, siempre que los supuestos de hecho necesarios no existieran en la fecha a que se retrotraiga la eficacia del acto.",
         "correct": "c",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 35,
@@ -371,7 +371,7 @@ const db = [
         "d": "Recurso extraordinario.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 36,
@@ -382,7 +382,7 @@ const db = [
         "d": "El contenido de los actos.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 37,
@@ -393,7 +393,7 @@ const db = [
         "d": "El día siguiente a la fecha en que se dicten, salvo que en ellos se disponga otra cosa.",
         "correct": "b",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 38,
@@ -404,7 +404,7 @@ const db = [
         "d": "En los actos que cada órgano competente estime convenientes, informando previamente a los interesados.",
         "correct": "b",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 39,
@@ -415,7 +415,7 @@ const db = [
         "d": "La motivación se realizará de conformidad con lo que dispongan las normas que regulen sus convocatorias, sin necesidad de que queden acreditadas en el procedimiento los fundamentos de la resolución que se adopte.",
         "correct": "b",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 40,
@@ -426,7 +426,7 @@ const db = [
         "d": "Las resoluciones administrativas de carácter particular no podrán vulnerar lo establecido en una disposición de carácter general, salvo que aquéllas precedan de un órgano de igual o superior jerarquía al que dictó la disposición general.",
         "correct": "b",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 41,
@@ -437,7 +437,7 @@ const db = [
         "d": "Quince días.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 42,
@@ -448,7 +448,7 @@ const db = [
         "d": "Sólo por propia iniciativa.",
         "correct": "c",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 43,
@@ -459,7 +459,7 @@ const db = [
         "d": "En cualquier momento, por iniciativa propia o a solicitud de interesado, y previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 44,
@@ -470,7 +470,7 @@ const db = [
         "d": "4 años siguientes a la fecha de la notificación de la resolución impugnada.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 45,
@@ -481,7 +481,7 @@ const db = [
         "d": "4 años desde que se dictó el acto administrativo.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 46,
@@ -492,7 +492,7 @@ const db = [
         "d": "Cuando la ejecución pudiera causar perjuicios de imposible o difícil reparación.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 47,
@@ -503,7 +503,7 @@ const db = [
         "d": "Es anulable y no puede ser objeto de convalidación.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 48,
@@ -514,7 +514,7 @@ const db = [
         "d": "Los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia, verbalmente.",
         "correct": "a",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 49,
@@ -525,7 +525,7 @@ const db = [
         "d": "Ante el órgano que dictó el acto que se impugna o ante el competente para resolverlo. Tema 3. Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución.",
         "correct": "d",
         "tema": 2,
-        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo."
+        "tema_title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos."
     },
     {
         "id": 50,
@@ -536,7 +536,7 @@ const db = [
         "d": "La orden emitida por un órgano administrativo superior jerárquico del competente para la iniciación del procedimiento.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 51,
@@ -547,7 +547,7 @@ const db = [
         "d": "Apremio sobre las personas, ejecución solidaria, multa coercitiva y compulsión sobre el patrimonio.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 52,
@@ -558,7 +558,7 @@ const db = [
         "d": "De manera electrónica.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 53,
@@ -569,7 +569,7 @@ const db = [
         "d": "Garantías, Iniciación, Ordenación, Instrucción, Finalización, tramitación Simplificada y Ejecución.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 54,
@@ -580,7 +580,7 @@ const db = [
         "d": "El conjunto ordenado de documentos que sirven de antecedente y fundamento a la resolución administrativa, así como las diligencias encaminadas a ejecutarla.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 55,
@@ -591,7 +591,7 @@ const db = [
         "d": "De las solicitudes, comunicaciones y escritos que se presenten electrónicamente o en las oficinas de asistencia en materia de registros de la Administración, podrán éstos exigir el correspondiente recibo que acredite la fecha y hora de presentación.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 56,
@@ -602,7 +602,7 @@ const db = [
         "d": "Actos que impongan una obligación personalísima de no hacer.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 57,
@@ -613,7 +613,7 @@ const db = [
         "d": "Nunca se podrá prescindir de este trámite.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 58,
@@ -624,7 +624,7 @@ const db = [
         "d": "No superior a 10 días.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 59,
@@ -635,7 +635,7 @@ const db = [
         "d": "Con antelación suficiente.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 60,
@@ -646,7 +646,7 @@ const db = [
         "d": "El órgano competente podrá pronunciarse sobre las mismas, poniéndolo antes de manifiesto a aquéllos por un plazo no superior a un mes.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 61,
@@ -657,7 +657,7 @@ const db = [
         "d": "10 días siguientes a su adopción, el cual podrá ser objeto del recurso que proceda.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 62,
@@ -668,7 +668,7 @@ const db = [
         "d": "De diez días.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 63,
@@ -679,7 +679,7 @@ const db = [
         "d": "Iniciado el procedimiento, el órgano administrativo competente para iniciar o instruir, de oficio y de forma motivada.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 64,
@@ -690,7 +690,7 @@ const db = [
         "d": "Durante la fase de ordenación y el interesado deberá aportarla.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 65,
@@ -701,7 +701,7 @@ const db = [
         "d": "Por cualquiera de las anteriores, e incluso por denuncia.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 66,
@@ -712,7 +712,7 @@ const db = [
         "d": "En cualquier momento del procedimiento anterior al trámite de información pública.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 67,
@@ -723,7 +723,7 @@ const db = [
         "d": "Independiente de las sanciones que puedan imponerse con tal carácter e incompatible con ellas.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 68,
@@ -734,7 +734,7 @@ const db = [
         "d": "Hasta 48 horas después del día que se notifique la resolución en la que se tenga por transcurrido el plazo. (Art. 73.3 Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas)",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 69,
@@ -745,7 +745,7 @@ const db = [
         "d": "Se acordarán en sucesivos actos todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea obligado su cumplimiento sucesivo.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 70,
@@ -756,7 +756,7 @@ const db = [
         "d": "Diez días a partir del siguiente al de la notificación del correspondiente acto, salvo en el caso de que en la norma correspondiente se fije plazo distinto.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 71,
@@ -767,7 +767,7 @@ const db = [
         "d": "No superior a treinta días ni inferior a diez.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 72,
@@ -778,7 +778,7 @@ const db = [
         "d": "Suspenderá la tramitación del mismo en ciertos casos.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 73,
@@ -789,7 +789,7 @@ const db = [
         "d": "Transparencia e información pública.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 74,
@@ -800,7 +800,7 @@ const db = [
         "d": "Se efectuará siempre respetando el principio de proporcionalidad e igualdad. Tema 4.Funcionamiento electrónico del Sector Público (I): Sede electrónica. Canales y puntos de acceso. Identificación y autenticación. Firma electrónica. Tema 5.El Funcionamiento electrónico del Sector Público (II).El acceso electrónico de la ciudadanía a los servicios públicos. Los servicios públicos electrónicos. Derecho y obligación de relacionarse electrónicamente con las Administraciones Públicas.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 75,
@@ -811,7 +811,7 @@ const db = [
         "d": "5 años revocables.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 76,
@@ -822,7 +822,7 @@ const db = [
         "d": "La responsabilidad del titular respecto del acceso de las comunicaciones.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 77,
@@ -833,7 +833,7 @@ const db = [
         "d": "Certificado electrónico del empleado público.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 78,
@@ -844,7 +844,7 @@ const db = [
         "d": "Será sustituida por su firma presencial, mediante escrito dirigido al órgano encargado de tramitar el procedimiento administrativo.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 79,
@@ -855,7 +855,7 @@ const db = [
         "d": "A una Administración Pública, o bien a una o varios organismos públicos o entidades de Derecho Público en el ejercicio de sus competencias.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 80,
@@ -866,7 +866,7 @@ const db = [
         "d": "A cada Administración Pública.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 81,
@@ -877,7 +877,7 @@ const db = [
         "d": "El Consejo de Ministros.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 82,
@@ -888,7 +888,7 @@ const db = [
         "d": "Capacidad de las Administraciones Públicas para que, partiendo del conocimiento adquirido del usuario final del servicio, proporcione servicios precumplimentados y se anticipe a las posibles necesidades de los mismos.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 83,
@@ -899,7 +899,7 @@ const db = [
         "d": "La obligación de relacionarse por cualquier tipo de medio, siempre que quede constancia del mismo, y teniendo efectos dicha decisión, a partir del quinto día hábil desde la recepción de la solicitud.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 84,
@@ -910,7 +910,7 @@ const db = [
         "d": "Del territorio internacional.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 85,
@@ -921,7 +921,7 @@ const db = [
         "d": "A la sede electrónica.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 86,
@@ -932,7 +932,7 @@ const db = [
         "d": "Sistemas de clave concertada.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 87,
@@ -943,7 +943,7 @@ const db = [
         "d": "5 días naturales sin acceso a la misma.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 88,
@@ -954,7 +954,7 @@ const db = [
         "d": "Procedimiento electrónico.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 89,
@@ -965,7 +965,7 @@ const db = [
         "d": "En ningún caso, comprenderá la relación de emisores y receptores autorizados y la naturaleza de los datos a intercambiar.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 90,
@@ -976,7 +976,7 @@ const db = [
         "d": "Son las que se establecen en la presente Ley.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 91,
@@ -987,7 +987,7 @@ const db = [
         "d": "Se establecerán mediante convenio suscrito entre aquellas.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 92,
@@ -998,7 +998,7 @@ const db = [
         "d": "No podrán identificar de forma conjunta al titular del puesto de trabajo o cargo y a la Administración u órgano en la que presta sus servicios.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 93,
@@ -1009,7 +1009,7 @@ const db = [
         "d": "Comprenderá la relación de emisores y receptores autorizados, pero no la naturaleza de los datos a intercambiar.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 94,
@@ -1020,7 +1020,7 @@ const db = [
         "d": "La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 95,
@@ -1031,7 +1031,7 @@ const db = [
         "d": "Siempre por medios electrónicos.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 96,
@@ -1042,7 +1042,7 @@ const db = [
         "d": "El poderdante una vez finalizado el plazo de validez del poder.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 97,
@@ -1053,7 +1053,7 @@ const db = [
         "d": "en instalaciones calificadas de alta protección informática, con independencia del territorio donde se encuentren.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 98,
@@ -1064,7 +1064,7 @@ const db = [
         "d": "Un sello electrónico basado en un certificado electrónico reconocido o cualificado que reúna los requisitos exigidos por la legislación de firma electrónica. Tema 6.Funcionamiento electrónico del Sector Público (III): Registro y archivo electrónico. Comunicaciones y notificaciones electrónicas. Tema 7.Funcionamiento electrónico del sector público (IV): La gestión electrónica de los procedimientos administrativos. Expediente y documento electrónico. La simplificación y reducción de cargas administrativas en la tramitación electrónica en las Administraciones Públicas.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 99,
@@ -1075,7 +1075,7 @@ const db = [
         "d": "En el momento en que el interesado confirma, mediante los enlaces correspondientes, la lectura y conformidad con el contenido de la notificación.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 100,
@@ -1086,7 +1086,7 @@ const db = [
         "d": "30 días.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 101,
@@ -1097,7 +1097,7 @@ const db = [
         "d": "Oficio electrónico.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 102,
@@ -1108,7 +1108,7 @@ const db = [
         "d": "Cada Organismo podrá disponer de su propio registro electrónico de apoderamientos.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 103,
@@ -1119,7 +1119,7 @@ const db = [
         "d": "Son de potestativo cumplimiento sólo para la Administración General del Estado.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 104,
@@ -1130,7 +1130,7 @@ const db = [
         "d": "Los interesados que estén obligados a recibir notificaciones por escrito.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 105,
@@ -1141,7 +1141,7 @@ const db = [
         "d": "Deberá ser cursada dentro del plazo de quince días a partir de la fecha en que el acto haya sido dictado, y deberá contener un resumen de la resolución, con indicación o no de si pone fin a la vía administrativa.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 106,
@@ -1152,7 +1152,7 @@ const db = [
         "d": "Diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 107,
@@ -1163,7 +1163,7 @@ const db = [
         "d": "Mediante orden del órgano encargado de tramitar.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 108,
@@ -1174,7 +1174,7 @@ const db = [
         "d": "Entraron en vigor el mismo día de publicación de la Ley en el Boletín Oficial del Estado, esto es, el 2 de octubre de 2015.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 109,
@@ -1185,7 +1185,7 @@ const db = [
         "d": "Físicas o jurídicas que, por razón de su capacidad económica, residencia, horario, dedicación profesional u otros motivos quede acreditado que tienen acceso y disponibilidad de los medios electrónicos necesarios.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 110,
@@ -1196,7 +1196,7 @@ const db = [
         "d": "Firma del solicitante o acreditación de la autenticidad de su voluntad expresada por cualquier medio.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 111,
@@ -1207,7 +1207,7 @@ const db = [
         "d": "Medidas para garantizar la seguridad de la información y los servicios electrónicos.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 112,
@@ -1218,7 +1218,7 @@ const db = [
         "d": "Su identificación, contenido, metadatos, firma, estructura y formato.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 113,
@@ -1229,7 +1229,7 @@ const db = [
         "d": "Mediante orden del Ministerio de la Presidencia.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 114,
@@ -1240,7 +1240,7 @@ const db = [
         "d": "Un índice electrónico ordenado.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 115,
@@ -1251,7 +1251,7 @@ const db = [
         "d": "A la preferencia en la tramitación de los procedimientos presentados electrónicamente.",
         "correct": "d",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 116,
@@ -1262,7 +1262,7 @@ const db = [
         "d": "Mediante decreto.",
         "correct": "b",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 117,
@@ -1273,7 +1273,7 @@ const db = [
         "d": "A los seis meses de la entrada en vigor de la Ley.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 118,
@@ -1284,7 +1284,7 @@ const db = [
         "d": "Siempre que se mantenga el original.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 119,
@@ -1295,7 +1295,7 @@ const db = [
         "d": "En todo caso.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 120,
@@ -1306,7 +1306,7 @@ const db = [
         "d": "A través de la dirección electrónica única, en todo caso.",
         "correct": "c",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 121,
@@ -1317,7 +1317,7 @@ const db = [
         "d": "Que no se podrán acordar en un solo acto aquellos trámites que, aunque admitan un impulso simultáneo.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 122,
@@ -1328,7 +1328,7 @@ const db = [
         "d": "Sistemas de registros de la Administración General del Estado. Tema 8. El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización.",
         "correct": "a",
         "tema": 3,
-        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento"
+        "tema_title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución."
     },
     {
         "id": 123,
@@ -1339,7 +1339,7 @@ const db = [
         "d": "Los derechos pendientes de cobro a 31 de diciembre.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 124,
@@ -1350,7 +1350,7 @@ const db = [
         "d": "La comprobación cuando se estime necesario del grado de cumplimiento de los objetivos, así como el análisis del coste de funcionamiento y del rendimiento de los respectivos servicios o inversiones.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 125,
@@ -1361,7 +1361,7 @@ const db = [
         "d": "Ordenación del pago.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 126,
@@ -1372,7 +1372,7 @@ const db = [
         "d": "Los créditos que hayan de habilitarse con ocasión de dar cumplimiento a una resolución judicial.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 127,
@@ -1383,7 +1383,7 @@ const db = [
         "d": "Los informes justificativos presentados por la Corporación Local.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 128,
@@ -1394,7 +1394,7 @@ const db = [
         "d": "El Boletín Oficial de la Provincia y en uno de los diarios de mayor circulación en el término municipal.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 129,
@@ -1405,7 +1405,7 @@ const db = [
         "d": "Un mes.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 130,
@@ -1416,7 +1416,7 @@ const db = [
         "d": "El Interventor.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 131,
@@ -1427,7 +1427,7 @@ const db = [
         "d": "Los Planes de Programas de Inversión y Financiación formulados por los Municipios y demás Entidades Locales de ámbito supramunicipal.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 132,
@@ -1438,7 +1438,7 @@ const db = [
         "d": "El compromiso del gasto.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 133,
@@ -1449,7 +1449,7 @@ const db = [
         "d": "Por omitir el crédito necesario para el cumplimiento de obligaciones exigibles a la entidad local, en virtud de precepto legal o de cualquier otro título legítimo.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 134,
@@ -1460,7 +1460,7 @@ const db = [
         "d": "De un plazo de un mes.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 135,
@@ -1471,7 +1471,7 @@ const db = [
         "d": "Con carácter semestral.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 136,
@@ -1482,7 +1482,7 @@ const db = [
         "d": "En cuanto a la recaudación de derechos y al pago de obligaciones el 31 de diciembre del año natural correspondiente, quedando a cargo de la Tesorería local los ingresos y pagos pendientes, según sus respectivas contracciones.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 137,
@@ -1493,7 +1493,7 @@ const db = [
         "d": "El RD 500/1900 de 15 de mayo.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 138,
@@ -1504,7 +1504,7 @@ const db = [
         "d": "Gastos menores de 3005,6 euros que se hagan efectivos a través del sistema de anticipos de caja fija.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 139,
@@ -1515,7 +1515,7 @@ const db = [
         "d": "Los que puedan resultar afectados por desarrollar su actividad económica en el territorio de la entidad local a pesar de no habitar en el mismo.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 140,
@@ -1526,7 +1526,7 @@ const db = [
         "d": "La intervención formal de la ordenación del pago.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 141,
@@ -1537,7 +1537,7 @@ const db = [
         "d": "La ejecución de los actos que den lugar al reconocimiento de gastos de contenido económico de sociedades en que participen los organismos autónomos de las Entidades locales.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 142,
@@ -1548,7 +1548,7 @@ const db = [
         "d": "Antes del 30 de septiembre.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 143,
@@ -1559,7 +1559,7 @@ const db = [
         "d": "Se interpondrá Recurso de Revisión ante el Pleno de la Corporación.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 144,
@@ -1570,7 +1570,7 @@ const db = [
         "d": "La Intervención Municipal enviará antes del día 15 de octubre de cada año la cuenta general correspondiente al ejercicio económico anterior.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 145,
@@ -1581,7 +1581,7 @@ const db = [
         "d": "Al Pleno y al Presidente de la Entidad Local conjuntamente.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 146,
@@ -1592,7 +1592,7 @@ const db = [
         "d": "Por Programas y Económica.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 147,
@@ -1603,7 +1603,7 @@ const db = [
         "d": "Al Presidente de la Entidad Local, previo informe de la Intervención. Tema 9.La Ley de Contratos del Sector Público (I). Disposiciones Generales. Objeto y ámbito de aplicación de la Ley. Tema 10 La Ley de contratos del Sector Público (II): Contratos del Sector Público.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 148,
@@ -1614,7 +1614,7 @@ const db = [
         "d": "Que se constituyan de forma inicial, con una aportación mayoritaria, directa, de una o varias entidades integradas en el sector público, pudiendo recibir dicha aportación con posterioridad a su constitución.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 149,
@@ -1625,7 +1625,7 @@ const db = [
         "d": "El carácter de la prestación que elija el adjudicador.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 150,
@@ -1636,7 +1636,7 @@ const db = [
         "d": "Las pequeñas y medianas empresas y empresas de economía social.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 151,
@@ -1647,7 +1647,7 @@ const db = [
         "d": "Las Entidades Gestoras y los Servicios Comunes de la Seguridad Social.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 152,
@@ -1658,7 +1658,7 @@ const db = [
         "d": "Quedan excluidas del ámbito de la presente Ley cuando se deleguen actividades a órganos de distinta administración.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 153,
@@ -1669,7 +1669,7 @@ const db = [
         "d": "Libertad de acceso a las licitaciones, publicidad y transparencia de los procedimientos, y no discriminación e igualdad de trato entre los licitadores.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 154,
@@ -1680,7 +1680,7 @@ const db = [
         "d": "No, salvo excepciones.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 155,
@@ -1691,7 +1691,7 @@ const db = [
         "d": "Incluida la conservación y mantenimiento de los elementos construidos, excepto las de restauración y reparación de construcciones existentes.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 156,
@@ -1702,7 +1702,7 @@ const db = [
         "d": "Los contratos de suministro y servicios.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 157,
@@ -1713,7 +1713,7 @@ const db = [
         "d": "Libertad de acceso a las licitaciones, publicidad y transparencia de los procedimientos, y no discriminación e igualdad de trato entre los licitadores.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 158,
@@ -1724,7 +1724,7 @@ const db = [
         "d": "Únicamente la realización de alguno de los trabajos que se enumeran en el Anexo I de la Ley de Contratos del Sector Público.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 159,
@@ -1735,7 +1735,7 @@ const db = [
         "d": "Criterios de calidad técnica y medioambientales siempre que guarden relación con el objeto del contrato.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 160,
@@ -1746,7 +1746,7 @@ const db = [
         "d": "Se regirán por sus normas especiales y las disposiciones de desarrollo que se establezcan.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 161,
@@ -1757,7 +1757,7 @@ const db = [
         "d": "Que los beneficios pertenezcan exclusivamente al poder adjudicador para su utilización en el ejercicio de su propia actividad y en otras nuevas actividades, y que el servicio prestado sea remunerado íntegramente por el poder adjudicador.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 162,
@@ -1768,7 +1768,7 @@ const db = [
         "d": "Un resultado distinto de una obra o suministro, incluyendo aquellos en que el adjudicatario se obligue a ejecutar el servicio de forma sucesiva y por precio unitario.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 163,
@@ -1779,7 +1779,7 @@ const db = [
         "d": "del medio ambiente.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 164,
@@ -1790,7 +1790,7 @@ const db = [
         "d": "Será aquel que contenga prestaciones correspondientes a otro u otros de distinta clase.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 165,
@@ -1801,7 +1801,7 @@ const db = [
         "d": "Criterios sociales y medioambientales siempre que guarde relación con el objeto del contrato.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 166,
@@ -1812,7 +1812,7 @@ const db = [
         "d": "Publicidad, no discriminación y confidencialidad.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 167,
@@ -1823,7 +1823,7 @@ const db = [
         "d": "El contratante obtenga algún tipo de beneficio económico de forma directa.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 168,
@@ -1834,7 +1834,7 @@ const db = [
         "d": "Los contratos gratuito, cualquiera que sea su naturaleza jurídica.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 169,
@@ -1845,7 +1845,7 @@ const db = [
         "d": "Los contratos relativos a servicios de arbitraje y conciliación.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 170,
@@ -1856,7 +1856,7 @@ const db = [
         "d": "Las Mutuas colaboradoras con la Seguridad Social.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 171,
@@ -1867,7 +1867,7 @@ const db = [
         "d": "Los efectos, cumplimiento y extinción de los contratos administrativos, en atención a los fines institucionales de carácter público o privado que a través de los mismos se tratan de realizar.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 172,
@@ -1878,7 +1878,7 @@ const db = [
         "d": "Los contratos no onerosos, cualquiera que sea su naturaleza jurídica, que celebren las entidades enumeradas en el artículo 3 de esta ley. Tema 11.La actividad subvencional de las Administraciones Públicas (I). La Ley 38/2003, 17 de noviembre, General de subvenciones: Ámbito de aplicación y disposiciones a las subvenciones públicas comunes. Tema 12.La actividad subvencional de las Administraciones Públicas (II). La Ley 38/2003, 17 de noviembre, General de subvenciones: procedimiento de concesión y gestión de subvenciones.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 173,
@@ -1889,7 +1889,7 @@ const db = [
         "d": "Sólo personas físicas y jurídicas.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 174,
@@ -1900,7 +1900,7 @@ const db = [
         "d": "Los objetivos y efectos que se pretenden en su aplicación, el plazo necesario para su consecución, los costes previsibles y sus fuentes de financiación supeditándose en todo caso al cumplimiento de los objetivos de estabilidad presupuestaria.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 175,
@@ -1911,7 +1911,7 @@ const db = [
         "d": "La Ley 38/2003, de 17 de noviembre, General de Subvenciones y sus disposiciones de desarrollo.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 176,
@@ -1922,7 +1922,7 @@ const db = [
         "d": "La Administración General del Estado, las entidades que integran la Administración Local y la Administración de las Comunidades Autónomas.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 177,
@@ -1933,7 +1933,7 @@ const db = [
         "d": "Las prestaciones como consecuencia de actos de terrorismo.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 178,
@@ -1944,7 +1944,7 @@ const db = [
         "d": "El acceso, integridad, disponibilidad, autenticidad, confidencialidad y trazabilidad de los datos.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 179,
@@ -1955,7 +1955,7 @@ const db = [
         "d": "El Consejo de Ministros y la Comisión Delegada del Gobierno para Asuntos Económicos.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 180,
@@ -1966,7 +1966,7 @@ const db = [
         "d": "Podrán ser publicadas las subvenciones concedidas cuando la publicación de los datos del beneficiario pueda ser contraria a la salvaguarda del honor e intimidad personal, siempre que impere el interés general.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 181,
@@ -1977,7 +1977,7 @@ const db = [
         "d": "Se considerará falta disciplinaria leve o grave, con independencia de las responsabilidades penales o civiles que puedan corresponder.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 182,
@@ -1988,7 +1988,7 @@ const db = [
         "d": "En las Comunidades autónomas, la Intervención General del Estado y de la propia Comunidad Autónoma u órgano que designe la propia Comunidad autónoma.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 183,
@@ -1999,7 +1999,7 @@ const db = [
         "d": "su función principal es servir como instrumento para la lucha contra el fraude de subvenciones y ayudas públicas",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 184,
@@ -2010,7 +2010,7 @@ const db = [
         "d": "Toda disposición dineraria realizada por cualesquiera de los sujetos que formen parte del Sector Público, a favor de personas públicas o privadas y que cumpla una serie de requisitos.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 185,
@@ -2021,7 +2021,7 @@ const db = [
         "d": "Aquellas en cuya tramitación sólo intervengan órganos de la Administración General de las Comunidades Autónomas o de las entidades de derecho público vinculadas o dependientes de aquéllas.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 186,
@@ -2032,7 +2032,7 @@ const db = [
         "d": "La regulación del régimen jurídico general de las subvenciones otorgadas por las Administraciones que forman parte del Sector Publico.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 187,
@@ -2043,7 +2043,7 @@ const db = [
         "d": "Las personas o entidades que hayan sido condenadas mediante sentencia firme en los últimos 4 años por delitos de prevaricación, cohecho, malversación de caudales públicos, tráfico de influencias, fraudes y exacciones ilegales o delitos urbanísticos.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 188,
@@ -2054,7 +2054,7 @@ const db = [
         "d": "Carácter reservado y exclusivo.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 189,
@@ -2065,7 +2065,7 @@ const db = [
         "d": "Eficacia, jerarquía, descentralización, desconcentración y coordinación.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 190,
@@ -2076,7 +2076,7 @@ const db = [
         "d": "El Ministro de Hacienda y Administraciones Públicas, junto con la Comisión Delegada del Gobierno para Asuntos Económicos.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 191,
@@ -2087,7 +2087,7 @@ const db = [
         "d": "Se aplicarán, únicamente, a los organismos y demás entidades de Derecho Público dependientes de la Administración General del Estado y de las Comunidades Autónomas.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 192,
@@ -2098,7 +2098,7 @@ const db = [
         "d": "Podrán ser objeto de desconcentración siempre que se determine mediante decreto del Consejo de Ministros.",
         "correct": "a",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 193,
@@ -2109,7 +2109,7 @@ const db = [
         "d": "Las aportaciones dinerarias en concepto de cuotas sólo de carácter ordinarias que realicen las entidades que integran la Administración Local a favor de las asociaciones a que se refiere la disposición adicional quinta de la LBRL.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 194,
@@ -2120,7 +2120,7 @@ const db = [
         "d": "El Régimen de garantías, medios de constitución, depósito y cancelación que tengan que constituir los beneficiarios o las entidades colaboradoras se establecerá conforme a lo dispuesto en el instrumento jurídico de creación.",
         "correct": "b",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 195,
@@ -2131,7 +2131,7 @@ const db = [
         "d": "El Tribunal de Cuentas.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 196,
@@ -2142,7 +2142,7 @@ const db = [
         "d": "Serán de aplicación los principios de gestión a todas las entregas dinerarias sin contraprestación.",
         "correct": "c",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 197,
@@ -2153,7 +2153,7 @@ const db = [
         "d": "La Intervención General de la Administración del Estado. Tema 13. La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía.",
         "correct": "d",
         "tema": 8,
-        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y"
+        "tema_title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización."
     },
     {
         "id": 198,
@@ -2164,7 +2164,7 @@ const db = [
         "d": "Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguna de las personas y entidades incluidas en el presente título y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones.",
         "correct": "d",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 199,
@@ -2175,7 +2175,7 @@ const db = [
         "d": "El derecho de cualquier persona a que los poderes públicos publiquen, en cumplimiento de la presente ley, de forma periódica y actualizada, la información veraz cuyo conocimiento sea relevante para garantizar la transparencia de su actividad relacionada con el funcionamiento y control de la actuación pública.",
         "correct": "d",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 200,
@@ -2186,7 +2186,7 @@ const db = [
         "d": "La intimidad personal y familiar.",
         "correct": "d",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 201,
@@ -2197,7 +2197,7 @@ const db = [
         "d": "Con carácter general, y salvo que en el caso concreto prevalezca la protección de datos personales u otros derechos constitucionalmente protegidos sobre el interés público en la divulgación que lo impida, se concederá el acceso a información.",
         "correct": "a",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 202,
@@ -2208,7 +2208,7 @@ const db = [
         "d": "Con carácter general, y salvo que en el caso concreto prevalezca la protección de datos personales u otros derechos constitucionalmente protegidos sobre el interés público en la divulgación que lo impida, se concederá el acceso a información.",
         "correct": "b",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 203,
@@ -2219,7 +2219,7 @@ const db = [
         "d": "Con carácter general, y salvo que en el caso concreto prevalezca la protección de datos personales u otros derechos constitucionalmente protegidos sobre el interés público en la divulgación que lo impida, se concederá el acceso a información.",
         "correct": "d",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 204,
@@ -2230,7 +2230,7 @@ const db = [
         "d": "Con carácter general, y salvo que en el caso concreto prevalezca la protección de datos personales u otros derechos constitucionalmente protegidos sobre el interés público en la divulgación que lo impida, se concederá el acceso a información.",
         "correct": "c",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 205,
@@ -2241,7 +2241,7 @@ const db = [
         "d": "Al superior jerárquico del titular del órgano administrativo o entidad competente para la resolución de las solicitudes de acceso a la información.",
         "correct": "a",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 206,
@@ -2252,7 +2252,7 @@ const db = [
         "d": "La identidad del solicitante, la información que se solicita, una dirección de contacto, preferentemente electrónica, a efectos de comunicaciones, lugar, fecha, firma y, en su caso, la modalidad que se prefiera para acceder a la información solicitada.",
         "correct": "a",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 207,
@@ -2263,7 +2263,7 @@ const db = [
         "d": "Cuya concesión resulte incompatible con la garantía de la confidencialidad o el secreto requerido en procesos de toma de decisión.",
         "correct": "a",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 208,
@@ -2274,7 +2274,7 @@ const db = [
         "d": "Exclusivamente, mediante la interposición de un recurso extraordinario de revisión ante el órgano administrativo que los dictó, cuando concurra alguna de las circunstancias recogidas en el artículo 125 de la Ley de Procedimiento Administrativo Común de las Administraciones Públicas.",
         "correct": "a",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 209,
@@ -2285,7 +2285,7 @@ const db = [
         "d": "Cinco años para las infracciones muy graves, tres años para las graves y seis meses para las leves. Tema 14. Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva.",
         "correct": "c",
         "tema": 13,
-        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la"
+        "tema_title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía."
     },
     {
         "id": 210,
@@ -2296,7 +2296,7 @@ const db = [
         "d": "Adoptar medidas que antepongan la protección individual a la colectiva.",
         "correct": "d",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 211,
@@ -2307,7 +2307,7 @@ const db = [
         "d": "Toda enfermedad que sufra el trabajador mientras trabaja.",
         "correct": "b",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 212,
@@ -2318,7 +2318,7 @@ const db = [
         "d": "Cualquier persona que está en la obra.",
         "correct": "b",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 213,
@@ -2329,7 +2329,7 @@ const db = [
         "d": "Ley de Prevención de Riesgos Laborales.",
         "correct": "d",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 214,
@@ -2340,7 +2340,7 @@ const db = [
         "d": "Autoridades sanitarias.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 215,
@@ -2351,7 +2351,7 @@ const db = [
         "d": "Autoridades sanitarias.",
         "correct": "b",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 216,
@@ -2362,7 +2362,7 @@ const db = [
         "d": "La elevación se hará siempre en sentido vertical.",
         "correct": "a",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 217,
@@ -2373,7 +2373,7 @@ const db = [
         "d": "El ruido no provoca accidentes de trabajo ni enfermedades profesionales, únicamente produce incomodidad.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 218,
@@ -2384,7 +2384,7 @@ const db = [
         "d": "Proteja a la colectividad y elimine la necesidad de utilizar EPIs",
         "correct": "d",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 219,
@@ -2395,7 +2395,7 @@ const db = [
         "d": "Sistemas de ventilación",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 220,
@@ -2406,7 +2406,7 @@ const db = [
         "d": "Se informará a los trabajadores de la forma de pago.",
         "correct": "a",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 221,
@@ -2417,7 +2417,7 @@ const db = [
         "d": "En la obra intervengan más de una empresa y trabajadores autónomos o varios trabajadores autónomos.",
         "correct": "d",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 222,
@@ -2428,7 +2428,7 @@ const db = [
         "d": "Sólo si lo solicita el accidentado.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 223,
@@ -2439,7 +2439,7 @@ const db = [
         "d": "Pulso.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 224,
@@ -2450,7 +2450,7 @@ const db = [
         "d": "El ruido no provoca accidentes de trabajo ni enfermedades profesionales, únicamente produce disconfort.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 225,
@@ -2461,7 +2461,7 @@ const db = [
         "d": "Controlar la cantidad y la calidad de la información tratada.",
         "correct": "b",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 226,
@@ -2472,7 +2472,7 @@ const db = [
         "d": "La promoción dentro de la empresa.",
         "correct": "b",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 227,
@@ -2483,7 +2483,7 @@ const db = [
         "d": "Extracción localizada.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 228,
@@ -2494,7 +2494,7 @@ const db = [
         "d": "Conatos de incendio.",
         "correct": "c",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 229,
@@ -2505,7 +2505,7 @@ const db = [
         "d": "Emergencia parcial, conato de emergencia, evacuación y emergencia general.",
         "correct": "a",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 230,
@@ -2516,7 +2516,7 @@ const db = [
         "d": "La manipulación de alimentos se puede llevar a cabo por personal que presente cualquier tipo de enfermedad.",
         "correct": "a",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 231,
@@ -2527,7 +2527,7 @@ const db = [
         "d": "Agente biológico, químico o físico que pueda causar un daño para la salud.",
         "correct": "d",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 232,
@@ -2538,7 +2538,7 @@ const db = [
         "d": "Las acciones y actividades que pueden ser utilizadas para eliminar un peligro o reducir su incidencia a niveles aceptables.",
         "correct": "a",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 233,
@@ -2549,7 +2549,7 @@ const db = [
         "d": "Las condiciones de trabajo son las enfermedades profesionales. Tema 15. La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior.",
         "correct": "b",
         "tema": 14,
-        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal."
+        "tema_title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva."
     },
     {
         "id": 234,
@@ -2560,7 +2560,7 @@ const db = [
         "d": "La ausencia de toda discriminación, directa o indirecta, por razón de sexo, y especialmente, las derivadas de la maternidad, la asunción de obligaciones familiares y el estado civil.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 235,
@@ -2571,7 +2571,7 @@ const db = [
         "d": "La situación en que una disposición, criterio o práctica aparentemente neutros pone a personas de un sexo en ventaja particular con respecto a personas del otro, salvo que dicha disposición, criterio o práctica puedan justificarse objetivamente en atención a una finalidad legítima y que los medios para alcanzar dicha finalidad sean necesarios y adecuados.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 236,
@@ -2582,7 +2582,7 @@ const db = [
         "d": "Ninguna es correcta.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 237,
@@ -2593,7 +2593,7 @@ const db = [
         "d": "Ninguna es correcta.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 238,
@@ -2604,7 +2604,7 @@ const db = [
         "d": "Todos los anteriores.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 239,
@@ -2615,7 +2615,7 @@ const db = [
         "d": "Subsanables.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 240,
@@ -2626,7 +2626,7 @@ const db = [
         "d": "Solo en la Administración General del Estado.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 241,
@@ -2637,7 +2637,7 @@ const db = [
         "d": "Las estadísticas, encuestas y recogidas de datos que se lleven a cabo.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 242,
@@ -2648,7 +2648,7 @@ const db = [
         "d": "Los proyectos de disposiciones de carácter general y los planes de especial relevancia económica, social, cultural y artística que se sometan a la aprobación de las Cortes Generales deberán incorporar un informe sobre su impacto por razón de género.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 243,
@@ -2659,7 +2659,7 @@ const db = [
         "d": "Derechos, deberes, obligaciones y oportunidades.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 244,
@@ -2670,7 +2670,7 @@ const db = [
         "d": "Todo trato desfavorable a las mujeres relacionado con el embarazo o la maternidad",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 245,
@@ -2681,7 +2681,7 @@ const db = [
         "d": "Cualquier comportamiento, verbal, físico o psíquico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 246,
@@ -2692,7 +2692,7 @@ const db = [
         "d": "Las Cortes Generales.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 247,
@@ -2703,7 +2703,7 @@ const db = [
         "d": "En situación de necesidad o en riesgo de exclusión, o de las que hayan sido víctimas de violencia de género, en especial cuando, en ambos casos, tengan hijos menores exclusivamente a su cargo.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 248,
@@ -2714,7 +2714,7 @@ const db = [
         "d": "Colaborar con las campañas institucionales dirigidas a fomentar la igualdad entre mujeres y hombres y a erradicar la violencia de género.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 249,
@@ -2725,7 +2725,7 @@ const db = [
         "d": "Podrán respetar la igualdad entre mujeres y hombres.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 250,
@@ -2736,7 +2736,7 @@ const db = [
         "d": "Este tipo de publicidad se sancionará con una multa.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 251,
@@ -2747,7 +2747,7 @@ const db = [
         "d": "Un principio rector de la política económica y social.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 252,
@@ -2758,7 +2758,7 @@ const db = [
         "d": "Sean un cincuenta por ciento de cada sexo.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 253,
@@ -2769,7 +2769,7 @@ const db = [
         "d": "Representantes de trabajadores y trabajadores.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 254,
@@ -2780,7 +2780,7 @@ const db = [
         "d": "3 años.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 255,
@@ -2791,7 +2791,7 @@ const db = [
         "d": "Las empresas en las que hayan más hombres que mujeres",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 256,
@@ -2802,7 +2802,7 @@ const db = [
         "d": "La igualdad de trato y de oportunidades entre mujeres y hombres y a eliminar la discriminación por razón de sexo.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 257,
@@ -2813,7 +2813,7 @@ const db = [
         "d": "Erradicar los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 258,
@@ -2824,7 +2824,7 @@ const db = [
         "d": "Cuando se adopten medidas laborales.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 259,
@@ -2835,7 +2835,7 @@ const db = [
         "d": "El Gobierno.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 260,
@@ -2846,7 +2846,7 @@ const db = [
         "d": "2010.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 261,
@@ -2857,7 +2857,7 @@ const db = [
         "d": "7 ejes.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 262,
@@ -2868,7 +2868,7 @@ const db = [
         "d": "15.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 263,
@@ -2879,7 +2879,7 @@ const db = [
         "d": "Universidades.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 264,
@@ -2890,7 +2890,7 @@ const db = [
         "d": "El Consejo de Ministros.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 265,
@@ -2901,7 +2901,7 @@ const db = [
         "d": "15 líneas de actuación.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 266,
@@ -2912,7 +2912,7 @@ const db = [
         "d": "2006-2009.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 267,
@@ -2923,7 +2923,7 @@ const db = [
         "d": "6 fases.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 268,
@@ -2934,7 +2934,7 @@ const db = [
         "d": "2012.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 269,
@@ -2945,7 +2945,7 @@ const db = [
         "d": "Son actuaciones reiteradas en el tiempo cuya finalidad es la eliminación a corto plazo de algún obstáculo concreto",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 270,
@@ -2956,7 +2956,7 @@ const db = [
         "d": "Pekín 1995.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 271,
@@ -2967,7 +2967,7 @@ const db = [
         "d": "De las Entidades Locales.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 272,
@@ -2978,7 +2978,7 @@ const db = [
         "d": "Artículo 17.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 273,
@@ -2989,7 +2989,7 @@ const db = [
         "d": "La situación de discriminación múltiple en que una mujer padece cualquier tipo de discriminación por razón de clase, etnia, religión orientación o identidad.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 274,
@@ -3000,7 +3000,7 @@ const db = [
         "d": "Que no será inferior a 4 años.",
         "correct": "d",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 275,
@@ -3011,7 +3011,7 @@ const db = [
         "d": "A la Consejería de Educación.",
         "correct": "a",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 276,
@@ -3022,7 +3022,7 @@ const db = [
         "d": "El Consejo de Gobierno y las Asociaciones de mujeres más representativas.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 277,
@@ -3033,7 +3033,7 @@ const db = [
         "d": "El uso discriminatorio que se hace por razón de las creencias religiosas.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 278,
@@ -3044,7 +3044,7 @@ const db = [
         "d": "El IAM.",
         "correct": "b",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 279,
@@ -3055,7 +3055,7 @@ const db = [
         "d": "La situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada en atención a su sexo de una manera menos favorable que otra en situación comparable. Tema 16. La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.",
         "correct": "c",
         "tema": 15,
-        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de"
+        "tema_title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior."
     },
     {
         "id": 280,
@@ -3066,7 +3066,7 @@ const db = [
         "d": "Al tratamiento total o parcialmente automatizado o no automatizado de datos personales.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 281,
@@ -3077,7 +3077,7 @@ const db = [
         "d": "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a residentes de estados miembros de la Unión.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 282,
@@ -3088,7 +3088,7 @@ const db = [
         "d": "La persona física o jurídica, o autoridad pública que determine los fines o medios del tratamiento.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 283,
@@ -3099,7 +3099,7 @@ const db = [
         "d": "El tratamiento es necesario para la satisfacción de intereses legítimos perseguidos por el responsable del tratamiento cuando sea realizado por las autoridades públicas en el ejercicio de sus funciones.",
         "correct": "b",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 284,
@@ -3110,7 +3110,7 @@ const db = [
         "d": "El responsable deberá ser capaz de demostrar que aquel consintió el tratamiento de sus datos personales.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 285,
@@ -3121,7 +3121,7 @@ const db = [
         "d": "El consentimiento lo prestará en todo caso quien ostente la patria potestad del menor de edad.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 286,
@@ -3132,7 +3132,7 @@ const db = [
         "d": "No puede estar prohibido.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 287,
@@ -3143,7 +3143,7 @@ const db = [
         "d": "Estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la finalidad del cumplir el presente Reglamento.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 288,
@@ -3154,7 +3154,7 @@ const db = [
         "d": "En el plazo de dos meses a partir de la recepción de la solicitud.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 289,
@@ -3165,7 +3165,7 @@ const db = [
         "d": "Dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes, habida cuenta de las circunstancias específicas en las que se traten dichos datos.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 290,
@@ -3176,7 +3176,7 @@ const db = [
         "d": "Dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes, habida cuenta de las circunstancias específicas en las que se traten dichos datos.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 291,
@@ -3187,7 +3187,7 @@ const db = [
         "d": "Únicamente las personas vinculadas al fallecido por razones familiares.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 292,
@@ -3198,7 +3198,7 @@ const db = [
         "d": "Se trata de una competencia atribuida a la Agencia Española de Protección de Datos.",
         "correct": "c",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 293,
@@ -3209,7 +3209,7 @@ const db = [
         "d": "Las respuestas a) y b) son incorrectas.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 294,
@@ -3220,7 +3220,7 @@ const db = [
         "d": "Todas las respuestas son incorrectas.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 295,
@@ -3231,7 +3231,7 @@ const db = [
         "d": "Las respuestas a), b) y c) son correctas.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 296,
@@ -3242,7 +3242,7 @@ const db = [
         "d": "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a residentes de estados miembros de la Unión.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 297,
@@ -3253,7 +3253,7 @@ const db = [
         "d": "Todas las respuestas son incorrectas.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 298,
@@ -3264,7 +3264,7 @@ const db = [
         "d": "El tratamiento es necesario para la satisfacción de intereses legítimos perseguidos por el responsable del tratamiento cuando sea realizado por las autoridades públicas en el ejercicio de sus funciones.",
         "correct": "b",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 299,
@@ -3275,7 +3275,7 @@ const db = [
         "d": "El responsable deberá ser capaz de demostrar que aquel consintió el tratamiento de sus datos personales.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 300,
@@ -3286,7 +3286,7 @@ const db = [
         "d": "El consentimiento lo prestará en todo caso quien ostente la patria potestad del menor de edad.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 301,
@@ -3297,7 +3297,7 @@ const db = [
         "d": "Todas las respuestas son erróneas.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 302,
@@ -3308,7 +3308,7 @@ const db = [
         "d": "Las respuestas b) y c) son correctas.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 303,
@@ -3319,7 +3319,7 @@ const db = [
         "d": "Ninguna de las respuestas es correcta.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 304,
@@ -3330,7 +3330,7 @@ const db = [
         "d": "En el plazo de dos meses a partir de la recepción de la solicitud.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 305,
@@ -3341,7 +3341,7 @@ const db = [
         "d": "dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes, habida cuenta de las circunstancias específicas en las que se traten dichos datos.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 306,
@@ -3352,7 +3352,7 @@ const db = [
         "d": "A las personas titulares de las Jefaturas de las Unidades Organizativas o Servicios de la Diputación.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 307,
@@ -3363,7 +3363,7 @@ const db = [
         "d": "A las personas titulares de las Jefaturas de las Unidades Organizativas o Servicios de la Diputación.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 308,
@@ -3374,7 +3374,7 @@ const db = [
         "d": "Dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes, habida cuenta de las circunstancias específicas en las que se traten dichos datos.",
         "correct": "d",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 309,
@@ -3385,7 +3385,7 @@ const db = [
         "d": "Todas las respuestas son erróneas.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 310,
@@ -3396,7 +3396,7 @@ const db = [
         "d": "Al Delegado o Delegada de Protección de Datos.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 311,
@@ -3407,7 +3407,7 @@ const db = [
         "d": "Dieciséis años.",
         "correct": "b",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 312,
@@ -3418,7 +3418,7 @@ const db = [
         "d": "Se trata de una competencia atribuida a la Agencia Española de Protección de Datos.",
         "correct": "c",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 313,
@@ -3429,7 +3429,7 @@ const db = [
         "d": "Los Consorcios del Sector Público Andaluz, Administración autonómica, Administraciones locales, y otras entidades de derecho público y privado dependientes de cualquiera de ellas, así como por las universidades del sistema universitario andaluz.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 314,
@@ -3440,7 +3440,7 @@ const db = [
         "d": "Todas las respuestas son erróneas.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     },
     {
         "id": 315,
@@ -3451,6 +3451,6 @@ const db = [
         "d": "Todas las respuestas son erróneas.",
         "correct": "a",
         "tema": 16,
-        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión"
+        "tema_title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
     }
 ];
