@@ -38,15 +38,10 @@ const db = [
     {
         id: 5,
         q: "En defecto de previsión expresa en el reglamento orgánico de la entidad, la Junta de Gobierno celebrará sesión ordinaria:",
-        a: ",
-        a: \"Cada mes como máximo.",
+        a: "Cada mes como máximo.",
         b: "Cada mes como mínimo.",
         c: "cada 15 días como máximo.",
-        d: "Cada 15 días como mínimo.
-
-
- V.13.08.25                                                                                              Página 3
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Cada 15 días como mínimo.",
         correct: "d"
     },
     {
@@ -82,12 +77,7 @@ const db = [
         a: "Se convocan por el Presidente.",
         b: "Sólo tratan asuntos, pero no los votan.",
         c: "Tienen una periodicidad establecida de antemano.",
-        d: "Se convocan a solicitud de los concejales.
-
-
-
- V.13.08.25                                                                                              Página 4
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Se convocan a solicitud de los concejales.",
         correct: "c"
     },
     {
@@ -132,11 +122,7 @@ const db = [
         a: "Cesión gratuita de bienes a otras Administraciones o instituciones públicas.",
         b: "Enajenación de bienes, cuando su cuantía exceda del 30 por ciento de los recursos ordinarios de su presupuesto.",
         c: "Alteración de la calificación jurídica de los bienes demaniales o comunales.",
-        d: "Cesión por cualquier título del aprovechamiento de los bienes comunales.
-
-
- V.13.08.25                                                                                               Página 5
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Cesión por cualquier título del aprovechamiento de los bienes comunales.",
         correct: "b"
     },
     {
@@ -172,17 +158,12 @@ const db = [
         a: "El sistema normal de votación es indistintamente ordinaria y nominal.",
         b: "Para que el sistema de votación nominal sea el normal, requerirá la solicitud de un grupo municipal aprobada por el Pleno por una mayoría simple en votación ordinaria.",
         c: "El sistema normal será la votación ordinaria.",
-        d: "El sistema normal será la votación secreta.
-
-
-
- V.13.08.25                                                                                              Página 6
- Temario Específico. Auxiliar Administrativo/a",
+        d: "El sistema normal será la votación secreta.",
         correct: "c"
     },
     {
         id: 19,
-        q: "La siguiente definición: \\" Es la propuesta de modificación de un dictamen o proposición presentada por cualquier miembro, mediante escrito presentado al Presidente antes de iniciarse la deliberación del asunto\\". ¿Con cuál de las siguientes se corresponde?",
+        q: "La siguiente definición: \\\" Es la propuesta de modificación de un dictamen o proposición presentada por cualquier miembro, mediante escrito presentado al Presidente antes de iniciarse la deliberación del asunto\\\". ¿Con cuál de las siguientes se corresponde?",
         a: "Ruego (artículo 97.6 del Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales, aprobado por RD 2568/1986, de 28 de noviembre)",
         b: "Moción (artículo 97. 3 del Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales, aprobado por RD 2568/1986, de 28 de noviembre)",
         c: "Enmienda (artículo 97.5 del Reglamento de Organización, Funcionamiento y Régimen Jurídico de las Entidades Locales, aprobado por RD 2568/1986, de 28 de noviembre)",
@@ -213,12 +194,7 @@ const db = [
         a: "Aquellas que convoque el Alcalde o Presidente con tal carácter, por iniciativa propia o a solicitud de la cuarta parte, al menos, del número legal de miembros de la Corporación.",
         b: "Aquellas cuya periodicidad esta preestablecida.",
         c: "Aquellas que convoca el Alcalde o Presidente cuando el asunto o asuntos debe ser tratados lo antes posible.",
-        d: "Aquellas que tienen como punto del orden del día el pronunciamiento del Pleno sobre el motivo de la sesión.
-
-
-
- V.13.08.25                                                                                              Página 7
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Aquellas que tienen como punto del orden del día el pronunciamiento del Pleno sobre el motivo de la sesión.",
         correct: "b"
     },
     {
@@ -237,13 +213,17 @@ const db = [
         b: "dentro de los veinte días siguientes a aquel en que éste haya designado los miembros que la integran.",
         c: "Dentro de los quince días siguientes a aquel en que éste haya designado los miembros que la integran.",
         d: "dentro de los cinco días siguientes a aquel en que éste haya designado los miembros que la integran.
-
-
-
- V.13.08.25                                                                                            Página 8
- Temario Específico. Auxiliar Administrativo/a
  Tema 2. Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos.",
         correct: "a"
+    },
+    {
+        id: 25,
+        q: "Atendiendo al artículo 117.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la ejecución del acto impugnado se entenderá suspendida:",
+        a: "Si transcurrido un mes desde que la solicitud de suspensión haya tenido entrada en el registro del órgano competente para decidir sobre la misma, éste no ha dictado y notificado resolución expresa al respecto.",
+        b: "Si transcurridos 60 días desde que la solicitud de suspensión haya tenido entrada en el registro del órgano competente para decidir sobre la misma, éste no ha dictado y notificado resolución expresa al respecto.",
+        c: "Si transcurridos 90 días desde que la solicitud de suspensión haya tenido entrada en el registro del órgano competente para decidir sobre la misma, éste no ha dictado y notificado resolución expresa al respecto.",
+        d: "Si transcurridos 15 días desde que la solicitud de suspensión haya tenido entrada en el registro del órgano competente para decidir sobre la misma, éste no ha dictado y notificado resolución expresa al respecto.",
+        correct: "p"
     },
     {
         id: 26,
@@ -260,12 +240,7 @@ const db = [
         a: "Requerirá en todo caso la aprobación expresa del Consejo de Ministros u órgano equivalente de las Comunidad Autónomas.",
         b: "Exigirá la oportuna autorización por el órgano competente en materia de Hacienda Pública.",
         c: "Requerirá previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.",
-        d: "Exigirá la previa audiencia de cuantos aparezcan como interesados en el mismo.
-
-
-
- V.13.08.25                                                                                             Página 9
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Exigirá la previa audiencia de cuantos aparezcan como interesados en el mismo.",
         correct: "d"
     },
     {
@@ -301,12 +276,7 @@ const db = [
         a: "Recurso extraordinario de revisión.",
         b: "Recurso de alzada.",
         c: "Recurso contencioso- administrativo.",
-        d: "Recurso potestativo de reposición.
-
-
-
- V.13.08.25                                                                                              Página 10
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Recurso potestativo de reposición.",
         correct: "c"
     },
     {
@@ -321,8 +291,7 @@ const db = [
     {
         id: 33,
         q: "Dispone el artículo 114 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, que ponen fin a la vía administrativa:",
-        a: ",
-        a: \"Los acuerdos y contratos financieros que tengan la consideración de finalizadores del procedimiento.",
+        a: "Los acuerdos y contratos financieros que tengan la consideración de finalizadores del procedimiento.",
         b: "Las demás resoluciones de Administraciones Públicas cuando una disposición así lo establezca.",
         c: "La resolución administrativa de los procedimientos de responsabilidad patrimonial.",
         d: "Los pactos y convenios cuando una disposición reglamentaria así lo establezca.",
@@ -343,12 +312,7 @@ const db = [
         a: "Los recursos de alzada y reposición.",
         b: "Recurso de revisión.",
         c: "Recurso ordinario.",
-        d: "Recurso extraordinario.
-
-
-
- V.13.08.25                                                                                            Página 11
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Recurso extraordinario.",
         correct: "a"
     },
     {
@@ -384,12 +348,7 @@ const db = [
         a: "No precisarán de motivación",
         b: "La motivación se realizará de conformidad con lo que dispongan las normas que regulen sus convocatorias, debiendo, en todo caso, quedar acreditados en el procedimiento los fundamentos de la resolución que se adopte.",
         c: "La motivación se realizará de conformidad con lo que disponga la presente ley.",
-        d: "La motivación se realizará de conformidad con lo que dispongan las normas que regulen sus convocatorias, sin necesidad de que queden acreditadas en el procedimiento los fundamentos de la resolución que se adopte.
-
-
-
- V.13.08.25                                                                                           Página 12
- Temario Específico. Auxiliar Administrativo/a",
+        d: "La motivación se realizará de conformidad con lo que dispongan las normas que regulen sus convocatorias, sin necesidad de que queden acreditadas en el procedimiento los fundamentos de la resolución que se adopte.",
         correct: "b"
     },
     {
@@ -425,12 +384,7 @@ const db = [
         a: "En cualquier momento anterior al trámite de audiencia, por iniciativa propia, y previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.",
         b: "En cualquier momento, a solicitud de interesado, y previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad autónoma, si lo hubiere.",
         c: "En cualquier momento anterior al trámite de audiencia, por iniciativa propia o a solicitud de interesado, y previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.",
-        d: "En cualquier momento, por iniciativa propia o a solicitud de interesado, y previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.
-
-
-
- V.13.08.25                                                                                             Página 13
- Temario Específico. Auxiliar Administrativo/a",
+        d: "En cualquier momento, por iniciativa propia o a solicitud de interesado, y previo dictamen favorable del Consejo de Estado u órgano consultivo equivalente de la Comunidad Autónoma, si lo hubiere.",
         correct: "d"
     },
     {
@@ -475,12 +429,7 @@ const db = [
         a: "Los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia, se producirán por escrito a través de medios electrónicos.",
         b: "Los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia, por escrito a través de medios no electrónicos.",
         c: "Los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia, por escrito a través de medios electrónicos o no electrónicos.",
-        d: "Los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia, verbalmente.
-
-
-
- V.13.08.25                                                                                            Página 14
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Los actos administrativos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia, verbalmente.",
         correct: "a"
     },
     {
@@ -490,11 +439,6 @@ const db = [
         b: "Sólo ante el órgano competente para resolverlo.",
         c: "Ante el superior jerárquico del órgano competente para resolverlo.",
         d: "Ante el órgano que dictó el acto que se impugna o ante el competente para resolverlo.
-
-
-
- V.13.08.25                                                                                        Página 15
- Temario Específico. Auxiliar Administrativo/a
  Tema 3. Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución.",
         correct: "d"
     },
@@ -522,12 +466,7 @@ const db = [
         a: "De oficio.",
         b: "De oficio o a instancia de parte.",
         c: "De oficio o a instancia de parte y de forma motivada.",
-        d: "De manera electrónica.
-
-
-
- V.13.08.25                                                                                            Página 16
- Temario Específico. Auxiliar Administrativo/a",
+        d: "De manera electrónica.",
         correct: "c"
     },
     {
@@ -563,18 +502,13 @@ const db = [
         a: "Actos personalísimos en que proceda la compulsión directa sobre la persona del obligado.",
         b: "Actos en que, procediendo la compulsión, la Administración no la estimara conveniente.",
         c: "Actos cuya ejecución no pueda el obligado encargar a otra persona.",
-        d: "Actos que impongan una obligación personalísima de no hacer.
-
-
- V.13.08.25                                                                                            Página 17
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Actos que impongan una obligación personalísima de no hacer.",
         correct: "b"
     },
     {
         id: 57,
         q: "Según el artículo 82 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, se podrá prescindir del trámite de audiencia:",
-        a: ",
-        a: \"Cuando no figuren en el procedimiento ni sean tenidos en cuenta en la resolución otros hechos ni otras alegaciones y pruebas que las aducidas por el interesado.",
+        a: "Cuando no figuren en el procedimiento ni sean tenidos en cuenta en la resolución otros hechos ni otras alegaciones y pruebas que las aducidas por el interesado.",
         b: "Cuando figuren en el procedimiento o sean tenidos en cuenta en la resolución otros hechos o alegaciones y pruebas adicionales a las aducidas por el interesado.",
         c: "Cuando lo autorice el superior jerárquico del órgano actuante.",
         d: "Nunca se podrá prescindir de este trámite.",
@@ -613,11 +547,7 @@ const db = [
         a: "10 días siguientes a su adopción, el cual no podrá ser objeto de recurso.",
         b: "15 días siguientes a su adopción, el cual podrá ser objeto del recurso que proceda.",
         c: "15 días siguientes a su adopción, el cual no podrá ser objeto de recurso.",
-        d: "10 días siguientes a su adopción, el cual podrá ser objeto del recurso que proceda.
-
-
- V.13.08.25                                                                                          Página 18
- Temario Específico. Auxiliar Administrativo/a",
+        d: "10 días siguientes a su adopción, el cual podrá ser objeto del recurso que proceda.",
         correct: "b"
     },
     {
@@ -662,11 +592,7 @@ const db = [
         a: "En todo momento.",
         b: "En cualquier momento del procedimiento anterior al acuerdo de iniciación.",
         c: "En cualquier momento del procedimiento anterior al trámite de audiencia.",
-        d: "En cualquier momento del procedimiento anterior al trámite de información pública.
-
-
- V.13.08.25                                                                                            Página 19
- Temario Específico. Auxiliar Administrativo/a",
+        d: "En cualquier momento del procedimiento anterior al trámite de información pública.",
         correct: "a"
     },
     {
@@ -681,8 +607,7 @@ const db = [
     {
         id: 68,
         q: "A los interesados que no cumplan lo dispuesto en cuanto al cumplimiento de trámites se les podrá declarar decaídos en su derecho al trámite correspondiente. No obstante, se admitirá la actuación del interesado y producirá sus efectos legales, si se produjera:",
-        a: ",
-        a: \"Antes del día que se notifique la resolución en la que se tenga por transcurrido el plazo. (Art. 73.1 Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas)",
+        a: "Antes del día que se notifique la resolución en la que se tenga por transcurrido el plazo. (Art. 73.1 Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas)",
         b: "Antes o dentro del día que se notifique la resolución en la que se tenga por transcurrido el plazo. (Art. 73.3 Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas)",
         c: "Hasta 24 horas después del día que se notifique la resolución en la que se tenga por transcurrido el plazo. (Art.73.1 Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas)",
         d: "Hasta 48 horas después del día que se notifique la resolución en la que se tenga por transcurrido el plazo. (Art. 73.3 Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas)",
@@ -691,16 +616,10 @@ const db = [
     {
         id: 69,
         q: "De acuerdo con el artículo 72 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, el principio de simplificación administrativa implica:",
-        a: ",
-        a: \"Se acordarán en un solo acto todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea obligado su cumplimiento sucesivo.",
+        a: "Se acordarán en un solo acto todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea obligado su cumplimiento sucesivo.",
         b: "Se acordarán en sucesivos actos todos los trámites que, por su naturaleza, admitan un impulso simultáneo y no sea obligado su cumplimiento sucesivo.",
         c: "Se acordarán en un solo acto todos los trámites que, por su naturaleza, admitan un impulso simultáneo y no sea obligado su cumplimiento sucesivo.",
-        d: "Se acordarán en sucesivos actos todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea obligado su cumplimiento sucesivo.
-
-
-
- V.13.08.25                                                                                             Página 20
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Se acordarán en sucesivos actos todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea obligado su cumplimiento sucesivo.",
         correct: "c"
     },
     {
@@ -742,15 +661,10 @@ const db = [
     {
         id: 74,
         q: "En relación con la ejecución forzosa que se encuentra regulada en el artículo 100 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, indique cuál de las siguientes afirmaciones es correcta:",
-        a: ",
-        a: \"Se efectuará siempre respetando el principio de proporcionalidad.",
+        a: "Se efectuará siempre respetando el principio de proporcionalidad.",
         b: "Si fueran varios los medios de ejecución admisibles, se elegirá el menos restrictivo de la seguridad individual.",
         c: "Si fuese necesario entrar en el domicilio del afectado se necesitará en todo caso, autorización judicial.",
         d: "Se efectuará siempre respetando el principio de proporcionalidad e igualdad.
-
-
- V.13.08.25                                                                                               Página 21
- Temario Específico. Auxiliar Administrativo/a
  Tema 4.Funcionamiento electrónico del Sector Público (I): Sede electrónica. Canales y puntos de acceso. Identificación y autenticación. Firma electrónica. Tema 5.El Funcionamiento electrónico del Sector Público (II).El acceso electrónico de la ciudadanía a los servicios públicos. Los servicios públicos electrónicos. Derecho y obligación de relacionarse electrónicamente con las Administraciones Públicas.",
         correct: "a"
     },
@@ -774,7 +688,7 @@ const db = [
     },
     {
         id: 77,
-        q: "Según dispone el artículo 43 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público: \\"Sin perjuicio de lo previsto en los artículos 38, 41 y 42, la actuación de una Administración Pública, órgano, organismo público o entidad de derecho público, cuando utilice medios electrónicos, se realizará mediante:\\"",
+        q: "Según dispone el artículo 43 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público: \\\"Sin perjuicio de lo previsto en los artículos 38, 41 y 42, la actuación de una Administración Pública, órgano, organismo público o entidad de derecho público, cuando utilice medios electrónicos, se realizará mediante:\\\"",
         a: "Sello electrónico del titular del órgano o empleado público.",
         b: "Firma electrónica del titular del órgano o empleado público.",
         c: "Certificado electrónico del titular del órgano.",
@@ -787,19 +701,13 @@ const db = [
         a: "No podrá ser realizado por funcionario público.",
         b: "Podrá ser válidamente realizada por un funcionario público.",
         c: "Se tramitará por cualquier funcionario público un sistema válido de identificación o firma electrónica.",
-        d: "Será sustituida por su firma presencial, mediante escrito dirigido al órgano encargado de tramitar el procedimiento administrativo.
-
-
-
- V.13.08.25                                                                                             Página 22
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Será sustituida por su firma presencial, mediante escrito dirigido al órgano encargado de tramitar el procedimiento administrativo.",
         correct: "b"
     },
     {
         id: 79,
         q: "Conforme al artículo 38 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público, la sede electrónica es aquella dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a:",
-        a: ",
-        a: \"Únicamente a una Administración Pública.",
+        a: "Únicamente a una Administración Pública.",
         b: "A uno o varios organismos públicos, en el ejercicio de competencias delegadas.",
         c: "A una o varias entidades de Derecho Privado en el ejercicio de sus competencias.",
         d: "A una Administración Pública, o bien a una o varios organismos públicos o entidades de Derecho Público en el ejercicio de sus competencias.",
@@ -829,12 +737,7 @@ const db = [
         a: "Principio que determina que el diseño de los servicios electrónicos esté centrado en las personas usuarias, de forma que se minimice el grado de conocimiento necesario para el uso del servicio.",
         b: "Capacidad de los sistemas de información y, por ende, de los procedimientos a los que estos dan soporte, de compartir datos y posibilitar el intercambio de información entre ellos.",
         c: "Principio en cuya virtud sólo se exigirán las garantías y medidas de seguridad adecuadas a la naturaleza y circunstancias de los distintos trámites y actuaciones electrónicos.",
-        d: "Capacidad de las Administraciones Públicas para que, partiendo del conocimiento adquirido del usuario final del servicio, proporcione servicios precumplimentados y se anticipe a las posibles necesidades de los mismos.
-
-
-
- V.13.08.25                                                                                             Página 23
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Capacidad de las Administraciones Públicas para que, partiendo del conocimiento adquirido del usuario final del servicio, proporcione servicios precumplimentados y se anticipe a las posibles necesidades de los mismos.",
         correct: "d"
     },
     {
@@ -876,15 +779,10 @@ const db = [
     {
         id: 87,
         q: "Conforme al Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, se dará por efectuado el trámite de notificación y se continuará el procedimiento, en los casos en que transcurra:",
-        a: ",
-        a: \"10 días hábiles sin acceso a la misma.",
+        a: "10 días hábiles sin acceso a la misma.",
         b: "10 días naturales sin acceso a la misma.",
         c: "5 días hábiles sin acceso a la misma.",
-        d: "5 días naturales sin acceso a la misma.
-
-
- V.13.08.25                                                                                            Página 24
- Temario Específico. Auxiliar Administrativo/a",
+        d: "5 días naturales sin acceso a la misma.",
         correct: "b"
     },
     {
@@ -925,16 +823,11 @@ const db = [
     },
     {
         id: 92,
-        q: "El artículo 43.2 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público, \\"Cada Administración Pública determinará los sistemas de firma electrónica que debe utilizar su personal, los cuales:\\"",
+        q: "El artículo 43.2 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público, \\\"Cada Administración Pública determinará los sistemas de firma electrónica que debe utilizar su personal, los cuales:\\\"",
         a: "Podrán identificar de forma conjunta al titular del puesto de trabajo o cargo y a la Administración u órgano en la que presta sus servicios.",
         b: "Identificarán de forma separada al titular del puesto de trabajo o cargo y a la Administración u órgano en la que presta sus servicios.",
         c: "Únicamente identificarán al titular del puesto de trabajo o cargo.",
-        d: "No podrán identificar de forma conjunta al titular del puesto de trabajo o cargo y a la Administración u órgano en la que presta sus servicios.
-
-
-
- V.13.08.25                                                                                            Página 25
- Temario Específico. Auxiliar Administrativo/a",
+        d: "No podrán identificar de forma conjunta al titular del puesto de trabajo o cargo y a la Administración u órgano en la que presta sus servicios.",
         correct: "a"
     },
     {
@@ -949,8 +842,7 @@ const db = [
     {
         id: 94,
         q: "Dispone la Ley 39/2015, de 1 de octubre del Procedimiento Administrativo Común de las Administraciones Públicas que, mantendrán actualizado un registro, u otro sistema equivalente, donde constarán los funcionarios habilitados para la identificación o firma electrónica:",
-        a: ",
-        a: \"La Administración General del Estado.",
+        a: "La Administración General del Estado.",
         b: "La Administración General del Estado y las Comunidades Autónomas.",
         c: "Las Comunidades Autónomas y las Entidades Locales.",
         d: "La Administración General del Estado, las Comunidades Autónomas y las Entidades Locales.",
@@ -958,7 +850,7 @@ const db = [
     },
     {
         id: 95,
-        q: "El artículo 46 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público relativo al Archivo electrónico de documentos, \\"los documentos utilizados en las actuaciones administrativas se almacenarán\\":",
+        q: "El artículo 46 de la Ley 40/2015, de 1 de octubre, del Régimen Jurídico del Sector Público relativo al Archivo electrónico de documentos, \\\"los documentos utilizados en las actuaciones administrativas se almacenarán\\\":",
         a: "Por medios electrónicos, salvo cuando no sea posible.",
         b: "Siempre por medios electrónicos y medios no electrónicos.",
         c: "Por medios no electrónicos, salvo cuando no sea lo más adecuado para su conservación.",
@@ -980,9 +872,7 @@ const db = [
         a: "En instalaciones calificadas de alta seguridad, con independencia del territorio donde se encuentren.",
         b: "En territorio europeo.",
         c: "En territorio español.",
-        d: "en instalaciones calificadas de alta protección informática, con independencia del territorio donde se encuentren.
- V.13.08.25                                                                                               Página 26
- Temario Específico. Auxiliar Administrativo/a",
+        d: "en instalaciones calificadas de alta protección informática, con independencia del territorio donde se encuentren.",
         correct: "c"
     },
     {
@@ -992,11 +882,6 @@ const db = [
         b: "Cualquier sistema electrónico basado en un certificado electrónico reconocido o cualificado que reúna los requisitos exigidos por la legislación de protección de datos.",
         c: "Un sello electrónico basado en un certificado electrónico reconocido o cualificado que reúna los requisitos exigidos por la legislación de protección de datos.",
         d: "Un sello electrónico basado en un certificado electrónico reconocido o cualificado que reúna los requisitos exigidos por la legislación de firma electrónica.
-
-
-
- V.13.08.25                                                                                            Página 27
- Temario Específico. Auxiliar Administrativo/a
  Tema 6.Funcionamiento electrónico del Sector Público (III): Registro y archivo electrónico. Comunicaciones y notificaciones electrónicas. Tema 7.Funcionamiento electrónico del sector público (IV): La gestión electrónica de los procedimientos administrativos. Expediente y documento electrónico. La simplificación y reducción de cargas administrativas en la tramitación electrónica en las Administraciones Públicas.",
         correct: "d"
     },
@@ -1033,12 +918,7 @@ const db = [
         a: "En el ámbito estatal, este registro será el Registro Electrónico de Apoderamientos de la Administración General del Estado.",
         b: "En ellos no constará el bastanteo realizado del poder.",
         c: "Los registros generales de apoderamientos no impedirán la existencia de registros particulares en cada Organismo.",
-        d: "Cada Organismo podrá disponer de su propio registro electrónico de apoderamientos.
-
-
-
- V.13.08.25                                                                                           Página 28
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Cada Organismo podrá disponer de su propio registro electrónico de apoderamientos.",
         correct: "b"
     },
     {
@@ -1047,11 +927,7 @@ const db = [
         a: "Son de preceptivo cumplimiento sólo para la Administración General del Estado.",
         b: "Son de potestativo cumplimiento para todas las Administraciones Públicas.",
         c: "Son de preceptivo cumplimiento para todas las Administraciones Públicas.",
-        d: ",
-        a: \"Son de preceptivo cumplimiento sólo para la Administración General del Estado.\",
-        b: \"Son de potestativo cumplimiento para todas las Administraciones Públicas.\",
-        c: \"Son de preceptivo cumplimiento para todas las Administraciones Públicas.\",
-        d: \"Son de potestativo cumplimiento sólo para la Administración General del Estado.",
+        d: "Son de potestativo cumplimiento sólo para la Administración General del Estado.",
         correct: "c"
     },
     {
@@ -1078,12 +954,7 @@ const db = [
         a: "Ocho días hábiles desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
         b: "Diez días hábiles desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
         c: "Quince días hábiles desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
-        d: "Diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.
-
-
-
- V.13.08.25                                                                                            Página 29
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido.",
         correct: "d"
     },
     {
@@ -1119,12 +990,7 @@ const db = [
         a: "Hechos, razones y petición en que se concrete con toda claridad la solicitud.",
         b: "Órgano, centro o unidad administrativa a la que se dirige.",
         c: "Domicilio profesional a efectos de notificaciones.",
-        d: "Firma del solicitante o acreditación de la autenticidad de su voluntad expresada por cualquier medio.
-
-
-
- V.13.08.25                                                                                              Página 30
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Firma del solicitante o acreditación de la autenticidad de su voluntad expresada por cualquier medio.",
         correct: "c"
     },
     {
@@ -1178,9 +1044,7 @@ const db = [
         a: "Mediante contrato.",
         b: "Mediante convenio de colaboración.",
         c: "Mediante orden.",
-        d: "Mediante decreto.
- V.13.08.25                                                                                            Página 31
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Mediante decreto.",
         correct: "b"
     },
     {
@@ -1195,8 +1059,7 @@ const db = [
     {
         id: 118,
         q: "Cuando el documento electrónico original se encuentre en poder de la Administración tendrá la consideración de copia auténtica:",
-        a: ",
-        a: \"Independientemente de que el documento sea emitido por el ciudadano o por una Administración Pública.",
+        a: "Independientemente de que el documento sea emitido por el ciudadano o por una Administración Pública.",
         b: "Siempre que el documento haya sido emitido por el ciudadano.",
         c: "Siempre que el documento haya sido emitido por esa Administración Pública.",
         d: "Siempre que se mantenga el original.",
@@ -1214,8 +1077,7 @@ const db = [
     {
         id: 120,
         q: "Como señala el artículo 43.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las notificaciones por medios electrónicos se practicarán mediante comparecencia:",
-        a: ",
-        a: \"En la sede electrónica de la Administración u Organismo actuante en todo caso.",
+        a: "En la sede electrónica de la Administración u Organismo actuante en todo caso.",
         b: "En la sede electrónica de la Administración u Organismo actuante, a través de la dirección electrónica habilitada única o mediante ambos sistemas, según disponga la legislación de la Comunidad Autónoma correspondiente.",
         c: "En la sede electrónica de la Administración u Organismo actuante, a través de la dirección electrónica habilitada única o mediante ambos sistemas, según disponga cada Administración u Organismo.",
         d: "A través de la dirección electrónica única, en todo caso.",
@@ -1227,9 +1089,7 @@ const db = [
         a: "Que se acordarán en un solo acto todos los trámites que, por su naturaleza, admitan un impulso simultáneo y no sea obligado su cumplimiento sucesivo.",
         b: "Que se acordarán en un solo acto todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea obligado su cumplimiento sucesivo.",
         c: "Que se acordarán en un solo acto todos los trámites que, por su naturaleza, admitan un impulso simultáneo y sea solicitado por los interesados.",
-        d: "Que no se podrán acordar en un solo acto aquellos trámites que, aunque admitan un impulso simultáneo.
- V.13.08.25                                                                                             Página 32
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Que no se podrán acordar en un solo acto aquellos trámites que, aunque admitan un impulso simultáneo.",
         correct: "a"
     },
     {
@@ -1239,11 +1099,6 @@ const db = [
         b: "Sistema de Registros Administrativos.",
         c: "Sistema de Aplicaciones registrales.",
         d: "Sistemas de registros de la Administración General del Estado.
-
-
-
- V.13.08.25                                                                                         Página 33
- Temario Específico. Auxiliar Administrativo/a
  Tema 8. El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización.",
         correct: "a"
     },
@@ -1280,19 +1135,13 @@ const db = [
         a: "Las cantidades destinadas a atender inversiones subvencionadas por otra u otras Administraciones.",
         b: "Los créditos destinados a atender los gastos de personal.",
         c: "Las devoluciones de ingresos declarados indebidos por Tribunal o Autoridad Competentes.",
-        d: "Los créditos que hayan de habilitarse con ocasión de dar cumplimiento a una resolución judicial.
-
-
-
- V.13.08.25                                                                                            Página 34
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Los créditos que hayan de habilitarse con ocasión de dar cumplimiento a una resolución judicial.",
         correct: "c"
     },
     {
         id: 127,
         q: "Según el artículo 218 del Real Decreto Legislativo 2/2004, de 5 marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales, el órgano interventor remitirá anualmente al Tribunal de Cuentas una serie de documentos, entre lo que no se encuentra:",
-        a: ",
-        a: \"Todas las resoluciones y acuerdos adoptados por el Presidente de la entidad Local y por el Pleno de la Corporación contrarios a los reparos formulados.",
+        a: "Todas las resoluciones y acuerdos adoptados por el Presidente de la entidad Local y por el Pleno de la Corporación contrarios a los reparos formulados.",
         b: "Un resumen de las principales anomalías detectadas en materia de ingresos.",
         c: "Un resumen de las principales anomalías detectadas en materia de gastos.",
         d: "Los informes justificativos presentados por la Corporación Local.",
@@ -1328,13 +1177,10 @@ const db = [
     {
         id: 131,
         q: "Al Presupuesto General de una Entidad Local, según dispone el art. 166 del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el Texto Refundido de la Ley Reguladora de las Haciendas Locales, se unirán una serie de anexos, entre los que no se encuentra:",
-        a: ",
-        a: \"El estado de consolidación del Presupuesto de la propia Entidad con el de todos los presupuestos y estado de previsión de sus organismos autónomos.",
+        a: "El estado de consolidación del Presupuesto de la propia Entidad con el de todos los presupuestos y estado de previsión de sus organismos autónomos.",
         b: "El estado de ingresos y gastos de las Sociedades Mercantiles de capital exclusivo de la Entidad Local.",
         c: "Los Programas anuales de actuación, inversiones, y financiación de las Sociedades Mercantiles de cuyo capital social sea titular único o partícipe mayoritario la Entidad Local.",
-        d: "Los Planes de Programas de Inversión y Financiación formulados por los Municipios y demás Entidades Locales de ámbito supramunicipal.
- V.13.08.25                                                                                               Página 35
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Los Planes de Programas de Inversión y Financiación formulados por los Municipios y demás Entidades Locales de ámbito supramunicipal.",
         correct: "b"
     },
     {
@@ -1349,8 +1195,7 @@ const db = [
     {
         id: 133,
         q: "El artículo 170.2 del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el Texto Refundido de la Ley Reguladora de las Haciendas Locales, establece expresamente los motivos por los que podrán entablarse reclamaciones contra el Presupuesto General de una Entidad Local. Entre dichos motivos no se encuentra:",
-        a: ",
-        a: \"Por no haberse ajustado su elaboración y aprobación a los trámites establecidos en esta ley.",
+        a: "Por no haberse ajustado su elaboración y aprobación a los trámites establecidos en esta ley.",
         b: "Por considerar que los créditos previstos en el Estado de ingresos no serán suficientes para alcanzar un determinado nivel de calidad en ciertos servicios.",
         c: "Por ser de manifiesta insuficiencia los ingresos con relación a los gastos presupuestados o bien de estos respecto a las necesidades para las que esté previsto.",
         d: "Por omitir el crédito necesario para el cumplimiento de obligaciones exigibles a la entidad local, en virtud de precepto legal o de cualquier otro título legítimo.",
@@ -1371,12 +1216,7 @@ const db = [
         a: "Cuando sea requerido por la Intervención General, debiendo emitirse informe, al menos, cada tres año.",
         b: "Con carácter anual.",
         c: "Con carácter bianual.",
-        d: "Con carácter semestral.
-
-
-
- V.13.08.25                                                                                             Página 36
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Con carácter semestral.",
         correct: "b"
     },
     {
@@ -1412,12 +1252,7 @@ const db = [
         a: "Los que resulten directamente afectados, aunque no habiten en el territorio de la entidad local.",
         b: "Los colegios oficiales, cámaras oficiales, sindicatos, asociaciones y demás entidades legalmente constituidas para velar por intereses profesionales o económicos y vecinales, cuando actúen en defensa de los que les son propios.",
         c: "Los habitantes en el territorio de la respectiva entidad local.",
-        d: "Los que puedan resultar afectados por desarrollar su actividad económica en el territorio de la entidad local a pesar de no habitar en el mismo.
-
-
-
- V.13.08.25                                                                                            Página 37
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Los que puedan resultar afectados por desarrollar su actividad económica en el territorio de la entidad local a pesar de no habitar en el mismo.",
         correct: "d"
     },
     {
@@ -1453,12 +1288,7 @@ const db = [
         a: "Se podrá interponer Recurso Contencioso- Administrativo.",
         b: "Solo se podrá interponer Recurso de Reposición.",
         c: "Deberá de interponerse Recurso de Alzada.",
-        d: "Se interpondrá Recurso de Revisión ante el Pleno de la Corporación.
-
-
-
- V.13.08.25                                                                                            Página 38
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Se interpondrá Recurso de Revisión ante el Pleno de la Corporación.",
         correct: "a"
     },
     {
@@ -1495,11 +1325,6 @@ const db = [
         b: "Al Presidente de la Entidad Local, previo informe de la Tesorería.",
         c: "Al Presidente de la Entidad Local, previo informe de la Secretaría.",
         d: "Al Presidente de la Entidad Local, previo informe de la Intervención.
-
-
-
- V.13.08.25                                                                                            Página 39
- Temario Específico. Auxiliar Administrativo/a
  Tema 9.La Ley de Contratos del Sector Público (I). Disposiciones Generales. Objeto y ámbito de aplicación de la Ley. Tema 10 La Ley de contratos del Sector Público (II): Contratos del Sector Público.",
         correct: "d"
     },
@@ -1515,8 +1340,7 @@ const db = [
     {
         id: 149,
         q: "Según se regula en el artículo 18 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, para la determinación de las normas que regirán la adjudicación de los contratos mixtos, cuando un contrato mixto comprenda prestaciones propias de dos o más contratos de obras, suministros o servicios se atenderá a:",
-        a: ",
-        a: \"El carácter de la prestación principal.",
+        a: "El carácter de la prestación principal.",
         b: "El carácter de la prestación secundaria.",
         c: "El carácter de la prestación que elija el adjudicatario.",
         d: "El carácter de la prestación que elija el adjudicador.",
@@ -1528,12 +1352,7 @@ const db = [
         a: "Las pequeñas empresas.",
         b: "Las pequeñas y medianas empresas.",
         c: "Las medianas empresas.",
-        d: "Las pequeñas y medianas empresas y empresas de economía social.
-
-
-
- V.13.08.25                                                                                             Página 40
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Las pequeñas y medianas empresas y empresas de economía social.",
         correct: "d"
     },
     {
@@ -1569,12 +1388,7 @@ const db = [
         a: "No.",
         b: "Sí.",
         c: "En ningún caso.",
-        d: "No, salvo excepciones.
-
-
-
- V.13.08.25                                                                                             Página 41
- Temario Específico. Auxiliar Administrativo/a",
+        d: "No, salvo excepciones.",
         correct: "a"
     },
     {
@@ -1601,12 +1415,7 @@ const db = [
         a: "Publicidad, transparencia, eficacia y eficiencia en la contratación pública.",
         b: "Eficacia y eficiencia en la contratación.",
         c: "No discriminación e igualdad de trato entre los licitadores y coordinación entre las Administraciones Públicas.",
-        d: "Libertad de acceso a las licitaciones, publicidad y transparencia de los procedimientos, y no discriminación e igualdad de trato entre los licitadores.
-
-
-
- V.13.08.25                                                                                              Página 42
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Libertad de acceso a las licitaciones, publicidad y transparencia de los procedimientos, y no discriminación e igualdad de trato entre los licitadores.",
         correct: "d"
     },
     {
@@ -1621,8 +1430,7 @@ const db = [
     {
         id: 159,
         q: "La Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, en su artículo 1 establece que en toda contratación pública se incorporarán de manera transversal y preceptiva:",
-        a: ",
-        a: \"Criterios sociales y medioambientales siempre que guarde relación con el objeto del contrato.",
+        a: "Criterios sociales y medioambientales siempre que guarde relación con el objeto del contrato.",
         b: "Criterios sociales y de calidad técnica siempre que guarden relación con el objeto del contrato.",
         c: "Criterios tecnológicos y medioambientales siempre que guarden relación con el objeto del contrato.",
         d: "Criterios de calidad técnica y medioambientales siempre que guarden relación con el objeto del contrato.",
@@ -1634,12 +1442,7 @@ const db = [
         a: "Se regirán únicamente por sus normas especiales.",
         b: "Se regirán por sus normas especiales, aplicándose los principios de esta Ley para resolver las dudas y lagunas que pudieran presentarse.",
         c: "Se regirán por la Ley de Contratos del Sector Público, aplicándose los principios de sus propias normas para resolver las dudas y lagunas que pudieran presentarse.",
-        d: "Se regirán por sus normas especiales y las disposiciones de desarrollo que se establezcan.
-
-
-
- V.13.08.25                                                                                            Página 43
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Se regirán por sus normas especiales y las disposiciones de desarrollo que se establezcan.",
         correct: "b"
     },
     {
@@ -1666,12 +1469,7 @@ const db = [
         a: "de la defensa y la seguridad.",
         b: "de la investigación y la divulgación.",
         c: "audiovisual.",
-        d: "del medio ambiente.
-
-
-
- V.13.08.25                                                                                              Página 44
- Temario Específico. Auxiliar Administrativo/a",
+        d: "del medio ambiente.",
         correct: "a"
     },
     {
@@ -1686,8 +1484,7 @@ const db = [
     {
         id: 165,
         q: "Dispone el artículo 1 de la Ley 9/2017, de 8 de noviembre de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, que en toda contratación pública se incorporarán de manera transversal y preceptiva:",
-        a: ",
-        a: \"Criterios sociales y medioambientales aunque no guarde relación con el objeto del contrato.",
+        a: "Criterios sociales y medioambientales aunque no guarde relación con el objeto del contrato.",
         b: "Criterios éticos y de transparencia siempre que guarde relación con el objeto del contrato.",
         c: "Criterios éticos y de transparencia aunque no guarde relación con el objeto del contrato.",
         d: "Criterios sociales y medioambientales siempre que guarde relación con el objeto del contrato.",
@@ -1708,12 +1505,7 @@ const db = [
         a: "El contratista obtenga algún tipo de beneficio económico de forma directa.",
         b: "El contratante obtenga algún tipo de beneficio económico, ya sea de forma directa o indirecta.",
         c: "El contratista obtenga algún tipo de beneficio económico, ya sea de forma directa o indirecta.",
-        d: "El contratante obtenga algún tipo de beneficio económico de forma directa.
-
-
-
- V.13.08.25                                                                                            Página 45
- Temario Específico. Auxiliar Administrativo/a",
+        d: "El contratante obtenga algún tipo de beneficio económico de forma directa.",
         correct: "c"
     },
     {
@@ -1740,19 +1532,13 @@ const db = [
         a: "La Administración General del Estado, las Administraciones de las Comunidades Autónomas, las Ciudades Autónomas de Ceuta y Melilla y las Entidades que integran la Administración Local.",
         b: "Las Diputaciones Forales y las Juntas Generales de los Territorios Históricos del País Vasco en lo que respecta a su actividad de contratación.",
         c: "Las Entidades Gestoras y los Servicios Comunes de la Seguridad Social.",
-        d: "Las Mutuas colaboradoras con la Seguridad Social.
-
-
-
- V.13.08.25                                                                                               Página 46
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Las Mutuas colaboradoras con la Seguridad Social.",
         correct: "d"
     },
     {
         id: 171,
         q: "Es objeto de la Ley 9/2017, de 8 de noviembre de Contratos del Sector Público del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, la regulación del régimen jurídico aplicable a:",
-        a: ",
-        a: \"Los efectos, cumplimiento y extinción de los contratos administrativos, en atención a los fines institucionales de carácter público que a través de los mismos se tratan de realizar.",
+        a: "Los efectos, cumplimiento y extinción de los contratos administrativos, en atención a los fines institucionales de carácter público que a través de los mismos se tratan de realizar.",
         b: "Los efectos y cumplimiento de los contratos administrativos, en atención a los fines institucionales de carácter público que a través de los mismos se tratan de realizar.",
         c: "Los efectos y cumplimiento de los contratos administrativos, en atención a los fines institucionales de carácter público o privado que a través de los mismos se tratan de realizar.",
         d: "Los efectos, cumplimiento y extinción de los contratos administrativos, en atención a los fines institucionales de carácter público o privado que a través de los mismos se tratan de realizar.",
@@ -1761,16 +1547,10 @@ const db = [
     {
         id: 172,
         q: "Según el artículo 2.1 de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero de 2014, son contratos del sector público y, en consecuencia, están sometidos a la presente Ley en la forma y términos previstos en la misma:",
-        a: ",
-        a: \"Los contratos no onerosos, de naturaleza jurídica pública, que celebren las entidades enumeradas en el artículo 3 de esta ley.",
+        a: "Los contratos no onerosos, de naturaleza jurídica pública, que celebren las entidades enumeradas en el artículo 3 de esta ley.",
         b: "Los contratos onerosos, cualquiera que sea su naturaleza jurídica, que celebren las entidades enumeradas en el artículo 3 de esta ley.",
         c: "Los contratos onerosos, de naturaleza jurídica-pública que celebren las entidades enumeradas en el artículo 3 de esta ley.",
         d: "Los contratos no onerosos, cualquiera que sea su naturaleza jurídica, que celebren las entidades enumeradas en el artículo 3 de esta ley.
-
-
-
- V.13.08.25                                                                                            Página 47
- Temario Específico. Auxiliar Administrativo/a
  Tema 11.La actividad subvencional de las Administraciones Públicas (I). La Ley 38/2003, 17 de noviembre, General de subvenciones: Ámbito de aplicación y disposiciones a las subvenciones públicas comunes. Tema 12.La actividad subvencional de las Administraciones Públicas (II). La Ley 38/2003, 17 de noviembre, General de subvenciones: procedimiento de concesión y gestión de subvenciones.",
         correct: "b"
     },
@@ -1807,12 +1587,7 @@ const db = [
         a: "La Administración General del Estado.",
         b: "La Administración General del Estado y sus Organismos autónomos.",
         c: "La Administración General del Estado y de las Comunidades Autónomas.",
-        d: "La Administración General del Estado, las entidades que integran la Administración Local y la Administración de las Comunidades Autónomas.
-
-
-
- V.13.08.25                                                                                            Página 48
- Temario Específico. Auxiliar Administrativo/a",
+        d: "La Administración General del Estado, las entidades que integran la Administración Local y la Administración de las Comunidades Autónomas.",
         correct: "d"
     },
     {
@@ -1848,12 +1623,7 @@ const db = [
         a: "Las convocatorias de subvenciones.",
         b: "Las subvenciones concedidas y no concedidas.",
         c: "Todas las sanciones impuestas por infracciones.",
-        d: "Podrán ser publicadas las subvenciones concedidas cuando la publicación de los datos del beneficiario pueda ser contraria a la salvaguarda del honor e intimidad personal, siempre que impere el interés general.
-
-
-
- V.13.08.25                                                                                             Página 49
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Podrán ser publicadas las subvenciones concedidas cuando la publicación de los datos del beneficiario pueda ser contraria a la salvaguarda del honor e intimidad personal, siempre que impere el interés general.",
         correct: "a"
     },
     {
@@ -1889,12 +1659,7 @@ const db = [
         a: "Toda disposición dineraria.",
         b: "Toda disposición dineraria realizada por cualquiera de los sujetos que formen parte del Sector Público.",
         c: "Toda disposición dineraria realizada por cualesquiera de los sujetos contemplados en el artículo 3 de esta ley, a favor de personas públicas o privadas y que cumpla una serie de requisitos.",
-        d: "Toda disposición dineraria realizada por cualesquiera de los sujetos que formen parte del Sector Público, a favor de personas públicas o privadas y que cumpla una serie de requisitos.
-
-
-
- V.13.08.25                                                                                            Página 50
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Toda disposición dineraria realizada por cualesquiera de los sujetos que formen parte del Sector Público, a favor de personas públicas o privadas y que cumpla una serie de requisitos.",
         correct: "c"
     },
     {
@@ -1918,8 +1683,7 @@ const db = [
     {
         id: 187,
         q: "De acuerdo con el artículo 13.2 de la Ley 38/2003, de 17 de noviembre, General de Subvenciones, salvo que por la naturaleza de la subvención se exceptúe por su normativa reguladora, no podrán obtener a la condición de beneficiario o entidad colaboradora:",
-        a: ",
-        a: \"Las personas o entidades que hayan sido sancionadas con multas administrativas.",
+        a: "Las personas o entidades que hayan sido sancionadas con multas administrativas.",
         b: "Las personas o entidades que hayan solicitado la declaración de concurso voluntario.",
         c: "Las personas o entidades que lleven 6 meses sin hallarse al corriente en el cumplimiento de las obligaciones tributarias.",
         d: "Las personas o entidades que hayan sido condenadas mediante sentencia firme en los últimos 4 años por delitos de prevaricación, cohecho, malversación de caudales públicos, tráfico de influencias, fraudes y exacciones ilegales o delitos urbanísticos.",
@@ -1940,11 +1704,7 @@ const db = [
         a: "Publicidad, transparencia, concurrencia, objetividad, igualdad y no discriminación.",
         b: "Eficacia en la asignación y utilización de los recursos.",
         c: "Eficiencia en el cumplimiento de los objetivos fijados por la Administración concedente.",
-        d: "Eficacia, jerarquía, descentralización, desconcentración y coordinación.
-
-
- V.13.08.25                                                                                            Página 51
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Eficacia, jerarquía, descentralización, desconcentración y coordinación.",
         correct: "a"
     },
     {
@@ -1968,8 +1728,7 @@ const db = [
     {
         id: 192,
         q: "Respecto a las facultades para conceder subvenciones a las que se refiere el artículo 10 de la Ley 38/2003, de 17 de noviembre, señale la respuesta correcta:",
-        a: ",
-        a: \"Podrán ser objeto de desconcentración mediante real decreto acordado en Consejo de Ministros.",
+        a: "Podrán ser objeto de desconcentración mediante real decreto acordado en Consejo de Ministros.",
         b: "Podrán ser objeto de delegación, según disponga el órgano competente.",
         c: "En ningún caso podrán delegarse dichas facultades.",
         d: "Podrán ser objeto de desconcentración siempre que se determine mediante decreto del Consejo de Ministros.",
@@ -1981,12 +1740,7 @@ const db = [
         a: "Las aportaciones dinerarias en concepto de cuotas.",
         b: "Las aportaciones dinerarias en concepto de cuotas, tanto ordinarias como extraordinarias, que realicen las entidades que integran la Administración Local a favor de las asociaciones a que se refiere la disposición adicional quinta de la LBRL.",
         c: "Las aportaciones dinerarias en concepto de cuotas sólo de carácter extraordinarias, que realicen las entidades que integran la Administración Local a favor de las asociaciones a que se refiere la disposición adicional quinta de la LBRL.",
-        d: "Las aportaciones dinerarias en concepto de cuotas sólo de carácter ordinarias que realicen las entidades que integran la Administración Local a favor de las asociaciones a que se refiere la disposición adicional quinta de la LBRL.
-
-
-
- V.13.08.25                                                                                              Página 52
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Las aportaciones dinerarias en concepto de cuotas sólo de carácter ordinarias que realicen las entidades que integran la Administración Local a favor de las asociaciones a que se refiere la disposición adicional quinta de la LBRL.",
         correct: "b"
     },
     {
@@ -2023,19 +1777,13 @@ const db = [
         b: "El Tribunal de Cuentas.",
         c: "El Tribunal de cuentas y la Intervención General de la Administración del Estado.",
         d: "La Intervención General de la Administración del Estado.
-
-
-
- V.13.08.25                                                                                             Página 53
- Temario Específico. Auxiliar Administrativo/a
  Tema 13. La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía.",
         correct: "d"
     },
     {
         id: 198,
         q: "El artículo 2 a) de la Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía establece que a los efectos de la presente ley, se entiende por información pública:",
-        a: ",
-        a: \"Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguna de las personas y entidades incluidas en el presente título o que hayan sido elaborados o adquiridos en el ejercicio de sus funciones.",
+        a: "Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguna de las personas y entidades incluidas en el presente título o que hayan sido elaborados o adquiridos en el ejercicio de sus funciones.",
         b: "Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguna de las personas y entidades incluidas en el presente título.",
         c: "Los contenidos o documentos, cualquiera que sea su formato o soporte, que hayan sido elaborados o adquiridos en el ejercicio de sus funciones por alguna de las personas y entidades incluidas en el presente título.",
         d: "Los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguna de las personas y entidades incluidas en el presente título y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones.",
@@ -2053,16 +1801,10 @@ const db = [
     {
         id: 200,
         q: "La Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno establece en su artículo 14 que el derecho de acceso podrá ser limitado cuando acceder a la información suponga un perjuicio para, marque la respuesta errónea:",
-        a: ",
-        a: \"La defensa.",
+        a: "La defensa.",
         b: "Los intereses económicos y comerciales.",
         c: "La protección del medio ambiente.",
-        d: "La intimidad personal y familiar.
-
-
-
- V.13.08.25                                                                                              Página 54
- Temario Específico. Auxiliar Administrativo/a",
+        d: "La intimidad personal y familiar.",
         correct: "d"
     },
     {
@@ -2080,12 +1822,7 @@ const db = [
         a: "En caso de que se contase con el consentimiento expreso y por escrito del afectado, a menos que dicho afectado hubiese hecho manifiestamente públicos los datos con anterioridad a que se solicitase el acceso.",
         b: "En caso de que se cuente con el consentimiento expreso del afectado o si aquel estuviera amparado por una norma con rango de ley.",
         c: "Previa ponderación suficientemente razonada del interés público en la divulgación de la información y los derechos de los afectados cuyos datos aparezcan en la información solicitada, en particular su derecho fundamental a la protección de datos de carácter personal.",
-        d: "Con carácter general, y salvo que en el caso concreto prevalezca la protección de datos personales u otros derechos constitucionalmente protegidos sobre el interés público en la divulgación que lo impida, se concederá el acceso a información.
-
-
-
- V.13.08.25                                                                                              Página 55
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Con carácter general, y salvo que en el caso concreto prevalezca la protección de datos personales u otros derechos constitucionalmente protegidos sobre el interés público en la divulgación que lo impida, se concederá el acceso a información.",
         correct: "b"
     },
     {
@@ -2109,16 +1846,10 @@ const db = [
     {
         id: 205,
         q: "La Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno establece en su artículo 17.1, el procedimiento para el ejercicio del derecho de acceso se iniciará con la presentación de la correspondiente solicitud, que deberá dirigirse a:",
-        a: ",
-        a: \"Al titular del órgano administrativo o entidad que posea la información.",
+        a: "Al titular del órgano administrativo o entidad que posea la información.",
         b: "Al titular del órgano administrativo o entidad competente para la resolución de las solicitudes de acceso a la información.",
         c: "Al superior jerárquico del titular del órgano administrativo o entidad que posea la información.",
-        d: "Al superior jerárquico del titular del órgano administrativo o entidad competente para la resolución de las solicitudes de acceso a la información.
-
-
-
- V.13.08.25                                                                                            Página 56
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Al superior jerárquico del titular del órgano administrativo o entidad competente para la resolución de las solicitudes de acceso a la información.",
         correct: "a"
     },
     {
@@ -2145,12 +1876,7 @@ const db = [
         a: "Directamente ante la Jurisdicción Contencioso-administrativa, sin perjuicio de la posibilidad de interposición de una reclamación potestativa ante el Consejo de Transparencia y Buen Gobierno.",
         b: "Directamente ante la Jurisdicción Contencioso-administrativa, sin perjuicio de la posibilidad de ser recurridos potestativamente en reposición ante el mismo órgano que los hubiera dictado.",
         c: "Cuando no pongan fin a la vía administrativa, en alzada ante el órgano superior jerárquico del que los dictó.",
-        d: "Exclusivamente, mediante la interposición de un recurso extraordinario de revisión ante el órgano administrativo que los dictó, cuando concurra alguna de las circunstancias recogidas en el artículo 125 de la Ley de Procedimiento Administrativo Común de las Administraciones Públicas.
-
-
-
- V.13.08.25                                                                                             Página 57
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Exclusivamente, mediante la interposición de un recurso extraordinario de revisión ante el órgano administrativo que los dictó, cuando concurra alguna de las circunstancias recogidas en el artículo 125 de la Ley de Procedimiento Administrativo Común de las Administraciones Públicas.",
         correct: "a"
     },
     {
@@ -2160,19 +1886,13 @@ const db = [
         b: "Tres años para las infracciones muy graves, dos años para las graves y seis meses para las leves.",
         c: "Cinco años para las infracciones muy graves, tres años para las graves y un año para las leves.",
         d: "Cinco años para las infracciones muy graves, tres años para las graves y seis meses para las leves.
-
-
-
- V.13.08.25                                                                                             Página 58
- Temario Específico. Auxiliar Administrativo/a
  Tema 14. Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva.",
         correct: "c"
     },
     {
         id: 210,
         q: "Señale cuál de los siguientes no es un principio general de la acción preventiva:",
-        a: ",
-        a: \"Evitar los riesgos.",
+        a: "Evitar los riesgos.",
         b: "Evaluar los riesgos que no se puedan evitar.",
         c: "Tener en cuenta la evolución de la técnica.",
         d: "Adoptar medidas que antepongan la protección individual a la colectiva.",
@@ -2220,12 +1940,7 @@ const db = [
         a: "Comisión Nacional de Seguridad y Salud en el Trabajo",
         b: "Inspección de Trabajo y Seguridad Social.",
         c: "Instituto Nacional de Seguridad e Higiene en el Trabajo.",
-        d: "Autoridades sanitarias.
-
-
-
- V.13.08.25                                                                                              Página 59
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Autoridades sanitarias.",
         correct: "b"
     },
     {
@@ -2240,8 +1955,7 @@ const db = [
     {
         id: 217,
         q: "Señale cuál de estas afirmaciones es verdadera:",
-        a: ",
-        a: \"El ruido siempre provoca accidentes.",
+        a: "El ruido siempre provoca accidentes.",
         b: "El ruido siempre provoca sordera.",
         c: "El ruido disminuye el nivel de atención y aumenta el tiempo de reacción del individuo, pudiendo ser la causa de un error que provoque un accidente.",
         d: "El ruido no provoca accidentes de trabajo ni enfermedades profesionales, únicamente produce incomodidad.",
@@ -2289,11 +2003,7 @@ const db = [
         a: "Siempre.",
         b: "Únicamente si hemos recibido un curso de primeros auxilios.",
         c: "No se recomienda trasladarles en el coche particular.",
-        d: "Sólo si lo solicita el accidentado.
-
-
- V.13.08.25                                                                                            Página 60
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Sólo si lo solicita el accidentado.",
         correct: "c"
     },
     {
@@ -2356,9 +2066,7 @@ const db = [
         a: "Conato de emergencia, emergencia parcial, emergencia general y evacuación.",
         b: "Emergencia parcial, conato de emergencia, emergencia general y evacuación.",
         c: "Emergencia general, evacuación, emergencia parcial y conato de emergencia.",
-        d: "Emergencia parcial, conato de emergencia, evacuación y emergencia general.
- V.13.08.25                                                                                              Página 61
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Emergencia parcial, conato de emergencia, evacuación y emergencia general.",
         correct: "a"
     },
     {
@@ -2391,15 +2099,10 @@ const db = [
     {
         id: 233,
         q: "Con respecto a “Si elevamos los niveles de prevención mejoramos las condiciones del trabajo”, se puede afirmar que:",
-        a: "\\"Niveles de prevención” y “condiciones de trabajo” no tienen nada que ver.",
+        a: "\\\"Niveles de prevención” y “condiciones de trabajo” no tienen nada que ver.",
         b: "Las condiciones de trabajo guardan una relación directa con la prevención.",
         c: "Los niveles de prevención son lo que podemos soportar al trabajar.",
         d: "Las condiciones de trabajo son las enfermedades profesionales.
-
-
-
- V.13.08.25                                                                                            Página 62
- Temario Específico. Auxiliar Administrativo/a
  Tema 15. La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior.",
         correct: "b"
     },
@@ -2427,12 +2130,7 @@ const db = [
         a: "Exclusivamente en el Código Penal.",
         b: "En el Código Penal y en la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres.",
         c: "En ninguna ley, solo en un reglamento.",
-        d: "Ninguna es correcta.
-
-
-
- V.13.08.25                                                                                             Página 63
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Ninguna es correcta.",
         correct: "b"
     },
     {
@@ -2483,15 +2181,10 @@ const db = [
     {
         id: 242,
         q: "Indique cuál de las siguientes afirmaciones es correcta:",
-        a: ",
-        a: \"Los proyectos de disposiciones de carácter general y los planes de especial relevancia económica, social, cultural y artística que se sometan a la aprobación del Consejo de Ministros, deberán incorporar un informe sobre su impacto por razón de género.",
+        a: "Los proyectos de disposiciones de carácter general y los planes de especial relevancia económica, social, cultural y artística que se sometan a la aprobación del Consejo de Ministros, deberán incorporar un informe sobre su impacto por razón de género.",
         b: "Los planes de especial relevancia económica, social, cultural y artística que se sometan a la aprobación del Consejo de Ministros deberán incorporar un informe sobre su impacto por razón de género.",
         c: "Los proyectos de disposiciones de carácter general que se sometan a la aprobación del Consejo de Ministros deberán incorporar un informe sobre su impacto por razón de género.",
-        d: "Los proyectos de disposiciones de carácter general y los planes de especial relevancia económica, social, cultural y artística que se sometan a la aprobación de las Cortes Generales deberán incorporar un informe sobre su impacto por razón de género.
-
-
- V.13.08.25                                                                                             Página 64
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Los proyectos de disposiciones de carácter general y los planes de especial relevancia económica, social, cultural y artística que se sometan a la aprobación de las Cortes Generales deberán incorporar un informe sobre su impacto por razón de género.",
         correct: "a"
     },
     {
@@ -2524,16 +2217,10 @@ const db = [
     {
         id: 246,
         q: "El Gobierno elaborará un informe periódico sobre el conjunto de sus actuaciones en relación con el principio de Igualdad entre mujeres y hombres. De este informe se dará cuenta a:",
-        a: ",
-        a: \"A las Cortes Generales, a las Asambleas legislativas de las Comunidades autónomas y a las Entidades Locales.",
+        a: "A las Cortes Generales, a las Asambleas legislativas de las Comunidades autónomas y a las Entidades Locales.",
         b: "A la ciudadanía en general.",
         c: "A las Cortes Generales y a las Asambleas legislativas de las Comunidades autónomas.",
-        d: "Las Cortes Generales.
-
-
-
- V.13.08.25                                                                                            Página 65
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Las Cortes Generales.",
         correct: "d"
     },
     {
@@ -2578,12 +2265,7 @@ const db = [
         a: "Un principio informador del ordenamiento jurídico.",
         b: "Un derecho fundamental recogido en el artículo 10 de la Constitución.",
         c: "Un derecho fundamental del artículo 12 de la Constitución",
-        d: "Un principio rector de la política económica y social.
-
-
-
- V.13.08.25                                                                                           Página 66
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Un principio rector de la política económica y social.",
         correct: "a"
     },
     {
@@ -2607,8 +2289,7 @@ const db = [
     {
         id: 254,
         q: "El periodo de vigencia o duración de los planes de igualdad, que será determinado, en su caso, por las partes negociadoras, no podrá ser superior a:",
-        a: ",
-        a: \"Tendrá una duración anual.",
+        a: "Tendrá una duración anual.",
         b: "2 años, renovable por un periodo de un año más.",
         c: "4 años.",
         d: "3 años.",
@@ -2626,8 +2307,7 @@ const db = [
     {
         id: 256,
         q: "Los planes de igualdad de las empresas son un conjunto ordenado de medidas, adoptadas después de realizar un diagnóstico de situación, tendentes a alcanzar en la empresa:",
-        a: ",
-        a: \"La igualdad de trato entre mujeres y hombres.",
+        a: "La igualdad de trato entre mujeres y hombres.",
         b: "La igualdad de oportunidades entre mujeres y hombres.",
         c: "La igualdad de trato y de oportunidades entre mujeres y hombres.",
         d: "La igualdad de trato y de oportunidades entre mujeres y hombres y a eliminar la discriminación por razón de sexo.",
@@ -2636,16 +2316,10 @@ const db = [
     {
         id: 257,
         q: "Los planes de igualdad de las empresas contendrán un conjunto ordenado de medidas evaluables dirigidas a:",
-        a: ",
-        a: \"Remover los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.",
+        a: "Remover los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.",
         b: "Eliminar los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.",
         c: "Disminuir los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.",
-        d: "Erradicar los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.
-
-
-
- V.13.08.25                                                                                              Página 67
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Erradicar los obstáculos que impiden o dificultan la igualdad efectiva de mujeres y hombres.",
         correct: "a"
     },
     {
@@ -2654,11 +2328,7 @@ const db = [
         a: "Cuando expresamente se acuerde por las partes.",
         b: "Siempre.",
         c: "Sólo en el caso de que la empresa tenga más de 100 trabajadores",
-        d: ",
-        a: \"Cuando expresamente se acuerde por las partes.\",
-        b: \"Siempre.\",
-        c: \"Sólo en el caso de que la empresa tenga más de 100 trabajadores\",
-        d: \"Cuando se adopten medidas laborales.",
+        d: "Cuando se adopten medidas laborales.",
         correct: "b"
     },
     {
@@ -2712,12 +2382,7 @@ const db = [
         a: "El Congreso.",
         b: "El Gobierno.",
         c: "El Gobierno, los presidentes/as de las CCAA y los Alcaldes/as.",
-        d: "El Consejo de Ministros.
-
-
-
- V.13.08.25                                                                                             Página 68
- Temario Específico. Auxiliar Administrativo/a",
+        d: "El Consejo de Ministros.",
         correct: "d"
     },
     {
@@ -2780,9 +2445,7 @@ const db = [
         a: "De todas las Comunidades Autónomas con competencia en la materia.",
         b: "De las asociaciones de mujeres.",
         c: "De las asociaciones de mujeres y representantes de los trabajadores.",
-        d: "De las Entidades Locales.
- V.13.08.25                                                                                             Página 69
- Temario Específico. Auxiliar Administrativo/a",
+        d: "De las Entidades Locales.",
         correct: "a"
     },
     {
@@ -2800,11 +2463,7 @@ const db = [
         a: "La situación de discriminación múltiple en que una mujer padece formas agravadas y específicas de discriminación por razón de clase, etnia, religión orientación o identidad.",
         b: "La situación de discriminación múltiple en que una mujer menor de edad padece formas agravadas y específicas de discriminación por razón de clase, etnia, religión orientación o identidad.",
         c: "La situación de discriminación múltiple en que una mujer o un grupo de mujeres padece formas agravadas y específicas de discriminación por razón de clase, etnia, religión orientación o identidad.",
-        d: ",
-        a: \"La situación de discriminación múltiple en que una mujer padece formas agravadas y específicas de discriminación por razón de clase, etnia, religión orientación o identidad.\",
-        b: \"La situación de discriminación múltiple en que una mujer menor de edad padece formas agravadas y específicas de discriminación por razón de clase, etnia, religión orientación o identidad.\",
-        c: \"La situación de discriminación múltiple en que una mujer o un grupo de mujeres padece formas agravadas y específicas de discriminación por razón de clase, etnia, religión orientación o identidad.\",
-        d: \"La situación de discriminación múltiple en que una mujer padece cualquier tipo de discriminación por razón de clase, etnia, religión orientación o identidad.",
+        d: "La situación de discriminación múltiple en que una mujer padece cualquier tipo de discriminación por razón de clase, etnia, religión orientación o identidad.",
         correct: "a"
     },
     {
@@ -2813,11 +2472,7 @@ const db = [
         a: "Anual.",
         b: "Trimestral.",
         c: "De cuatro años.",
-        d: ",
-        a: \"Anual.\",
-        b: \"Trimestral.\",
-        c: \"De cuatro años.\",
-        d: \"Que no será inferior a 4 años.",
+        d: "Que no será inferior a 4 años.",
         correct: "d"
     },
     {
@@ -2835,19 +2490,13 @@ const db = [
         a: "El Consejo de Gobierno.",
         b: "La Consejería competente en materia de Igualdad.",
         c: "El Consejo de Gobierno y las Entidades Locales que hayan participado en su formulación.",
-        d: "El Consejo de Gobierno y las Asociaciones de mujeres más representativas.
-
-
-
- V.13.08.25                                                                                            Página 70
- Temario Específico. Auxiliar Administrativo/a",
+        d: "El Consejo de Gobierno y las Asociaciones de mujeres más representativas.",
         correct: "b"
     },
     {
         id: 277,
         q: "Según la Ley 12/2007, de 26 de noviembre para la promoción de la igualdad de género en Andalucía se entiende por lenguaje sexista:",
-        a: ",
-        a: \"El uso discriminatorio del lenguaje que se hace por razón de la orientación sexual.",
+        a: "El uso discriminatorio del lenguaje que se hace por razón de la orientación sexual.",
         b: "El uso discriminatorio del lenguaje que se hace por razón de sexo y orientación sexual.",
         c: "El uso discriminatorio del lenguaje que se hace por razón de sexo.",
         d: "El uso discriminatorio que se hace por razón de las creencias religiosas.",
@@ -2856,8 +2505,7 @@ const db = [
     {
         id: 278,
         q: "Según la Ley 12/2007, de 26 de noviembre para la promoción de la igualdad de género en Andalucía, se promoverá la existencia de un servicio especializado de igualdad de género en el ámbito municipal, considerando como tales a:",
-        a: ",
-        a: \"Los Puntos de Información a la mujer.",
+        a: "Los Puntos de Información a la mujer.",
         b: "Los Centros Municipales de Información a la mujer.",
         c: "Los Ayuntamientos.",
         d: "El IAM.",
@@ -2870,19 +2518,13 @@ const db = [
         b: "La situación en que se encuentra una persona que sea o haya sido tratada en atención a su sexo de una manera menos favorable que otra.",
         c: "La situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada en atención a su sexo de una manera menos favorable que otra en situación comparable",
         d: "La situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada en atención a su sexo de una manera menos favorable que otra en situación comparable.
-
-
-
- V.13.08.25                                                                                          Página 71
- Temario Específico. Auxiliar Administrativo/a
  Tema 16. La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.",
         correct: "c"
     },
     {
         id: 280,
         q: "El artículo 2 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), establece que se aplica a:",
-        a: ",
-        a: \"Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
+        a: "Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
         b: "Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
         c: "Al tratamiento total y parcialmente automatizado de datos personales, así como al tratamiento automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
         d: "Al tratamiento total o parcialmente automatizado o no automatizado de datos personales.",
@@ -2891,16 +2533,10 @@ const db = [
     {
         id: 281,
         q: "El artículo 3 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), establece que se aplica a:",
-        a: ",
-        a: \"Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, independientemente de que el tratamiento tenga lugar en la Unión o no.",
+        a: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, independientemente de que el tratamiento tenga lugar en la Unión o no.",
         b: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, sólo cuando el tratamiento tenga lugar en la Unión.",
         c: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a nacionales de estados miembros de la Unión.",
-        d: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a residentes de estados miembros de la Unión.
-
-
-
- V.13.08.25                                                                                            Página 72
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a residentes de estados miembros de la Unión.",
         correct: "a"
     },
     {
@@ -2927,12 +2563,7 @@ const db = [
         a: "Deberá ser expreso y realizarse por escrito.",
         b: "Si se realiza de forma oral, el responsable que lo reciba deberá realizar una diligencia por escrito en la que conste el alcance del consentimiento.",
         c: "Sólo se exigirá la forma escrita si se presta de forma genérica para el tratamiento de cualquier dato personal destinado a una finalidad determinada.",
-        d: "El responsable deberá ser capaz de demostrar que aquel consintió el tratamiento de sus datos personales.
-
-
-
- V.13.08.25                                                                                            Página 73
- Temario Específico. Auxiliar Administrativo/a",
+        d: "El responsable deberá ser capaz de demostrar que aquel consintió el tratamiento de sus datos personales.",
         correct: "d"
     },
     {
@@ -2947,8 +2578,7 @@ const db = [
     {
         id: 286,
         q: "De conformidad con el artículo 9 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas, las convicciones religiosas o filosóficas, la afiliación sindical, y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual o la orientación sexual de una persona física:",
-        a: ",
-        a: \"Está prohibido.",
+        a: "Está prohibido.",
         b: "Podrán tratarse lícitamente cuando resulte necesario para el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable del tratamiento.",
         c: "Sólo está prohibido el tratamiento de datos personales relativos a la vida sexual o la orientación sexual, las convicciones religiosas y el origen étnico o racial.",
         d: "No puede estar prohibido.",
@@ -2960,11 +2590,7 @@ const db = [
         a: "Este no estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la única finalidad de cumplir el presente Reglamento.",
         b: "Durante el plazo de un año éste estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la única finalidad de cumplir el presente Reglamento.",
         c: "Mientras trate los datos personales estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la única finalidad de cumplir el presente Reglamento.",
-        d: "Estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la finalidad del cumplir el presente Reglamento.
-
-
- V.13.08.25                                                                                               Página 74
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la finalidad del cumplir el presente Reglamento.",
         correct: "a"
     },
     {
@@ -2991,12 +2617,7 @@ const db = [
         a: "En el momento en que estos se obtengan.",
         b: "En el plazo máximo de 72 horas.",
         c: "Tan pronto como se haya dado de alta en el Registro de Actividades de Tratamiento (RAT)",
-        d: "Dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes, habida cuenta de las circunstancias específicas en las que se traten dichos datos.
-
-
-
- V.13.08.25                                                                                              Página 75
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes, habida cuenta de las circunstancias específicas en las que se traten dichos datos.",
         correct: "d"
     },
     {
@@ -3011,8 +2632,7 @@ const db = [
     {
         id: 292,
         q: "El artículo 82 del Estatuto de Autonomía de Andalucía atribuye a la Comunidad Autónoma de Andalucía, en materia de protección de datos de carácter personal, la competencia:",
-        a: ",
-        a: \"Exclusiva.",
+        a: "Exclusiva.",
         b: "Compartida.",
         c: "Ejecutiva.",
         d: "Se trata de una competencia atribuida a la Agencia Española de Protección de Datos.",
@@ -3030,13 +2650,10 @@ const db = [
     {
         id: 294,
         q: "2. El artículo 2 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), establece que se aplica a:",
-        a: ",
-        a: \"Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
+        a: "Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
         b: "Al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
         c: "Al tratamiento total y parcialmente automatizado de datos personales, así como al tratamiento automatizado de datos personales contenidos o destinados a ser incluidos en un fichero.",
-        d: "Todas las respuestas son incorrectas.
- V.13.08.25                                                                                              Página 76
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Todas las respuestas son incorrectas.",
         correct: "a"
     },
     {
@@ -3051,8 +2668,7 @@ const db = [
     {
         id: 296,
         q: "El artículo 3 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), establece que se aplica a:",
-        a: ",
-        a: \"Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, independientemente de que el tratamiento tenga lugar en la Unión o no.",
+        a: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, independientemente de que el tratamiento tenga lugar en la Unión o no.",
         b: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, sólo cuando el tratamiento tenga lugar en la Unión.",
         c: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a nacionales de estados miembros de la Unión.",
         d: "Al tratamiento de datos personales en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, que afecten a residentes de estados miembros de la Unión.",
@@ -3064,12 +2680,7 @@ const db = [
         a: "La persona física o jurídica, autoridad pública, servicio u otro organismo que, solo o junto con otros, determine los fines y medios del tratamiento.",
         b: "La persona física o jurídica, autoridad pública, servicio u otro organismo que, solo o junto con otros, determine los fines o medios del tratamiento.",
         c: "La persona física o jurídica, autoridad pública, servicio u otro organismo que determine los fines y medios del tratamiento.",
-        d: "Todas las respuestas son incorrectas.
-
-
-
- V.13.08.25                                                                                            Página 77
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Todas las respuestas son incorrectas.",
         correct: "a"
     },
     {
@@ -3096,19 +2707,13 @@ const db = [
         a: "Cuando tenga como mínimo16 años.",
         b: "Cuando tenga como mínimo 14 años.",
         c: "Los Estados miembros podrán establecer por ley una edad inferior a tales fines, siempre que esta no sea inferior a 12 años.",
-        d: "El consentimiento lo prestará en todo caso quien ostente la patria potestad del menor de edad.
-
-
-
- V.13.08.25                                                                                            Página 78
- Temario Específico. Auxiliar Administrativo/a",
+        d: "El consentimiento lo prestará en todo caso quien ostente la patria potestad del menor de edad.",
         correct: "a"
     },
     {
         id: 301,
         q: "De conformidad con el artículo 9 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas, las convicciones religiosas o filosóficas, la afiliación sindical, y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual o la orientación sexual de una persona física:",
-        a: ",
-        a: \"Está prohibido.",
+        a: "Está prohibido.",
         b: "Podrán tratarse lícitamente cuando resulte necesario para el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable del tratamiento.",
         c: "Sólo está prohibido el tratamiento de datos personales relativos a la vida sexual o la orientación sexual, las convicciones religiosas y el origen étnico o racial.",
         d: "Todas las respuestas son erróneas.",
@@ -3129,12 +2734,7 @@ const db = [
         a: "Este no estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la única finalidad de cumplir el presente Reglamento.",
         b: "Durante el plazo de un año éste estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la única finalidad de cumplir el presente Reglamento.",
         c: "Mientras trate los datos personales estará obligado a mantener, obtener o tratar información adicional con vistas a identificar al interesado con la única finalidad de cumplir el presente Reglamento.",
-        d: "Ninguna de las respuestas es correcta.
-
-
-
- V.13.08.25                                                                                               Página 79
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Ninguna de las respuestas es correcta.",
         correct: "a"
     },
     {
@@ -3170,15 +2770,7 @@ const db = [
         a: "A la persona titular de la Presidencia de la Diputación.",
         b: "A los diputados y diputadas integrantes de la Junta de Gobierno.",
         c: "A los diputados y diputadas integrantes de la Comisión de Derechos y Libertades ciudadanas",
-        d: ",
-        a: \"A la persona titular de la Presidencia de la Diputación.\",
-        b: \"A los diputados y diputadas integrantes de la Junta de Gobierno.\",
-        c: \"A los diputados y diputadas integrantes de la Comisión de Derechos y Libertades ciudadanas\",
-        d: \"A las personas titulares de las Jefaturas de las Unidades Organizativas o Servicios de la Diputación.
-
-
- V.13.08.25                                                                                              Página 80
- Temario Específico. Auxiliar Administrativo/a",
+        d: "A las personas titulares de las Jefaturas de las Unidades Organizativas o Servicios de la Diputación.",
         correct: "d"
     },
     {
@@ -3205,11 +2797,7 @@ const db = [
         a: "Al Delegado o Delegada de Protección de Datos y a la persona que ocupe el cargo de Responsable de Seguridad.",
         b: "Al Delegado o Delegada de Protección de Datos y a la persona que ocupe el cargo de Responsable de Sistemas.",
         c: "Al Delegado o Delegada de Protección de Datos y a la persona que ocupe la Presidencia del Comité de Seguridad.",
-        d: ",
-        a: \"Al Delegado o Delegada de Protección de Datos y a la persona que ocupe el cargo de Responsable de Seguridad.\",
-        b: \"Al Delegado o Delegada de Protección de Datos y a la persona que ocupe el cargo de Responsable de Sistemas.\",
-        c: \"Al Delegado o Delegada de Protección de Datos y a la persona que ocupe la Presidencia del Comité de Seguridad.\",
-        d: \"Al Delegado o Delegada de Protección de Datos.",
+        d: "Al Delegado o Delegada de Protección de Datos.",
         correct: "a"
     },
     {
@@ -3218,16 +2806,13 @@ const db = [
         a: "Trece años.",
         b: "Catorce años.",
         c: "Quince años.",
-        d: "Dieciséis años.
- V.13.08.25                                                                                              Página 81
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Dieciséis años.",
         correct: "b"
     },
     {
         id: 312,
         q: "El artículo 82 del Estatuto de Autonomía de Andalucía atribuye a la Comunidad Autónoma de Andalucía, en materia de protección de datos de carácter personal, la competencia:",
-        a: ",
-        a: \"Exclusiva.",
+        a: "Exclusiva.",
         b: "Compartida.",
         c: "Ejecutiva.",
         d: "Se trata de una competencia atribuida a la Agencia Española de Protección de Datos.",
@@ -3248,12 +2833,7 @@ const db = [
         a: "Se identificará al mismo mediante su nombre y apellidos, añadiendo cuatro cifras numéricas aleatorias del documento nacional de identidad, número de identidad de extranjero, pasaporte o documento equivalente.",
         b: "Se identificará al afectado exclusivamente mediante el número completo de su documento nacional de identidad, número de identidad de extranjero, pasaporte o documento equivalente.",
         c: "Se identificará al mismo mediante su nombre y apellidos, añadiendo la cuatro últimas cifras numéricas del documento nacional de identidad, número de identidad de extranjero, pasaporte o documento equivalente.",
-        d: "Todas las respuestas son erróneas.
-
-
-
- V.13.08.25                                                                                            Página 82
- Temario Específico. Auxiliar Administrativo/a",
+        d: "Todas las respuestas son erróneas.",
         correct: "a"
     },
     {
@@ -3263,13 +2843,10 @@ const db = [
         b: "Se identificará al mismo mediante su nombre y apellidos, añadiendo cuatro cifras numéricas aleatorias del documento nacional de identidad, número de identidad de extranjero, pasaporte o documento equivalente.",
         c: "Se identificará al mismo mediante su nombre y apellidos, añadiendo la cuatro últimas cifras numéricas del documento nacional de identidad, número de identidad de extranjero, pasaporte o documento equivalente.",
         d: "Todas las respuestas son erróneas.
-
-
-
- V.13.08.25                                                                                            Página 83
- Temario Específico. Auxiliar Administrativo/a",
+ PREG       RESP   PREG   RESP   PREG   RESP   PREG        RESP           PREG           RESP 1         D       64    C      127    C      190         A              253            A 2         C       65    D      128    A      191         C              254            C 3         D       66    A      129    B      192         A              255            A 4         C       67    B      130    A      193         B              256            D 5         D       68    B      131    B      194         B              257            A 6         B       69    C      132    B      195         C              258            B 7         C       70    D      133    B      196         C              259            D 8         D       71    D      134    D      197         D              260            C 9         C       72    C      135    B      198         D              261            A 10         A       73    A      136    A      199         D              262            C 11         D       74    A      137    A      200         D              263            A 12         A       75    D      138    C      201         A              264            D 13         D       76    A      139    D      202         B              265            B 14         B       77    B      140    A      203         D              266            A 15         C       78    B      141    D      204         C              267            A 16         A       79    D      142    C      205         A              268            A 17         C       80    D      143    A      206         A              269            A 18         C       81    A      144    A      207         A              270            D 19         C       82    D      145    A      208         A              271            A 20         A       83    C      146    D      209         C              272            B 21         C       84    B      147    D      210         D              273            A 22         B       85    A      148    C      211         B              274            D 23         B       86    B      149    A      212         B              275            A 24         A       87    B      150    D      213         D              276            B 25         A       88    B      151    A      214         C              277            C 26         D       89    C      152    C      215         B              278            B 27         D       90    C      153    D      216         A              279            C 28         B       91    D      154    A      217         C              280            A 29         A       92    A      155    A      218         D              281            A 30         A       93    B      156    D      219         C              282            A 31         C       94    D      157    D      220         A              283            B 32         A       95    A      158    C      221         D              284            D 33         C       96    A      159    A      222         C              285            A 34         C       97    C      160    B      223         C              286            A 35         A       98    D      161    B      224         C              287            A 36         D       99    C      162    D      225         B              288            A 37         B      100    A      163    A      226         B              289            A 38         B      101    C      164    D      227         C              290            D 39         B      102    B      165    D      228         C              291            A 40         B      103    C      166    C      229         A              292            C 41         A      104    B      167    C      230         A              293            D 42         C      105    C      168    C      231         D              294            A 43         D      106    D      169    B      232         A              295            D 44         D      107    B      170    D      233         B              296            A 45         D      108    C      171    A      234         D              297            A 46         D      109    C      172    B      235         A              298            B 47         A      110    C      173    A      236         B              299            D
+ 48       A   111   D   174   D   237          C             300             A 49       D   112   D   175   C   238          A             301             A 50       A   113   A   176   D   239          B             302             D 51       C   114   A   177   C   240          A             303             A 52       C   115   D   178   A   241          D             304             A 53       D   116   B   179   C   242          A             305             A 54       B   117   C   180   A   243          B             306             D 55       C   118   A   181   B   244          D             307             D 56       B   119   C   182   A   245          A             308             D 57       A   120   C   183   A   246          D             309             A 58       D   121   A   184   C   247          C             310             A 59       D   122   A   185   B   248          B             311             B 60       C   123   C   186   A   249          A             312             C 61       B   124   A   187   B   250          C             313             A 62       B   125   B   188   C   251          A             314             A 63       B   126   C   189   A   252          B             315             A",
         correct: "a"
-    }
+    },
 ];
 
 module.exports = db;
