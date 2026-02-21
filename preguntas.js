@@ -3271,5 +3271,3 @@ const db = [
         correct: "a"
     }
 ];
-
-module.exports = db;
