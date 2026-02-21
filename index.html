@@ -3,72 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icono-192.svg">
+    <link rel="apple-touch-icon" href="icono-192.svg">
     <title>PrepApp | Auxiliar Málaga</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="preguntas.js"></script>
     <script src="estadisticas.js"></script>
     <script src="temas.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
 </head>
 
-<body class="bg-slate-50 min-h-screen text-slate-900">
+<body
+    class="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-100 transition-colors duration-300">
     <div id="app" class="max-w-xl mx-auto p-4 py-8">
 
         <div id="loader" class="text-center py-20">
-            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto"></div>
-            <p class="mt-4 text-slate-500 font-medium">Cargando base de datos...</p>
+            <div
+                class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 dark:border-indigo-400 mx-auto">
+            </div>
+            <p class="mt-4 text-slate-500 dark:text-slate-400 font-medium">Cargando base de datos...</p>
         </div>
 
         <div id="main-content" class="hidden">
             <div
-                class="flex justify-between items-center mb-6 bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+                class="flex justify-between items-center mb-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 transition-colors duration-300">
                 <div>
-                    <h1 class="font-black text-indigo-600 leading-none">AUX. ADVO MÁLAGA</h1>
-                    <p id="stats" class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter mt-1"></p>
+                    <h1 class="font-black text-indigo-600 dark:text-indigo-400 leading-none">AUX. ADVO MÁLAGA</h1>
+                    <p id="stats"
+                        class="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-tighter mt-1">
+                    </p>
                 </div>
-                <div class="flex gap-2 flex-wrap justify-end">
+                <div class="flex gap-2 flex-wrap justify-end items-center">
+                    <button onclick="toggleDarkMode()" id="dark-btn"
+                        class="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition"
+                        title="Modo Oscuro">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        </svg>
+                    </button>
+                    <button onclick="toggleMute()" id="mute-btn"
+                        class="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition"
+                        title="Sonido">
+                        <svg id="icon-sound-on" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                        </svg>
+                        <svg id="icon-sound-off" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                        </svg>
+                    </button>
                     <button onclick="openTemaConfig()" id="config-btn"
-                        class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-green-100 transition">⚙️
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-green-100 dark:hover:bg-green-900 transition">⚙️
                         TEMAS</button>
                     <button onclick="toggleOrder()" id="order-btn"
-                        class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-blue-100 transition">📋
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">📋
                         ORDEN</button>
                     <button onclick="toggleReview()" id="rev-btn"
-                        class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-indigo-100 transition">REPASO:
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-indigo-100 dark:hover:bg-indigo-900 transition">REPASO:
                         OFF</button>
                     <button onclick="openStatsModal()" id="stats-btn"
-                        class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-purple-100 transition">📊
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-purple-100 dark:hover:bg-purple-900 transition">📊
                         STATS</button>
-                    <div class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">🔥 <span
-                            id="streak">0</span></div>
+                    <div
+                        class="bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-3 py-1 rounded-full text-xs font-bold border border-orange-200 dark:border-orange-800">
+                        🔥 <span id="streak">0</span></div>
                 </div>
             </div>
 
             <div class="mb-6">
-                <div class="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
-                    <div id="bar" class="h-full bg-indigo-500 transition-all duration-500" style="width: 0%"></div>
+                <div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div id="bar" class="h-full bg-indigo-500 dark:bg-indigo-400 transition-all duration-500"
+                        style="width: 0%"></div>
                 </div>
             </div>
 
             <div id="card"
-                class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden mb-6 animate__animated animate__fadeIn">
+                class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden mb-6 animate__animated animate__fadeIn transition-colors duration-300">
                 <div class="p-6 md:p-8">
                     <div class="flex items-start gap-3 mb-3">
                         <span id="q-number"
-                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-600 text-white font-bold text-sm"></span>
-                        <h2 id="q-text" class="text-lg font-semibold text-slate-800 leading-snug flex-1"></h2>
+                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-600 dark:bg-indigo-500 text-white font-bold text-sm"></span>
+                        <h2 id="q-text"
+                            class="text-lg font-semibold text-slate-800 dark:text-slate-100 leading-snug flex-1"></h2>
                     </div>
-                    <p id="q-tema" class="text-xs text-slate-500 font-medium px-0 mb-2"></p>
+                    <p id="q-tema" class="text-xs text-slate-500 dark:text-slate-400 font-medium px-0 mb-2"></p>
                 </div>
-                <div id="options" class="p-4 bg-slate-50/50 grid gap-3"></div>
+                <div id="options" class="p-4 bg-slate-50/50 dark:bg-slate-800/50 grid gap-3"></div>
             </div>
 
             <div class="flex justify-between items-center px-2">
                 <button onclick="prev()"
-                    class="text-xs font-bold text-slate-400 hover:text-slate-600 uppercase transition">Anterior</button>
+                    class="text-xs font-bold text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 uppercase transition">Anterior</button>
                 <button onclick="next()"
-                    class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-600 active:scale-95 transition-all">Siguiente</button>
+                    class="bg-slate-900 dark:bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-600 dark:hover:bg-indigo-500 active:scale-95 transition-all">Siguiente</button>
             </div>
 
             <!-- Modal de Configuración de Temas -->
@@ -148,6 +190,25 @@
             return temaGroupNames[temaId] || `Tema ${temaId}`;
         }
 
+        // Colores por tema (bloques lógicos)
+        function getTemaColorConfig(temaId) {
+            const configs = {
+                1: { border: 'border-blue-400', bg: 'bg-blue-50/30', darkBg: 'dark:bg-blue-900/10' },     // Órganos locales
+                2: { border: 'border-emerald-400', bg: 'bg-emerald-50/30', darkBg: 'dark:bg-emerald-900/10' }, // PAC I
+                3: { border: 'border-emerald-500', bg: 'bg-emerald-50/50', darkBg: 'dark:bg-emerald-900/20' }, // PAC II
+                4: { border: 'border-cyan-400', bg: 'bg-cyan-50/30', darkBg: 'dark:bg-cyan-900/10' },      // e-Gov I-II
+                6: { border: 'border-cyan-500', bg: 'bg-cyan-50/50', darkBg: 'dark:bg-cyan-900/20' },      // e-Gov III-IV
+                8: { border: 'border-amber-400', bg: 'bg-amber-50/30', darkBg: 'dark:bg-amber-900/10' },     // Presupuestos
+                9: { border: 'border-orange-400', bg: 'bg-orange-50/30', darkBg: 'dark:bg-orange-900/10' },    // Contratos
+                11: { border: 'border-rose-400', bg: 'bg-rose-50/30', darkBg: 'dark:bg-rose-900/10' },      // Subvenciones
+                13: { border: 'border-violet-400', bg: 'bg-violet-50/30', darkBg: 'dark:bg-violet-900/10' },    // Transparencia
+                14: { border: 'border-fuchsia-400', bg: 'bg-fuchsia-50/30', darkBg: 'dark:bg-fuchsia-900/10' }, // PRL
+                15: { border: 'border-pink-400', bg: 'bg-pink-50/30', darkBg: 'dark:bg-pink-900/10' },      // Igualdad
+                16: { border: 'border-indigo-400', bg: 'bg-indigo-50/30', darkBg: 'dark:bg-indigo-900/10' }    // LOPD (default)
+            };
+            return configs[temaId] || { border: 'border-slate-200', bg: 'bg-white', darkBg: 'dark:bg-slate-800' };
+        }
+
         let currentIdx = 0;
         let isReview = false;
         let isRandomOrder = false;
@@ -156,8 +217,30 @@
         let fails = JSON.parse(localStorage.getItem('malaga_fails') || '[]');
         let selectedTemas = JSON.parse(localStorage.getItem('malaga_selected_temas') || 'null');
         let temaFilter = null; // null = todos los temas, [] = filtro activo
+        let isDarkMode = localStorage.getItem('malaga_dark') === 'true';
+        let isMuted = localStorage.getItem('malaga_muted') === 'true';
+
+        // Audios
+        const audioCorrect = new Audio('correct.mp3');
+        const audioWrong = new Audio('wrong.mp3');
+        audioCorrect.volume = 0.5;
+        audioWrong.volume = 0.3;
+
+        // Inicializar Dark Mode pre-render
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+        }
 
         function iniciarApp() {
+            // Registrar Service Worker para PWA
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./sw.js')
+                        .then(reg => console.log('SW registrado', reg))
+                        .catch(err => console.log('SW fallo', err));
+                });
+            }
+
             // Comprobamos si 'db' existe (viene de preguntas.js)
             if (typeof db !== 'undefined') {
                 document.getElementById('loader').classList.add('hidden');
@@ -175,7 +258,37 @@
         }
 
         // Ejecutar al cargar la ventana
-        window.addEventListener('load', iniciarApp);
+        window.addEventListener('load', () => {
+            iniciarApp();
+            updateMuteUI();
+        });
+
+        function playSound(type) {
+            if (isMuted) return;
+            if (type === 'correct') {
+                audioCorrect.currentTime = 0;
+                audioCorrect.play().catch(e => console.log('Audio error:', e));
+            } else {
+                audioWrong.currentTime = 0;
+                audioWrong.play().catch(e => console.log('Audio error:', e));
+            }
+        }
+
+        function toggleMute() {
+            isMuted = !isMuted;
+            localStorage.setItem('malaga_muted', isMuted);
+            updateMuteUI();
+        }
+
+        function updateMuteUI() {
+            if (isMuted) {
+                document.getElementById('icon-sound-on').classList.add('hidden');
+                document.getElementById('icon-sound-off').classList.remove('hidden');
+            } else {
+                document.getElementById('icon-sound-on').classList.remove('hidden');
+                document.getElementById('icon-sound-off').classList.add('hidden');
+            }
+        }
 
         function shuffleArray(array) {
             const shuffled = [...array];
@@ -234,15 +347,28 @@
             const temaLabel = q.tema ? temaDisplayName(q.tema) : '';
             statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReview ? '(MODO REPASO)' : ''} ${modeLabel}`.trim();
 
+            // Aplicar colores dinámicos a la tarjeta
+            const cardEl = document.getElementById('card');
+            const themeCfg = getTemaColorConfig(q.tema);
+
+            // Limpiar clases de color anteriores (regex simplificada para todos los colores)
+            cardEl.className = cardEl.className.replace(/\bborder-[a-z]+-\d+\b/g, '')
+                .replace(/\bbg-[a-z]+-50\/\d+\b/g, '')
+                .replace(/\bdark:bg-[a-z]+-900\/\d+\b/g, '')
+                .replace(/\bbg-white\b/g, '')
+                .replace(/\bdark:bg-slate-800\b/g, '');
+
+            cardEl.className = `${cardEl.className} ${themeCfg.border} ${themeCfg.bg} ${themeCfg.darkBg} bg-white dark:bg-slate-800`.trim();
+
 
             container.innerHTML = '';
             ['a', 'b', 'c', 'd'].forEach(l => {
                 if (!q[l]) return; // Por si alguna pregunta solo tiene 3 opciones
                 const btn = document.createElement('button');
-                btn.className = "w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-indigo-300 transition-all flex gap-4 items-center group active:bg-slate-50";
+                btn.className = "w-full text-left p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-300 dark:hover:border-indigo-500 transition-all flex gap-4 items-center group active:bg-slate-50 dark:active:bg-slate-700";
                 btn.innerHTML = `
-                    <span class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg bg-slate-100 text-slate-500 group-hover:bg-indigo-100 font-bold text-sm uppercase">${l}</span>
-                    <span class="text-slate-600 text-sm font-medium">${q[l]}</span>
+                    <span class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-bold text-sm uppercase transition-colors">${l}</span>
+                    <span class="text-slate-600 dark:text-slate-300 text-sm font-medium transition-colors">${q[l]}</span>
                 `;
                 btn.onclick = () => check(l, q.correct, q.id, btn);
                 container.appendChild(btn);
@@ -262,14 +388,48 @@
 
             if (esCorrecta) {
                 btn.classList.replace('border-slate-200', 'border-green-500');
-                btn.classList.add('bg-green-50');
+                btn.classList.replace('dark:border-slate-700', 'dark:border-green-500');
+                btn.classList.add('bg-green-50', 'dark:bg-green-900/20');
                 streak++;
+                playSound('correct');
+
+                // Mostrar logro de racha
+                if (streak > 0 && streak % 10 === 0) {
+                    Toastify({
+                        text: `¡Fuego! 🔥 ${streak} aciertos seguidos`,
+                        duration: 3000,
+                        gravity: "bottom",
+                        position: "center",
+                        style: {
+                            background: "linear-gradient(to right, #f97316, #ea580c)",
+                            borderRadius: "100px",
+                            fontWeight: "bold"
+                        }
+                    }).showToast();
+                }
+
                 // Si acertamos en modo repaso, quitar de la lista de fallos
                 if (isReview) fails = fails.filter(f => f !== id);
             } else {
                 btn.classList.replace('border-slate-200', 'border-red-500');
-                btn.classList.add('bg-red-50');
+                btn.classList.replace('dark:border-slate-700', 'dark:border-red-500');
+                btn.classList.add('bg-red-50', 'dark:bg-red-900/20');
+
+                if (streak >= 10) {
+                    Toastify({
+                        text: `¡Uy! 🧊 Rompiste tu racha de ${streak}`,
+                        duration: 3000,
+                        gravity: "bottom",
+                        position: "center",
+                        style: {
+                            background: "linear-gradient(to right, #64748b, #475569)",
+                            borderRadius: "100px"
+                        }
+                    }).showToast();
+                }
                 streak = 0;
+                playSound('wrong');
+
                 if (!fails.includes(id)) fails.push(id);
 
                 // Mostrar la correcta
@@ -277,7 +437,8 @@
                     const letra = b.querySelector('span').innerText.toLowerCase();
                     if (letra === correct) {
                         b.classList.replace('border-slate-200', 'border-green-500');
-                        b.classList.add('bg-green-50');
+                        b.classList.replace('dark:border-slate-700', 'dark:border-green-500');
+                        b.classList.add('bg-green-50', 'dark:bg-green-900/20');
                     }
                 });
             }
@@ -289,6 +450,22 @@
 
             localStorage.setItem('malaga_fails', JSON.stringify(fails));
             document.getElementById('streak').innerText = streak;
+        }
+
+        function toggleDarkMode() {
+            isDarkMode = !isDarkMode;
+            if (isDarkMode) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            localStorage.setItem('malaga_dark', isDarkMode);
+            // Rotar el icono para dar feedback visual
+            const btnImg = document.querySelector('#dark-btn svg');
+            if (btnImg) {
+                btnImg.classList.add('rotate-180', 'transition-transform');
+                setTimeout(() => btnImg.classList.remove('rotate-180'), 300);
+            }
         }
 
         function toggleOrder() {
