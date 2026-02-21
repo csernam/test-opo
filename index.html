@@ -119,7 +119,7 @@
             const q = list[currentIdx];
             qText.innerText = q.q;
             qNumber.innerText = q.id;
-            qTema.innerText = q.tema_title || '';
+            qTema.innerText = q.tema ? `Tema ${q.tema}: ${q.tema_title}` : '';
             const modeLabel = isRandomOrder ? '(ALEATORIO)' : '';
             const temaLabel = q.tema ? `Tema ${q.tema}` : '';
             statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReview ? '(MODO REPASO)' : ''} ${modeLabel}`.trim();
