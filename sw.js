@@ -1,4 +1,4 @@
-const CACHE_NAME = 'prepapp-malaga-v1';
+const CACHE_NAME = 'prepapp-malaga-v2';
 const urlsToCache = [
     './',
     './index.html',
@@ -6,8 +6,8 @@ const urlsToCache = [
     './temas.js',
     './estadisticas.js',
     './manifest.json',
-    './icono-192.png',
-    './icono-512.png',
+    './icono-192.svg',
+    './icono-512.svg',
     'https://cdn.tailwindcss.com',
     'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
 ];
