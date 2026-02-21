@@ -23,6 +23,7 @@
                     <p id="stats" class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter mt-1"></p>
                 </div>
                 <div class="flex gap-2 flex-wrap justify-end">
+                    <button onclick="openTemaConfig()" id="config-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-green-100 transition">⚙️ TEMAS</button>
                     <button onclick="toggleOrder()" id="order-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-blue-100 transition">📋 ORDEN</button>
                     <button onclick="toggleReview()" id="rev-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-indigo-100 transition">REPASO: OFF</button>
                     <div class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">🔥 <span id="streak">0</span></div>
@@ -50,6 +51,27 @@
                 <button onclick="prev()" class="text-xs font-bold text-slate-400 hover:text-slate-600 uppercase transition">Anterior</button>
                 <button onclick="next()" class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-600 active:scale-95 transition-all">Siguiente</button>
             </div>
+
+            <!-- Modal de Configuración de Temas -->
+            <div id="tema-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full p-6 animate__animated animate__fadeIn">
+                    <h2 class="text-xl font-bold text-slate-800 mb-4">Selecciona temas a repasar</h2>
+                    
+                    <div class="mb-4 flex gap-2">
+                        <button onclick="selectAllTemas()" class="flex-1 bg-indigo-100 text-indigo-600 text-sm font-bold px-3 py-2 rounded-lg hover:bg-indigo-200 transition">Todos</button>
+                        <button onclick="deselectAllTemas()" class="flex-1 bg-slate-100 text-slate-600 text-sm font-bold px-3 py-2 rounded-lg hover:bg-slate-200 transition">Ninguno</button>
+                    </div>
+
+                    <div id="tema-list" class="max-h-80 overflow-y-auto space-y-2 mb-6">
+                        <!-- Se llenará con JavaScript -->
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button onclick="closeTemaConfig()" class="flex-1 bg-slate-100 text-slate-600 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition">Cancelar</button>
+                        <button onclick="applyTemaFilter()" class="flex-1 bg-indigo-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Aplicar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -62,12 +84,20 @@
         let randomList = [];
         let streak = 0;
         let fails = JSON.parse(localStorage.getItem('malaga_fails') || '[]');
+        let selectedTemas = JSON.parse(localStorage.getItem('malaga_selected_temas') || 'null');
+        let temaFilter = null; // null = todos los temas, [] = filtro activo
 
         function iniciarApp() {
             // Comprobamos si 'db' existe (viene de preguntas.js)
             if (typeof db !== 'undefined') {
                 document.getElementById('loader').classList.add('hidden');
                 document.getElementById('main-content').classList.remove('hidden');
+                buildTemaList();
+                // Restaurar filtro anterior si existe
+                if (selectedTemas) {
+                    temaFilter = selectedTemas;
+                    updateTemaConfigUI();
+                }
                 render(); 
             } else {
                 alert("Error: No se detecta 'db' en preguntas.js. Asegúrate de que el archivo empieza con 'const db = [...]'");
@@ -87,7 +117,17 @@
         }
 
         function render() {
-            let list = isReview ? db.filter(q => fails.includes(q.id)) : db;
+            let list = db;
+            
+            // Aplicar filtro de temas
+            if (temaFilter !== null) {
+                list = list.filter(q => temaFilter.includes(q.tema));
+            }
+            
+            // Aplicar filtro de repaso
+            if (isReview) {
+                list = list.filter(q => fails.includes(q.id));
+            }
             
             if (isRandomOrder) {
                 if (!randomList.length || randomList.length !== list.length) {
@@ -218,6 +258,80 @@
                 currentIdx--; 
                 render(); 
             }
+        }
+
+        function buildTemaList() {
+            const temaList = document.getElementById('tema-list');
+            const uniqueTemas = [...new Set(db.map(q => q.tema))].sort((a, b) => a - b);
+            
+            temaList.innerHTML = '';
+            uniqueTemas.forEach(tema => {
+                const title = db.find(q => q.tema === tema)?.tema_title || 'Sin título';
+                const count = db.filter(q => q.tema === tema).length;
+                const isChecked = temaFilter === null || temaFilter.includes(tema);
+                
+                const label = document.createElement('label');
+                label.className = 'flex items-center gap-3 p-3 bg-slate-50 rounded-lg cursor-pointer hover:bg-slate-100 transition';
+                label.innerHTML = `
+                    <input type="checkbox" data-tema="${tema}" class="tema-checkbox w-4 h-4" ${isChecked ? 'checked' : ''}>
+                    <div class="flex-1 min-w-0">
+                        <div class="font-semibold text-slate-700 text-sm">Tema ${tema}</div>
+                        <div class="text-xs text-slate-500 truncate">${title.substring(0, 50)}...</div>
+                        <div class="text-xs text-slate-400">${count} preguntas</div>
+                    </div>
+                `;
+                temaList.appendChild(label);
+            });
+        }
+
+        function openTemaConfig() {
+            document.getElementById('tema-modal').classList.remove('hidden');
+            updateTemaConfigUI();
+        }
+
+        function closeTemaConfig() {
+            document.getElementById('tema-modal').classList.add('hidden');
+        }
+
+        function updateTemaConfigUI() {
+            const checkboxes = document.querySelectorAll('.tema-checkbox');
+            checkboxes.forEach(cb => {
+                const temaNum = parseInt(cb.getAttribute('data-tema'));
+                cb.checked = temaFilter === null || temaFilter.includes(temaNum);
+            });
+        }
+
+        function selectAllTemas() {
+            document.querySelectorAll('.tema-checkbox').forEach(cb => cb.checked = true);
+        }
+
+        function deselectAllTemas() {
+            document.querySelectorAll('.tema-checkbox').forEach(cb => cb.checked = false);
+        }
+
+        function applyTemaFilter() {
+            const selected = Array.from(document.querySelectorAll('.tema-checkbox:checked'))
+                .map(cb => parseInt(cb.getAttribute('data-tema')))
+                .sort((a, b) => a - b);
+            
+            if (selected.length === 0) {
+                alert('Debes seleccionar al menos un tema');
+                return;
+            }
+            
+            // Check if all temas are selected
+            const allTemas = [...new Set(db.map(q => q.tema))].length;
+            if (selected.length === allTemas) {
+                temaFilter = null; // Todos los temas
+            } else {
+                temaFilter = selected;
+            }
+            
+            localStorage.setItem('malaga_selected_temas', JSON.stringify(temaFilter));
+            currentIdx = 0;
+            randomList = [];
+            closeTemaConfig();
+            render();
         }
     </script>
 </body>
