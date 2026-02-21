@@ -87,7 +87,13 @@
       71,
       72,
       73,
-      74,
+      74
+    ],
+    "count": 25
+  },
+  "4": {
+    "title": "Funcionamiento electrónico del Sector Público (I) y (II)",
+    "questions": [
       75,
       76,
       77,
@@ -111,7 +117,13 @@
       95,
       96,
       97,
-      98,
+      98
+    ],
+    "count": 24
+  },
+  "6": {
+    "title": "Funcionamiento electrónico del Sector Público (III) y (IV)",
+    "questions": [
       99,
       100,
       101,
@@ -137,7 +149,7 @@
       121,
       122
     ],
-    "count": 73
+    "count": 24
   },
   "8": {
     "title": "El presupuesto de las entidades locales. Elaboración, aprobación y",
@@ -166,7 +178,13 @@
       144,
       145,
       146,
-      147,
+      147
+    ],
+    "count": 25
+  },
+  "9": {
+    "title": "La Ley de Contratos del Sector Público (I) y (II)",
+    "questions": [
       148,
       149,
       150,
@@ -191,7 +209,13 @@
       169,
       170,
       171,
-      172,
+      172
+    ],
+    "count": 25
+  },
+  "11": {
+    "title": "La actividad subvencional de las Administraciones Públicas (I) y (II)",
+    "questions": [
       173,
       174,
       175,
@@ -218,7 +242,7 @@
       196,
       197
     ],
-    "count": 75
+    "count": 25
   },
   "13": {
     "title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la",
