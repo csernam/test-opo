@@ -1,0 +1,84 @@
+{
+  "temas": [
+    {
+      "id": 1,
+      "title": "Los órganos colegiados locales. Convocatoria, orden del día. Requisitos de constitución. Funcionamiento. Actas y certificados de acuerdos.",
+      "hasQuestions": true
+    },
+    {
+      "id": 2,
+      "title": "Procedimiento Administrativo común (I): El acto administrativo. Requisitos. La eficacia de los actos administrativos. Nulidad y anulabilidad. La revisión de los actos en vía administrativa. Los recursos administrativos.",
+      "hasQuestions": true
+    },
+    {
+      "id": 3,
+      "title": "Procedimiento Administrativo Común (II): Las fases del procedimiento administrativo. Iniciación, Ordenación, Instrucción y Finalización. La ejecución.",
+      "hasQuestions": true
+    },
+    {
+      "id": 4,
+      "title": "Funcionamiento electrónico del Sector Público (I): Sede electrónica. Canales y puntos de atención electrónica.",
+      "hasQuestions": false
+    },
+    {
+      "id": 5,
+      "title": "El Funcionamiento electrónico del Sector Público (II). El acceso electrónico de la ciudadanía.",
+      "hasQuestions": false
+    },
+    {
+      "id": 6,
+      "title": "Funcionamiento electrónico del Sector Público (III): Registro y archivo electrónico.",
+      "hasQuestions": false
+    },
+    {
+      "id": 7,
+      "title": "Funcionamiento electrónico del sector público (IV): La gestión electrónica de los procedimientos administrativos.",
+      "hasQuestions": false
+    },
+    {
+      "id": 8,
+      "title": "El presupuesto de las entidades locales. Elaboración, aprobación y ejecución presupuestaria. Su control y fiscalización.",
+      "hasQuestions": true
+    },
+    {
+      "id": 9,
+      "title": "La Ley de Contratos del Sector Público (I). Disposiciones Generales. Objeto y ámbito de aplicación.",
+      "hasQuestions": false
+    },
+    {
+      "id": 10,
+      "title": "La Ley de contratos del Sector Público (II): Contratos del Sector Público.",
+      "hasQuestions": false
+    },
+    {
+      "id": 11,
+      "title": "La actividad subvencional de las Administraciones Públicas (I). La Ley 38/2003, de 17 de noviembre.",
+      "hasQuestions": false
+    },
+    {
+      "id": 12,
+      "title": "La actividad subvencional de las Administraciones Públicas (II). La Ley 38/2003, de 17 de noviembre.",
+      "hasQuestions": false
+    },
+    {
+      "id": 13,
+      "title": "La Ley 19/2013, de 9 de diciembre, de Transparencia, Acceso a la Información Pública y Buen Gobierno. La Ley 1/2014, de 24 de junio, de Transparencia Pública de Andalucía.",
+      "hasQuestions": true
+    },
+    {
+      "id": 14,
+      "title": "Principios básicos de Prevención de Riesgos Laborales. Normativa legal. Modalidades de organización de la prevención en la empresa. Gestión de la actividad preventiva.",
+      "hasQuestions": true
+    },
+    {
+      "id": 15,
+      "title": "La Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres. Las Políticas Públicas para la Igualdad y el Derecho de Igualdad y no Discriminación. El principio de igualdad en el empleo público. La Ley 12/2007, de 26 de noviembre, para la promoción de la igualdad de género en Andalucía, y la Ley 9/2018, de 8 de octubre, de modificación de la anterior.",
+      "hasQuestions": true
+    },
+    {
+      "id": 16,
+      "title": "La protección de datos de carácter personal: Normativa de la Unión Europea y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.",
+      "hasQuestions": true
+    }
+  ]
+}

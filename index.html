@@ -262,26 +262,41 @@
 
         function buildTemaList() {
             const temaList = document.getElementById('tema-list');
-            const uniqueTemas = [...new Set(db.map(q => q.tema))].sort((a, b) => a - b);
             
-            temaList.innerHTML = '';
-            uniqueTemas.forEach(tema => {
-                const title = db.find(q => q.tema === tema)?.tema_title || 'Sin título';
-                const count = db.filter(q => q.tema === tema).length;
-                const isChecked = temaFilter === null || temaFilter.includes(tema);
-                
-                const label = document.createElement('label');
-                label.className = 'flex items-center gap-3 p-3 bg-slate-50 rounded-lg cursor-pointer hover:bg-slate-100 transition';
-                label.innerHTML = `
-                    <input type="checkbox" data-tema="${tema}" class="tema-checkbox w-4 h-4" ${isChecked ? 'checked' : ''}>
-                    <div class="flex-1 min-w-0">
-                        <div class="font-semibold text-slate-700 text-sm">Tema ${tema}</div>
-                        <div class="text-xs text-slate-500 truncate">${title.substring(0, 50)}...</div>
-                        <div class="text-xs text-slate-400">${count} preguntas</div>
-                    </div>
-                `;
-                temaList.appendChild(label);
-            });
+            // Fetch all temas (1-16) from temas.json
+            fetch('temas.json')
+                .then(r => r.json())
+                .then(data => {
+                    temaList.innerHTML = '';
+                    data.temas.forEach(tema => {
+                        const count = db.filter(q => q.tema === tema.id).length;
+                        const isChecked = temaFilter === null || temaFilter.includes(tema.id);
+                        const isAvailable = tema.hasQuestions;
+                        
+                        const label = document.createElement('label');
+                        label.className = `flex items-center gap-3 p-3 bg-slate-50 rounded-lg cursor-pointer hover:bg-slate-100 transition ${!isAvailable ? 'opacity-50' : ''}`;
+                        
+                        const checkbox = document.createElement('input');
+                        checkbox.type = 'checkbox';
+                        checkbox.className = 'tema-checkbox w-4 h-4';
+                        checkbox.setAttribute('data-tema', tema.id);
+                        checkbox.checked = isChecked && isAvailable;
+                        checkbox.disabled = !isAvailable;
+                        
+                        const textDiv = document.createElement('div');
+                        textDiv.className = 'flex-1 min-w-0';
+                        textDiv.innerHTML = `
+                            <div class="font-semibold text-slate-700 text-sm">Tema ${tema.id}${!isAvailable ? ' (sin preguntas)' : ''}</div>
+                            <div class="text-xs text-slate-500 truncate">${tema.title.substring(0, 50)}...</div>
+                            ${isAvailable ? `<div class="text-xs text-slate-400">${count} preguntas</div>` : ''}
+                        `;
+                        
+                        label.appendChild(checkbox);
+                        label.appendChild(textDiv);
+                        temaList.appendChild(label);
+                    });
+                })
+                .catch(err => console.error('Error loading temas.json:', err));
         }
 
         function openTemaConfig() {
@@ -314,17 +329,20 @@
                 .map(cb => parseInt(cb.getAttribute('data-tema')))
                 .sort((a, b) => a - b);
             
-            if (selected.length === 0) {
-                alert('Debes seleccionar al menos un tema');
+            // Filter to only temas with questions
+            const temasWithQuestions = [1, 2, 3, 8, 13, 14, 15, 16];
+            const selectedWithQuestions = selected.filter(t => temasWithQuestions.includes(t));
+            
+            if (selectedWithQuestions.length === 0) {
+                alert('Debes seleccionar al menos un tema con preguntas');
                 return;
             }
             
-            // Check if all temas are selected
-            const allTemas = [...new Set(db.map(q => q.tema))].length;
-            if (selected.length === allTemas) {
-                temaFilter = null; // Todos los temas
+            // Check if all temas with questions are selected
+            if (selectedWithQuestions.length === temasWithQuestions.length) {
+                temaFilter = null; // All available temas
             } else {
-                temaFilter = selected;
+                temaFilter = selectedWithQuestions;
             }
             
             localStorage.setItem('malaga_selected_temas', JSON.stringify(temaFilter));
