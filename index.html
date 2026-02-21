@@ -22,7 +22,8 @@
                     <h1 class="font-black text-indigo-600 leading-none">AUX. ADVO MÁLAGA</h1>
                     <p id="stats" class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter mt-1"></p>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex gap-2 flex-wrap justify-end">
+                    <button onclick="toggleOrder()" id="order-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-blue-100 transition">📋 ORDEN</button>
                     <button onclick="toggleReview()" id="rev-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-indigo-100 transition">REPASO: OFF</button>
                     <div class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">🔥 <span id="streak">0</span></div>
                 </div>
@@ -56,6 +57,8 @@
         
         let currentIdx = 0;
         let isReview = false;
+        let isRandomOrder = false;
+        let randomList = [];
         let streak = 0;
         let fails = JSON.parse(localStorage.getItem('malaga_fails') || '[]');
 
@@ -73,8 +76,27 @@
         // Ejecutar al cargar la ventana
         window.addEventListener('load', iniciarApp);
 
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
         function render() {
-            const list = isReview ? db.filter(q => fails.includes(q.id)) : db;
+            let list = isReview ? db.filter(q => fails.includes(q.id)) : db;
+            
+            if (isRandomOrder) {
+                if (!randomList.length || randomList.length !== list.length) {
+                    randomList = shuffleArray(list);
+                }
+                list = randomList;
+            } else {
+                randomList = [];
+            }
+
             const statsEl = document.getElementById('stats');
             const container = document.getElementById('options');
             const qText = document.getElementById('q-text');
@@ -94,7 +116,9 @@
             const q = list[currentIdx];
             qText.innerText = q.q;
             qNumber.innerText = q.id;
-            statsEl.innerText = `Pregunta ${currentIdx + 1} de ${list.length} ${isReview ? '(MODO REPASO)' : ''}`;
+            const modeLabel = isRandomOrder ? '(ALEATORIO)' : '';
+            statsEl.innerText = `Pregunta ${currentIdx + 1} de ${list.length} ${isReview ? '(MODO REPASO)' : ''} ${modeLabel}`;
+
             
             container.innerHTML = '';
             ['a', 'b', 'c', 'd'].forEach(l => {
@@ -142,9 +166,23 @@
             document.getElementById('streak').innerText = streak;
         }
 
+        function toggleOrder() {
+            isRandomOrder = !isRandomOrder;
+            currentIdx = 0;
+            randomList = [];
+            const btn = document.getElementById('order-btn');
+            btn.innerText = isRandomOrder ? "🎲 ALEATORIO" : "📋 ORDEN";
+            btn.classList.toggle('bg-purple-600');
+            btn.classList.toggle('text-white');
+            btn.classList.toggle('bg-slate-100');
+            btn.classList.toggle('text-slate-500');
+            render();
+        }
+
         function toggleReview() {
             isReview = !isReview;
             currentIdx = 0;
+            randomList = [];
             const btn = document.getElementById('rev-btn');
             btn.innerText = isReview ? "REPASO: ON" : "REPASO: OFF";
             btn.classList.toggle('bg-indigo-600');
@@ -155,7 +193,13 @@
         }
 
         function next() { 
-            const list = isReview ? db.filter(q => fails.includes(q.id)) : db;
+            let list = isReview ? db.filter(q => fails.includes(q.id)) : db;
+            if (isRandomOrder) {
+                if (!randomList.length || randomList.length !== list.length) {
+                    randomList = shuffleArray(list);
+                }
+                list = randomList;
+            }
             if(currentIdx < list.length - 1) {
                 currentIdx++; 
             } else {
