@@ -434,6 +434,17 @@
             const qNumber = document.getElementById('q-number');
             const qTema = document.getElementById('q-tema');
 
+            // Actualizar badge de coincidencias flotante
+            const matchesBadge = document.getElementById('search-matches');
+            if (matchesBadge) {
+                if (textSearchQuery !== '') {
+                    matchesBadge.innerText = `${list.length} coincidencia${list.length !== 1 ? 's' : ''}`;
+                    matchesBadge.classList.remove('hidden');
+                } else {
+                    matchesBadge.classList.add('hidden');
+                }
+            }
+
             if (list.length === 0) {
                 qText.innerText = textSearchQuery !== ''
                     ? "No se encontraron preguntas que coincidan con la búsqueda."
@@ -459,17 +470,6 @@
             let searchLabel = textSearchQuery !== '' ? `(FILTRADAS)` : '';
             const isReviewBadge = reviewMode === 'fails' ? '(SÓLO FALLOS)' : (reviewMode === 'smart' ? '(INTELIGENTE)' : '');
             statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReviewBadge} ${modeLabel} ${searchLabel}`.trim();
-
-            // Actualizar badge de coincidencias flotante
-            const matchesBadge = document.getElementById('search-matches');
-            if (matchesBadge) {
-                if (textSearchQuery !== '') {
-                    matchesBadge.innerText = `${list.length} coincidencia${list.length !== 1 ? 's' : ''}`;
-                    matchesBadge.classList.remove('hidden');
-                } else {
-                    matchesBadge.classList.add('hidden');
-                }
-            }
 
             // Aplicar colores dinámicos a la tarjeta
             const cardEl = document.getElementById('card');
