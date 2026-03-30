@@ -249,6 +249,11 @@
         let isMuted = localStorage.getItem('malaga_muted') === 'true';
         let textSearchQuery = '';
 
+        // ===== ANTI-SENSIBILIDAD PARA NAVEGACIÓN =====
+        // Evita cambios accidentales de pregunta por scroll/touch
+        let lastNavigationTime = 0;
+        const NAVIGATION_DEBOUNCE = 500; // milisegundos entre navegaciones
+
         // Sintetizador de audio para evitar problemas de carga o caché (PWA)
         const AudioContextOptions = window.AudioContext || window.webkitAudioContext;
         const audioCtx = new AudioContextOptions();
@@ -641,6 +646,13 @@
         }
 
         function next() {
+            // Debounce para evitar clics accidentales (500ms)
+            const now = Date.now();
+            if (now - lastNavigationTime < NAVIGATION_DEBOUNCE) {
+                return; // Ignorar si es demasiado pronto
+            }
+            lastNavigationTime = now;
+
             let list = getFilteredList();
             if (reviewMode === 'smart' || isRandomOrder) {
                 list = randomList; // La lista ya está calculada y guardada en render()
@@ -654,6 +666,13 @@
         }
 
         function prev() {
+            // Debounce para evitar clics accidentales (500ms)
+            const now = Date.now();
+            if (now - lastNavigationTime < NAVIGATION_DEBOUNCE) {
+                return; // Ignorar si es demasiado pronto
+            }
+            lastNavigationTime = now;
+
             if (currentIdx > 0) {
                 currentIdx--;
                 render();
