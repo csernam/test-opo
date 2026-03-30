@@ -116,6 +116,10 @@
         let fails = JSON.parse(localStorage.getItem('malaga_fails') || '[]');
         let selectedTemas = JSON.parse(localStorage.getItem('malaga_selected_temas') || 'null');
         let temaFilter = null; // null = todos los temas, [] = filtro activo
+        
+        // Sistema de anti-spam para navegación
+        let lastNavigationTime = 0;
+        const NAVIGATION_DELAY = 300; // milisegundos mínimos entre navegaciones
 
         function iniciarApp() {
             // Comprobamos si 'db' existe (viene de preguntas.js)
@@ -278,6 +282,13 @@
         }
 
         function next() { 
+            // Prevenir clics accidentales - delay mínimo entre navegaciones
+            const now = Date.now();
+            if (now - lastNavigationTime < NAVIGATION_DELAY) {
+                return; // Ignorar si es muy pronto
+            }
+            lastNavigationTime = now;
+
             let list = isReview ? db.filter(q => fails.includes(q.id)) : db;
             if (isRandomOrder) {
                 if (!randomList.length || randomList.length !== list.length) {
@@ -294,6 +305,13 @@
         }
 
         function prev() { 
+            // Prevenir clics accidentales - delay mínimo entre navegaciones
+            const now = Date.now();
+            if (now - lastNavigationTime < NAVIGATION_DELAY) {
+                return; // Ignorar si es muy pronto
+            }
+            lastNavigationTime = now;
+
             if(currentIdx > 0) {
                 currentIdx--; 
                 render(); 
