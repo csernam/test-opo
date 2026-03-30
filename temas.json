@@ -17,23 +17,13 @@
     },
     {
       "id": 4,
-      "title": "Funcionamiento electrónico del Sector Público (I): Sede electrónica. Canales y puntos de atención electrónica.",
-      "hasQuestions": false
-    },
-    {
-      "id": 5,
-      "title": "El Funcionamiento electrónico del Sector Público (II). El acceso electrónico de la ciudadanía.",
-      "hasQuestions": false
+      "title": "Funcionamiento electrónico del Sector Público (I) y (II): Sede electrónica. Canales y puntos de acceso. Identificación y autenticación. Firma electrónica. El acceso electrónico de la ciudadanía a los servicios públicos.",
+      "hasQuestions": true
     },
     {
       "id": 6,
-      "title": "Funcionamiento electrónico del Sector Público (III): Registro y archivo electrónico.",
-      "hasQuestions": false
-    },
-    {
-      "id": 7,
-      "title": "Funcionamiento electrónico del sector público (IV): La gestión electrónica de los procedimientos administrativos.",
-      "hasQuestions": false
+      "title": "Funcionamiento electrónico del Sector Público (III) y (IV): Registro y archivo electrónico. Comunicaciones y notificaciones electrónicas. La gestión electrónica de los procedimientos administrativos. Expediente y documento electrónico.",
+      "hasQuestions": true
     },
     {
       "id": 8,
@@ -42,23 +32,13 @@
     },
     {
       "id": 9,
-      "title": "La Ley de Contratos del Sector Público (I). Disposiciones Generales. Objeto y ámbito de aplicación.",
-      "hasQuestions": false
-    },
-    {
-      "id": 10,
-      "title": "La Ley de contratos del Sector Público (II): Contratos del Sector Público.",
-      "hasQuestions": false
+      "title": "La Ley de Contratos del Sector Público (I) y (II). Disposiciones Generales. Objeto y ámbito de aplicación. Contratos del Sector Público.",
+      "hasQuestions": true
     },
     {
       "id": 11,
-      "title": "La actividad subvencional de las Administraciones Públicas (I). La Ley 38/2003, de 17 de noviembre.",
-      "hasQuestions": false
-    },
-    {
-      "id": 12,
-      "title": "La actividad subvencional de las Administraciones Públicas (II). La Ley 38/2003, de 17 de noviembre.",
-      "hasQuestions": false
+      "title": "La actividad subvencional de las Administraciones Públicas (I) y (II). La Ley 38/2003, de 17 de noviembre, General de subvenciones: Ámbito de aplicación, disposiciones comunes, procedimiento de concesión y gestión de subvenciones.",
+      "hasQuestions": true
     },
     {
       "id": 13,

@@ -1,67 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4f46e5">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="icono-192.svg">
+    <link rel="apple-touch-icon" href="icono-192.svg">
     <title>PrepApp | Auxiliar Málaga</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="preguntas.js"></script>
     <script src="estadisticas.js"></script>
+    <script src="temas.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
 </head>
-<body class="bg-slate-50 min-h-screen text-slate-900">
+
+<body
+    class="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-100 transition-colors duration-300">
     <div id="app" class="max-w-xl mx-auto p-4 py-8">
-        
+
         <div id="loader" class="text-center py-20">
-            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto"></div>
-            <p class="mt-4 text-slate-500 font-medium">Cargando base de datos...</p>
+            <div
+                class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 dark:border-indigo-400 mx-auto">
+            </div>
+            <p class="mt-4 text-slate-500 dark:text-slate-400 font-medium">Cargando base de datos...</p>
         </div>
 
         <div id="main-content" class="hidden">
-            <div class="flex justify-between items-center mb-6 bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+            <div
+                class="flex justify-between items-center mb-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 transition-colors duration-300">
                 <div>
-                    <h1 class="font-black text-indigo-600 leading-none">AUX. ADVO MÁLAGA</h1>
-                    <p id="stats" class="text-[10px] text-slate-400 font-bold uppercase tracking-tighter mt-1"></p>
+                    <h1 class="font-black text-indigo-600 dark:text-indigo-400 leading-none">AUX. ADVO MÁLAGA</h1>
+                    <p id="stats"
+                        class="text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase tracking-tighter mt-1">
+                    </p>
                 </div>
-                <div class="flex gap-2 flex-wrap justify-end">
-                    <button onclick="openTemaConfig()" id="config-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-green-100 transition">⚙️ TEMAS</button>
-                    <button onclick="toggleOrder()" id="order-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-blue-100 transition">📋 ORDEN</button>
-                    <button onclick="toggleReview()" id="rev-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-indigo-100 transition">REPASO: OFF</button>
-                    <button onclick="openStatsModal()" id="stats-btn" class="bg-slate-100 text-slate-500 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-purple-100 transition">📊 STATS</button>
-                    <div class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">🔥 <span id="streak">0</span></div>
+                <div class="flex gap-2 flex-wrap justify-end items-center">
+                    <button onclick="toggleDarkMode()" id="dark-btn"
+                        class="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition"
+                        title="Modo Oscuro">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        </svg>
+                    </button>
+                    <button onclick="toggleMute()" id="mute-btn"
+                        class="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-500 dark:text-slate-400 transition"
+                        title="Sonido">
+                        <svg id="icon-sound-on" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                        </svg>
+                        <svg id="icon-sound-off" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+                        </svg>
+                    </button>
+                    <button onclick="openTemaConfig()" id="config-btn"
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-green-100 dark:hover:bg-green-900 transition">⚙️
+                        TEMAS</button>
+                    <button onclick="toggleOrder()" id="order-btn"
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">📋
+                        ORDEN</button>
+                    <button onclick="toggleReview()" id="rev-btn"
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-indigo-100 dark:hover:bg-indigo-900 transition">REPASO:
+                        OFF</button>
+                    <button onclick="openStatsModal()" id="stats-btn"
+                        class="bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full hover:bg-purple-100 dark:hover:bg-purple-900 transition">📊
+                        STATS</button>
+                    <div
+                        class="bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-3 py-1 rounded-full text-xs font-bold border border-orange-200 dark:border-orange-800">
+                        🔥 <span id="streak">0</span></div>
+                </div>
+            </div>
+
+            <!-- Cabecera de Búsqueda Mágica -->
+            <div class="mb-6 relative animate__animated animate__fadeIn">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-indigo-400 dark:text-indigo-500" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <input type="text" id="search-input" oninput="onSearchInput()"
+                    placeholder="Buscar en preguntas o respuestas..."
+                    class="block w-full pl-11 pr-4 py-3 border border-slate-200 dark:border-slate-700/80 rounded-2xl leading-5 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm font-medium transition-all duration-300 shadow-sm hover:shadow-md">
+                <button id="clear-search" onclick="clearSearch()"
+                    class="absolute inset-y-0 right-0 pr-4 flex items-center hidden text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition">
+                    <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="search-matches"
+                    class="absolute -top-3 right-2 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 text-[10px] font-bold px-2 py-0.5 rounded-full hidden border border-indigo-200 dark:border-indigo-800">
+                    0 resultados
                 </div>
             </div>
 
             <div class="mb-6">
-                <div class="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
-                    <div id="bar" class="h-full bg-indigo-500 transition-all duration-500" style="width: 0%"></div>
+                <div class="h-1.5 w-full bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div id="bar" class="h-full bg-indigo-500 dark:bg-indigo-400 transition-all duration-500"
+                        style="width: 0%"></div>
                 </div>
             </div>
 
-            <div id="card" class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden mb-6 animate__animated animate__fadeIn">
+            <div id="card"
+                class="bg-white dark:bg-slate-800 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden mb-6 animate__animated animate__fadeIn transition-colors duration-300">
                 <div class="p-6 md:p-8">
                     <div class="flex items-start gap-3 mb-3">
-                        <span id="q-number" class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-600 text-white font-bold text-sm"></span>
-                        <h2 id="q-text" class="text-lg font-semibold text-slate-800 leading-snug flex-1"></h2>
+                        <span id="q-number"
+                            class="flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg bg-indigo-600 dark:bg-indigo-500 text-white font-bold text-sm"></span>
+                        <h2 id="q-text"
+                            class="text-lg font-semibold text-slate-800 dark:text-slate-100 leading-snug flex-1"></h2>
                     </div>
-                    <p id="q-tema" class="text-xs text-slate-500 font-medium px-0 mb-2"></p>
+                    <p id="q-tema" class="text-xs text-slate-500 dark:text-slate-400 font-medium px-0 mb-2"></p>
                 </div>
-                <div id="options" class="p-4 bg-slate-50/50 grid gap-3"></div>
+                <div id="options" class="p-4 bg-slate-50/50 dark:bg-slate-800/50 grid gap-3"></div>
             </div>
 
             <div class="flex justify-between items-center px-2">
-                <button onclick="prev()" class="text-xs font-bold text-slate-400 hover:text-slate-600 uppercase transition">Anterior</button>
-                <button onclick="next()" class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-600 active:scale-95 transition-all">Siguiente</button>
+                <button onclick="prev()"
+                    class="text-xs font-bold text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 uppercase transition">Anterior</button>
+                <button onclick="next()"
+                    class="bg-slate-900 dark:bg-indigo-600 text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:bg-indigo-600 dark:hover:bg-indigo-500 active:scale-95 transition-all">Siguiente</button>
             </div>
 
             <!-- Modal de Configuración de Temas -->
-            <div id="tema-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div id="tema-modal"
+                class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
                 <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full p-6 animate__animated animate__fadeIn">
                     <h2 class="text-xl font-bold text-slate-800 mb-4">Selecciona temas a repasar</h2>
-                    
+
                     <div class="mb-4 flex gap-2">
-                        <button onclick="selectAllTemas()" class="flex-1 bg-indigo-100 text-indigo-600 text-sm font-bold px-3 py-2 rounded-lg hover:bg-indigo-200 transition">Todos</button>
-                        <button onclick="deselectAllTemas()" class="flex-1 bg-slate-100 text-slate-600 text-sm font-bold px-3 py-2 rounded-lg hover:bg-slate-200 transition">Ninguno</button>
+                        <button onclick="selectAllTemas()"
+                            class="flex-1 bg-indigo-100 text-indigo-600 text-sm font-bold px-3 py-2 rounded-lg hover:bg-indigo-200 transition">Todos</button>
+                        <button onclick="deselectAllTemas()"
+                            class="flex-1 bg-slate-100 text-slate-600 text-sm font-bold px-3 py-2 rounded-lg hover:bg-slate-200 transition">Ninguno</button>
                     </div>
 
                     <div id="tema-list" class="max-h-80 overflow-y-auto space-y-2 mb-6">
@@ -69,25 +158,34 @@
                     </div>
 
                     <div class="flex gap-2">
-                        <button onclick="closeTemaConfig()" class="flex-1 bg-slate-100 text-slate-600 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition">Cancelar</button>
-                        <button onclick="applyTemaFilter()" class="flex-1 bg-indigo-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Aplicar</button>
+                        <button onclick="closeTemaConfig()"
+                            class="flex-1 bg-slate-100 text-slate-600 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition">Cancelar</button>
+                        <button onclick="applyTemaFilter()"
+                            class="flex-1 bg-indigo-600 text-white font-bold px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Aplicar</button>
                     </div>
                 </div>
             </div>
 
             <!-- Modal de Estadísticas -->
-            <div id="stats-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-                <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-6 my-8 animate__animated animate__fadeIn">
+            <div id="stats-modal"
+                class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+                <div
+                    class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-6 my-8 animate__animated animate__fadeIn">
                     <div class="flex justify-between items-center mb-6">
                         <h2 class="text-2xl font-bold text-slate-800">📊 Estadísticas</h2>
-                        <button onclick="closeStatsModal()" class="text-slate-400 hover:text-slate-600 text-2xl">✕</button>
+                        <button onclick="closeStatsModal()"
+                            class="text-slate-400 hover:text-slate-600 text-2xl">✕</button>
                     </div>
 
                     <!-- Tabs -->
                     <div class="flex gap-2 mb-6 border-b border-slate-200">
-                        <button onclick="switchStatsTab('session')" id="tab-session" class="px-4 py-2 font-bold text-indigo-600 border-b-2 border-indigo-600">Sesión Actual</button>
-                        <button onclick="switchStatsTab('daily')" id="tab-daily" class="px-4 py-2 font-bold text-slate-500 border-b-2 border-transparent hover:text-slate-700">Hoy</button>
-                        <button onclick="switchStatsTab('overall')" id="tab-overall" class="px-4 py-2 font-bold text-slate-500 border-b-2 border-transparent hover:text-slate-700">General</button>
+                        <button onclick="switchStatsTab('session')" id="tab-session"
+                            class="px-4 py-2 font-bold text-indigo-600 border-b-2 border-indigo-600">Sesión
+                            Actual</button>
+                        <button onclick="switchStatsTab('daily')" id="tab-daily"
+                            class="px-4 py-2 font-bold text-slate-500 border-b-2 border-transparent hover:text-slate-700">Hoy</button>
+                        <button onclick="switchStatsTab('overall')" id="tab-overall"
+                            class="px-4 py-2 font-bold text-slate-500 border-b-2 border-transparent hover:text-slate-700">General</button>
                     </div>
 
                     <!-- Contenido de Tabs -->
@@ -96,9 +194,14 @@
                     </div>
 
                     <div class="flex gap-2">
-                        <button onclick="exportarEstadisticas()" class="flex-1 bg-blue-100 text-blue-600 font-bold px-4 py-2 rounded-lg hover:bg-blue-200 transition">💾 Exportar</button>
-                        <button onclick="limpiarEstadisticas()" class="flex-1 bg-red-100 text-red-600 font-bold px-4 py-2 rounded-lg hover:bg-red-200 transition">🗑️ Limpiar</button>
-                        <button onclick="closeStatsModal()" class="flex-1 bg-slate-100 text-slate-600 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition">Cerrar</button>
+                        <button onclick="exportarEstadisticas()"
+                            class="flex-1 bg-blue-100 text-blue-600 font-bold px-4 py-2 rounded-lg hover:bg-blue-200 transition">💾
+                            Exportar</button>
+                        <button onclick="limpiarEstadisticas()"
+                            class="flex-1 bg-red-100 text-red-600 font-bold px-4 py-2 rounded-lg hover:bg-red-200 transition">🗑️
+                            Limpiar</button>
+                        <button onclick="closeStatsModal()"
+                            class="flex-1 bg-slate-100 text-slate-600 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition">Cerrar</button>
                     </div>
                 </div>
             </div>
@@ -107,21 +210,64 @@
 
     <script>
         // ELIMINADO: let db = [];  <-- Esto causaba el error de "already declared"
-        
+
+        // Mapeo de temas agrupados para mostrar nombres correctos
+        const temaGroupNames = { 4: 'Tema 4 y 5', 6: 'Tema 6 y 7', 9: 'Tema 9 y 10', 11: 'Tema 11 y 12' };
+        function temaDisplayName(temaId) {
+            return temaGroupNames[temaId] || `Tema ${temaId}`;
+        }
+
+        // Colores por tema (bloques lógicos)
+        function getTemaColorConfig(temaId) {
+            const configs = {
+                1: { border: 'border-blue-400', bg: 'bg-blue-50/30', darkBg: 'dark:bg-blue-900/10' },     // Órganos locales
+                2: { border: 'border-emerald-400', bg: 'bg-emerald-50/30', darkBg: 'dark:bg-emerald-900/10' }, // PAC I
+                3: { border: 'border-emerald-500', bg: 'bg-emerald-50/50', darkBg: 'dark:bg-emerald-900/20' }, // PAC II
+                4: { border: 'border-cyan-400', bg: 'bg-cyan-50/30', darkBg: 'dark:bg-cyan-900/10' },      // e-Gov I-II
+                6: { border: 'border-cyan-500', bg: 'bg-cyan-50/50', darkBg: 'dark:bg-cyan-900/20' },      // e-Gov III-IV
+                8: { border: 'border-amber-400', bg: 'bg-amber-50/30', darkBg: 'dark:bg-amber-900/10' },     // Presupuestos
+                9: { border: 'border-orange-400', bg: 'bg-orange-50/30', darkBg: 'dark:bg-orange-900/10' },    // Contratos
+                11: { border: 'border-rose-400', bg: 'bg-rose-50/30', darkBg: 'dark:bg-rose-900/10' },      // Subvenciones
+                13: { border: 'border-violet-400', bg: 'bg-violet-50/30', darkBg: 'dark:bg-violet-900/10' },    // Transparencia
+                14: { border: 'border-fuchsia-400', bg: 'bg-fuchsia-50/30', darkBg: 'dark:bg-fuchsia-900/10' }, // PRL
+                15: { border: 'border-pink-400', bg: 'bg-pink-50/30', darkBg: 'dark:bg-pink-900/10' },      // Igualdad
+                16: { border: 'border-indigo-400', bg: 'bg-indigo-50/30', darkBg: 'dark:bg-indigo-900/10' }    // LOPD (default)
+            };
+            return configs[temaId] || { border: 'border-slate-200', bg: 'bg-white', darkBg: 'dark:bg-slate-800' };
+        }
+
         let currentIdx = 0;
-        let isReview = false;
+        let reviewMode = 'off'; // 'off', 'fails', 'smart'
         let isRandomOrder = false;
         let randomList = [];
         let streak = 0;
         let fails = JSON.parse(localStorage.getItem('malaga_fails') || '[]');
+        let failsCount = JSON.parse(localStorage.getItem('malaga_fails_count') || '{}');
         let selectedTemas = JSON.parse(localStorage.getItem('malaga_selected_temas') || 'null');
         let temaFilter = null; // null = todos los temas, [] = filtro activo
-        
-        // Sistema de anti-spam para navegación
-        let lastNavigationTime = 0;
-        const NAVIGATION_DELAY = 300; // milisegundos mínimos entre navegaciones
+        let isDarkMode = localStorage.getItem('malaga_dark') === 'true';
+        let isMuted = localStorage.getItem('malaga_muted') === 'true';
+        let textSearchQuery = '';
+
+        // Sintetizador de audio para evitar problemas de carga o caché (PWA)
+        const AudioContextOptions = window.AudioContext || window.webkitAudioContext;
+        const audioCtx = new AudioContextOptions();
+
+        // Inicializar Dark Mode pre-render
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+        }
 
         function iniciarApp() {
+            // Registrar Service Worker para PWA
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('./sw.js')
+                        .then(reg => console.log('SW registrado', reg))
+                        .catch(err => console.log('SW fallo', err));
+                });
+            }
+
             // Comprobamos si 'db' existe (viene de preguntas.js)
             if (typeof db !== 'undefined') {
                 document.getElementById('loader').classList.add('hidden');
@@ -132,14 +278,72 @@
                     temaFilter = selectedTemas;
                     updateTemaConfigUI();
                 }
-                render(); 
+                render();
             } else {
                 alert("Error: No se detecta 'db' en preguntas.js. Asegúrate de que el archivo empieza con 'const db = [...]'");
             }
         }
 
         // Ejecutar al cargar la ventana
-        window.addEventListener('load', iniciarApp);
+        window.addEventListener('load', () => {
+            iniciarApp();
+            updateMuteUI();
+        });
+
+        function playSound(type) {
+            if (isMuted) return;
+
+            // Reanudar contexto si el navegador lo suspendió (por políticas de autoplay)
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            if (type === 'correct') {
+                // Sonido sutil de campana (Acierto)
+                oscillator.type = 'sine';
+                oscillator.frequency.setValueAtTime(523.25, audioCtx.currentTime); // C5
+                oscillator.frequency.exponentialRampToValueAtTime(1046.50, audioCtx.currentTime + 0.1); // C6
+
+                gainNode.gain.setValueAtTime(0.3, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+
+                oscillator.start();
+                oscillator.stop(audioCtx.currentTime + 0.2);
+            } else {
+                // Sonido tipo buzz corto y grave (Fallo)
+                oscillator.type = 'sawtooth';
+                oscillator.frequency.setValueAtTime(150, audioCtx.currentTime);
+                oscillator.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + 0.2);
+
+                gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+
+                oscillator.start();
+                oscillator.stop(audioCtx.currentTime + 0.2);
+            }
+        }
+
+        function toggleMute() {
+            isMuted = !isMuted;
+            localStorage.setItem('malaga_muted', isMuted);
+            updateMuteUI();
+        }
+
+        function updateMuteUI() {
+            if (isMuted) {
+                document.getElementById('icon-sound-on').classList.add('hidden');
+                document.getElementById('icon-sound-off').classList.remove('hidden');
+            } else {
+                document.getElementById('icon-sound-on').classList.remove('hidden');
+                document.getElementById('icon-sound-off').classList.add('hidden');
+            }
+        }
 
         function shuffleArray(array) {
             const shuffled = [...array];
@@ -150,20 +354,72 @@
             return shuffled;
         }
 
-        function render() {
+        // Normalizador rápido para ignorar acentos en las búsquedas
+        function normalizeText(text) {
+            return text ? text.toString().normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : '';
+        }
+
+        function onSearchInput() {
+            textSearchQuery = normalizeText(document.getElementById('search-input').value);
+            const clearBtn = document.getElementById('clear-search');
+            if (clearBtn) {
+                if (textSearchQuery) {
+                    clearBtn.classList.remove('hidden');
+                } else {
+                    clearBtn.classList.add('hidden');
+                }
+            }
+            currentIdx = 0; // Volver a la primera pregunta del filtro
+            render();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            onSearchInput();
+        }
+
+        function generateSmartList(baseList) {
+            let mapped = baseList.map(q => {
+                let weight = 1 + (failsCount[q.id] || 0) * 3;
+                if (fails.includes(q.id) && !(failsCount[q.id] > 0)) weight += 2;
+                let score = Math.pow(Math.random(), 1 / weight);
+                return { q, score };
+            });
+            mapped.sort((a, b) => b.score - a.score);
+            return mapped.map(item => item.q);
+        }
+
+        // Obtiene la lista base filtrada (sin ordenar secuencial o aleatoriamente)
+        function getFilteredList() {
             let list = db;
-            
-            // Aplicar filtro de temas
             if (temaFilter !== null) {
                 list = list.filter(q => temaFilter.includes(q.tema));
             }
-            
-            // Aplicar filtro de repaso
-            if (isReview) {
+            if (reviewMode === 'fails') {
                 list = list.filter(q => fails.includes(q.id));
             }
-            
-            if (isRandomOrder) {
+            if (textSearchQuery !== '') {
+                list = list.filter(q => {
+                    return normalizeText(q.q).includes(textSearchQuery) ||
+                        normalizeText(q.a).includes(textSearchQuery) ||
+                        normalizeText(q.b).includes(textSearchQuery) ||
+                        normalizeText(q.c).includes(textSearchQuery) ||
+                        normalizeText(q.d).includes(textSearchQuery);
+                });
+            }
+            return list;
+        }
+
+        function render() {
+            let list = getFilteredList();
+
+            // Ordenamiento y Smart Review
+            if (reviewMode === 'smart') {
+                if (!randomList.length || randomList.length !== list.length) {
+                    randomList = generateSmartList(list);
+                }
+                list = randomList;
+            } else if (isRandomOrder) {
                 if (!randomList.length || randomList.length !== list.length) {
                     randomList = shuffleArray(list);
                 }
@@ -178,8 +434,21 @@
             const qNumber = document.getElementById('q-number');
             const qTema = document.getElementById('q-tema');
 
+            // Actualizar badge de coincidencias flotante
+            const matchesBadge = document.getElementById('search-matches');
+            if (matchesBadge) {
+                if (textSearchQuery !== '') {
+                    matchesBadge.innerText = `${list.length} coincidencia${list.length !== 1 ? 's' : ''}`;
+                    matchesBadge.classList.remove('hidden');
+                } else {
+                    matchesBadge.classList.add('hidden');
+                }
+            }
+
             if (list.length === 0) {
-                qText.innerText = isReview ? "¡Felicidades! No tienes preguntas pendientes de repaso." : "Cargando preguntas...";
+                qText.innerText = textSearchQuery !== ''
+                    ? "No se encontraron preguntas que coincidan con la búsqueda."
+                    : (reviewMode === 'fails' ? "¡Felicidades! No tienes preguntas pendientes de repaso." : "Cargando preguntas...");
                 qNumber.innerText = "";
                 qTema.innerText = "";
                 container.innerHTML = "";
@@ -193,20 +462,37 @@
             const q = list[currentIdx];
             qText.innerText = q.q;
             qNumber.innerText = q.id;
-            qTema.innerText = q.tema ? `Tema ${q.tema}: ${q.tema_title}` : '';
+            qTema.innerText = q.tema ? `${temaDisplayName(q.tema)}: ${q.tema_title}` : '';
             const modeLabel = isRandomOrder ? '(ALEATORIO)' : '';
-            const temaLabel = q.tema ? `Tema ${q.tema}` : '';
-            statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReview ? '(MODO REPASO)' : ''} ${modeLabel}`.trim();
+            const temaLabel = q.tema ? temaDisplayName(q.tema) : '';
 
-            
+            // Añadir indicación de resultado de búsqueda
+            let searchLabel = textSearchQuery !== '' ? `(FILTRADAS)` : '';
+            const isReviewBadge = reviewMode === 'fails' ? '(SÓLO FALLOS)' : (reviewMode === 'smart' ? '(INTELIGENTE)' : '');
+            statsEl.innerText = `${temaLabel} • Pregunta ${currentIdx + 1} de ${list.length} ${isReviewBadge} ${modeLabel} ${searchLabel}`.trim();
+
+            // Aplicar colores dinámicos a la tarjeta
+            const cardEl = document.getElementById('card');
+            const themeCfg = getTemaColorConfig(q.tema);
+
+            // Limpiar clases de color anteriores (regex simplificada para todos los colores)
+            cardEl.className = cardEl.className.replace(/\bborder-[a-z]+-\d+\b/g, '')
+                .replace(/\bbg-[a-z]+-50\/\d+\b/g, '')
+                .replace(/\bdark:bg-[a-z]+-900\/\d+\b/g, '')
+                .replace(/\bbg-white\b/g, '')
+                .replace(/\bdark:bg-slate-800\b/g, '');
+
+            cardEl.className = `${cardEl.className} ${themeCfg.border} ${themeCfg.bg} ${themeCfg.darkBg} bg-white dark:bg-slate-800`.trim();
+
+
             container.innerHTML = '';
             ['a', 'b', 'c', 'd'].forEach(l => {
-                if(!q[l]) return; // Por si alguna pregunta solo tiene 3 opciones
+                if (!q[l]) return; // Por si alguna pregunta solo tiene 3 opciones
                 const btn = document.createElement('button');
-                btn.className = "w-full text-left p-4 rounded-xl border border-slate-200 bg-white hover:border-indigo-300 transition-all flex gap-4 items-center group active:bg-slate-50";
+                btn.className = "w-full text-left p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-indigo-300 dark:hover:border-indigo-500 transition-all flex gap-4 items-center group active:bg-slate-50 dark:active:bg-slate-700";
                 btn.innerHTML = `
-                    <span class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg bg-slate-100 text-slate-500 group-hover:bg-indigo-100 font-bold text-sm uppercase">${l}</span>
-                    <span class="text-slate-600 text-sm font-medium">${q[l]}</span>
+                    <span class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 font-bold text-sm uppercase transition-colors">${l}</span>
+                    <span class="text-slate-600 dark:text-slate-300 text-sm font-medium transition-colors">${q[l]}</span>
                 `;
                 btn.onclick = () => check(l, q.correct, q.id, btn);
                 container.appendChild(btn);
@@ -220,39 +506,98 @@
             btns.forEach(b => b.onclick = null); // Bloquear clics extra
 
             const esCorrecta = opt === correct;
-            
+
             // Encontrar la pregunta completa
             const pregunta = db.find(q => q.id === id);
 
-            if(esCorrecta) {
+            if (esCorrecta) {
                 btn.classList.replace('border-slate-200', 'border-green-500');
-                btn.classList.add('bg-green-50');
+                btn.classList.replace('dark:border-slate-700', 'dark:border-green-500');
+                btn.classList.add('bg-green-50', 'dark:bg-green-900/20');
                 streak++;
-                // Si acertamos en modo repaso, quitar de la lista de fallos
-                if(isReview) fails = fails.filter(f => f !== id);
+                playSound('correct');
+
+                // Mostrar logro de racha
+                if (streak > 0 && streak % 10 === 0) {
+                    Toastify({
+                        text: `¡Fuego! 🔥 ${streak} aciertos seguidos`,
+                        duration: 3000,
+                        gravity: "bottom",
+                        position: "center",
+                        style: {
+                            background: "linear-gradient(to right, #f97316, #ea580c)",
+                            borderRadius: "100px",
+                            fontWeight: "bold"
+                        }
+                    }).showToast();
+                }
+
+                // Si acertamos en modo repaso o inteligente, quitar de la lista de fallos
+                if (reviewMode !== 'off') fails = fails.filter(f => f !== id);
+
+                // Reducir contador de fallos
+                if (failsCount[id]) {
+                    failsCount[id] = Math.max(0, failsCount[id] - 1);
+                    if (failsCount[id] === 0) delete failsCount[id];
+                }
             } else {
                 btn.classList.replace('border-slate-200', 'border-red-500');
-                btn.classList.add('bg-red-50');
+                btn.classList.replace('dark:border-slate-700', 'dark:border-red-500');
+                btn.classList.add('bg-red-50', 'dark:bg-red-900/20');
+
+                if (streak >= 10) {
+                    Toastify({
+                        text: `¡Uy! 🧊 Rompiste tu racha de ${streak}`,
+                        duration: 3000,
+                        gravity: "bottom",
+                        position: "center",
+                        style: {
+                            background: "linear-gradient(to right, #64748b, #475569)",
+                            borderRadius: "100px"
+                        }
+                    }).showToast();
+                }
                 streak = 0;
-                if(!fails.includes(id)) fails.push(id);
-                
+                playSound('wrong');
+
+                if (!fails.includes(id)) fails.push(id);
+                failsCount[id] = (failsCount[id] || 0) + 1;
+
                 // Mostrar la correcta
                 btns.forEach(b => {
                     const letra = b.querySelector('span').innerText.toLowerCase();
-                    if(letra === correct) {
+                    if (letra === correct) {
                         b.classList.replace('border-slate-200', 'border-green-500');
-                        b.classList.add('bg-green-50');
+                        b.classList.replace('dark:border-slate-700', 'dark:border-green-500');
+                        b.classList.add('bg-green-50', 'dark:bg-green-900/20');
                     }
                 });
             }
-            
+
             // Registrar en estadísticas
             if (pregunta) {
                 estadisticas.registrarRespuesta(pregunta, opt, esCorrecta);
             }
-            
+
             localStorage.setItem('malaga_fails', JSON.stringify(fails));
+            localStorage.setItem('malaga_fails_count', JSON.stringify(failsCount));
             document.getElementById('streak').innerText = streak;
+        }
+
+        function toggleDarkMode() {
+            isDarkMode = !isDarkMode;
+            if (isDarkMode) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            localStorage.setItem('malaga_dark', isDarkMode);
+            // Rotar el icono para dar feedback visual
+            const btnImg = document.querySelector('#dark-btn svg');
+            if (btnImg) {
+                btnImg.classList.add('rotate-180', 'transition-transform');
+                setTimeout(() => btnImg.classList.remove('rotate-180'), 300);
+            }
         }
 
         function toggleOrder() {
@@ -269,92 +614,87 @@
         }
 
         function toggleReview() {
-            isReview = !isReview;
+            if (reviewMode === 'off') {
+                reviewMode = 'fails';
+            } else if (reviewMode === 'fails') {
+                reviewMode = 'smart';
+            } else {
+                reviewMode = 'off';
+            }
             currentIdx = 0;
             randomList = [];
             const btn = document.getElementById('rev-btn');
-            btn.innerText = isReview ? "REPASO: ON" : "REPASO: OFF";
-            btn.classList.toggle('bg-indigo-600');
-            btn.classList.toggle('text-white');
-            btn.classList.toggle('bg-slate-100');
-            btn.classList.toggle('text-slate-500');
+
+            btn.classList.remove('bg-indigo-600', 'text-white', 'bg-fuchsia-600', 'bg-slate-100', 'text-slate-500');
+
+            if (reviewMode === 'fails') {
+                btn.innerText = "REPASO: FALLOS";
+                btn.classList.add('bg-indigo-600', 'text-white');
+            } else if (reviewMode === 'smart') {
+                btn.innerText = "🧠 INTELIGENTE";
+                btn.classList.add('bg-fuchsia-600', 'text-white');
+            } else {
+                btn.innerText = "REPASO: OFF";
+                btn.classList.add('bg-slate-100', 'text-slate-500');
+            }
             render();
         }
 
-        function next() { 
-            // Prevenir clics accidentales - delay mínimo entre navegaciones
-            const now = Date.now();
-            if (now - lastNavigationTime < NAVIGATION_DELAY) {
-                return; // Ignorar si es muy pronto
+        function next() {
+            let list = getFilteredList();
+            if (reviewMode === 'smart' || isRandomOrder) {
+                list = randomList; // La lista ya está calculada y guardada en render()
             }
-            lastNavigationTime = now;
-
-            let list = isReview ? db.filter(q => fails.includes(q.id)) : db;
-            if (isRandomOrder) {
-                if (!randomList.length || randomList.length !== list.length) {
-                    randomList = shuffleArray(list);
-                }
-                list = randomList;
-            }
-            if(currentIdx < list.length - 1) {
-                currentIdx++; 
+            if (currentIdx < list.length - 1) {
+                currentIdx++;
             } else {
                 currentIdx = 0; // Volver al inicio
             }
-            render(); 
+            render();
         }
 
-        function prev() { 
-            // Prevenir clics accidentales - delay mínimo entre navegaciones
-            const now = Date.now();
-            if (now - lastNavigationTime < NAVIGATION_DELAY) {
-                return; // Ignorar si es muy pronto
-            }
-            lastNavigationTime = now;
-
-            if(currentIdx > 0) {
-                currentIdx--; 
-                render(); 
+        function prev() {
+            if (currentIdx > 0) {
+                currentIdx--;
+                render();
             }
         }
 
         function buildTemaList() {
             const temaList = document.getElementById('tema-list');
-            
-            // Fetch all temas (1-16) from temas.json
-            fetch('temas.json')
-                .then(r => r.json())
-                .then(data => {
-                    temaList.innerHTML = '';
-                    data.temas.forEach(tema => {
-                        const count = db.filter(q => q.tema === tema.id).length;
-                        const isChecked = temaFilter === null || temaFilter.includes(tema.id);
-                        const isAvailable = tema.hasQuestions;
-                        
-                        const label = document.createElement('label');
-                        label.className = `flex items-center gap-3 p-3 bg-slate-50 rounded-lg cursor-pointer hover:bg-slate-100 transition ${!isAvailable ? 'opacity-50' : ''}`;
-                        
-                        const checkbox = document.createElement('input');
-                        checkbox.type = 'checkbox';
-                        checkbox.className = 'tema-checkbox w-4 h-4';
-                        checkbox.setAttribute('data-tema', tema.id);
-                        checkbox.checked = isChecked && isAvailable;
-                        checkbox.disabled = !isAvailable;
-                        
-                        const textDiv = document.createElement('div');
-                        textDiv.className = 'flex-1 min-w-0';
-                        textDiv.innerHTML = `
-                            <div class="font-semibold text-slate-700 text-sm">Tema ${tema.id}${!isAvailable ? ' (sin preguntas)' : ''}</div>
-                            <div class="text-xs text-slate-500 truncate">${tema.title.substring(0, 50)}...</div>
-                            ${isAvailable ? `<div class="text-xs text-slate-400">${count} preguntas</div>` : ''}
-                        `;
-                        
-                        label.appendChild(checkbox);
-                        label.appendChild(textDiv);
-                        temaList.appendChild(label);
-                    });
-                })
-                .catch(err => console.error('Error loading temas.json:', err));
+            temaList.innerHTML = '';
+
+            if (typeof temasData !== 'undefined') {
+                temasData.temas.forEach(tema => {
+                    const count = db.filter(q => q.tema === tema.id).length;
+                    const isChecked = temaFilter === null || temaFilter.includes(tema.id);
+                    const isAvailable = tema.hasQuestions;
+
+                    const label = document.createElement('label');
+                    label.className = `flex items-center gap-3 p-3 bg-slate-50 rounded-lg cursor-pointer hover:bg-slate-100 transition ${!isAvailable ? 'opacity-50' : ''}`;
+
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.className = 'tema-checkbox w-4 h-4';
+                    checkbox.setAttribute('data-tema', tema.id);
+                    checkbox.checked = isChecked && isAvailable;
+                    checkbox.disabled = !isAvailable;
+
+                    const textDiv = document.createElement('div');
+                    textDiv.className = 'flex-1 min-w-0';
+                    textDiv.innerHTML = `
+                        <div class="font-semibold text-slate-700 text-sm">${temaDisplayName(tema.id)}${!isAvailable ? ' (sin preguntas)' : ''}</div>
+                        <div class="text-xs text-slate-500 truncate">${tema.title.substring(0, 50)}...</div>
+                        ${isAvailable ? `<div class="text-xs text-slate-400">${count} preguntas</div>` : ''}
+                    `;
+
+                    label.appendChild(checkbox);
+                    label.appendChild(textDiv);
+                    temaList.appendChild(label);
+                });
+            } else {
+                console.error('Error: no se pudo cargar temasData de temas.js');
+            }
         }
 
         function openTemaConfig() {
@@ -386,23 +726,23 @@
             const selected = Array.from(document.querySelectorAll('.tema-checkbox:checked'))
                 .map(cb => parseInt(cb.getAttribute('data-tema')))
                 .sort((a, b) => a - b);
-            
+
             // Filter to only temas with questions
-            const temasWithQuestions = [1, 2, 3, 8, 13, 14, 15, 16];
+            const temasWithQuestions = [1, 2, 3, 4, 6, 8, 9, 11, 13, 14, 15, 16];
             const selectedWithQuestions = selected.filter(t => temasWithQuestions.includes(t));
-            
+
             if (selectedWithQuestions.length === 0) {
                 alert('Debes seleccionar al menos un tema con preguntas');
                 return;
             }
-            
+
             // Check if all temas with questions are selected
             if (selectedWithQuestions.length === temasWithQuestions.length) {
                 temaFilter = null; // All available temas
             } else {
                 temaFilter = selectedWithQuestions;
             }
-            
+
             localStorage.setItem('malaga_selected_temas', JSON.stringify(temaFilter));
             currentIdx = 0;
             randomList = [];
@@ -445,7 +785,7 @@
 
         function renderSessionStats(container) {
             const session = estadisticas.getSessionResumen();
-            
+
             const html = `
                 <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
                     <div class="grid grid-cols-3 gap-4 text-center">
@@ -467,12 +807,12 @@
 
                 <div>
                     <h3 class="font-bold text-slate-700 mb-3">Por Tema:</h3>
-                    ${session.temas.length === 0 ? 
-                        '<p class="text-slate-500 text-sm">Sin respuestas aún en esta sesión</p>' :
-                        session.temas.map(t => `
+                    ${session.temas.length === 0 ?
+                    '<p class="text-slate-500 text-sm">Sin respuestas aún en esta sesión</p>' :
+                    session.temas.map(t => `
                             <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg mb-2">
                                 <div>
-                                    <p class="font-semibold text-slate-700">Tema ${t.tema}</p>
+                                    <p class="font-semibold text-slate-700">${temaDisplayName(t.tema)}</p>
                                     <p class="text-xs text-slate-500">${t.correctas}/${t.total}</p>
                                 </div>
                                 <div class="text-right">
@@ -480,7 +820,7 @@
                                 </div>
                             </div>
                         `).join('')
-                    }
+                }
                 </div>
             `;
             container.innerHTML = html;
@@ -488,7 +828,7 @@
 
         function renderDailyStats(container) {
             const hoy = estadisticas.getHoyStats();
-            
+
             if (!hoy || hoy.total === 0) {
                 container.innerHTML = '<p class="text-slate-500 text-center py-8">Sin respuestas hoy</p>';
                 return;
@@ -516,12 +856,12 @@
                 <div>
                     <h3 class="font-bold text-slate-700 mb-3">Por Tema:</h3>
                     ${Object.entries(hoy.temas).map(([id, t]) => {
-                        const totalTema = t.correctas + t.incorrectas;
-                        const porcentajeTema = totalTema > 0 ? Math.round((t.correctas / totalTema) * 100) : 0;
-                        return `
+                const totalTema = t.correctas + t.incorrectas;
+                const porcentajeTema = totalTema > 0 ? Math.round((t.correctas / totalTema) * 100) : 0;
+                return `
                             <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg mb-2">
                                 <div>
-                                    <p class="font-semibold text-slate-700">Tema ${id}</p>
+                                    <p class="font-semibold text-slate-700">${temaDisplayName(parseInt(id))}</p>
                                     <p class="text-xs text-slate-500">${t.correctas}/${totalTema}</p>
                                 </div>
                                 <div class="text-right">
@@ -529,7 +869,7 @@
                                 </div>
                             </div>
                         `;
-                    }).join('')}
+            }).join('')}
                 </div>
             `;
             container.innerHTML = html;
@@ -560,12 +900,12 @@
 
                 <div>
                     <h3 class="font-bold text-slate-700 mb-3">Temas por desempeño (peores primero):</h3>
-                    ${temasByPerformance.length === 0 ? 
-                        '<p class="text-slate-500 text-sm">Sin datos aún</p>' :
-                        temasByPerformance.map(t => `
+                    ${temasByPerformance.length === 0 ?
+                    '<p class="text-slate-500 text-sm">Sin datos aún</p>' :
+                    temasByPerformance.map(t => `
                             <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg mb-2">
                                 <div class="flex-1">
-                                    <p class="font-semibold text-slate-700 text-sm">Tema ${t.id}</p>
+                                    <p class="font-semibold text-slate-700 text-sm">${temaDisplayName(t.id)}</p>
                                     <p class="text-xs text-slate-500">${t.correctas}/${t.total}</p>
                                 </div>
                                 <div class="text-right">
@@ -573,7 +913,7 @@
                                 </div>
                             </div>
                         `).join('')
-                    }
+                }
                 </div>
             `;
             container.innerHTML = html;
@@ -598,6 +938,50 @@
                 alert('Estadísticas limpiadas correctamente');
             }
         }
+
+        // ==========================================
+        // Navegación por Gestos Táctiles (Swipes)
+        // ==========================================
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleGestures() {
+            const minSwipeDistance = 50; // distancia mínima para considerar swipe
+            if (touchEndX < touchStartX - minSwipeDistance) {
+                // Swipe a la izquierda -> Siguiente
+                animateCard('animate__slideInRight');
+                next();
+            }
+            if (touchEndX > touchStartX + minSwipeDistance) {
+                // Swipe a la derecha -> Anterior
+                animateCard('animate__slideInLeft');
+                prev();
+            }
+        }
+
+        function animateCard(animationClass) {
+            const card = document.getElementById('card');
+            // Reset de animaciones existentes
+            card.className = card.className.replace(/animate__\w+/g, '').replace('animate__animated', '').trim();
+            // Force reflow para reiniciar la animación
+            void card.offsetWidth;
+            // Añadir nuevas
+            card.classList.add('animate__animated', animationClass);
+        }
+
+        document.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        document.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            // Sólo actuar si se hizo el gesto sobre la tarjeta principal
+            if (e.target.closest('#card') || e.target.closest('#options')) {
+                handleGestures();
+            }
+        }, { passive: true });
+
     </script>
 </body>
+
 </html>
