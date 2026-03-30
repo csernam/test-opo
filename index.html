@@ -990,7 +990,14 @@
         let touchEndX = 0;
 
         function handleGestures() {
-            const minSwipeDistance = 50; // distancia mínima para considerar swipe
+            // Debounce: evitar múltiples gestos en poco tiempo
+            const now = Date.now();
+            if (now - lastNavigationTime < NAVIGATION_DEBOUNCE) {
+                return; // Ignorar si es demasiado pronto
+            }
+            lastNavigationTime = now;
+
+            const minSwipeDistance = 120; // Aumentado a 120px para gestos más deliberados
             if (touchEndX < touchStartX - minSwipeDistance) {
                 // Swipe a la izquierda -> Siguiente
                 animateCard('animate__slideInRight');
