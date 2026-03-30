@@ -82,6 +82,11 @@
                     <div
                         class="bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 px-3 py-1 rounded-full text-xs font-bold border border-orange-200 dark:border-orange-800">
                         🔥 <span id="streak">0</span></div>
+                    <div id="version-badge"
+                        class="bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-1 rounded-full text-[9px] font-bold border border-slate-300 dark:border-slate-600 cursor-help"
+                        title="Versión actual">
+                        v?.?.?
+                    </div>
                 </div>
             </div>
 
@@ -273,6 +278,9 @@
                 });
             }
 
+            // Cargar y mostrar versión
+            loadVersionInfo();
+
             // Comprobamos si 'db' existe (viene de preguntas.js)
             if (typeof db !== 'undefined') {
                 document.getElementById('loader').classList.add('hidden');
@@ -294,6 +302,23 @@
             iniciarApp();
             updateMuteUI();
         });
+
+        // ===== CARGA DE VERSIÓN =====
+        function loadVersionInfo() {
+            fetch('./version.json')
+                .then(response => response.json())
+                .then(data => {
+                    const versionBadge = document.getElementById('version-badge');
+                    versionBadge.textContent = `v${data.version}`;
+                    versionBadge.title = `v${data.version} • ${data.buildDate}`;
+                    console.log(`%cPrepApp ${data.version}`, 'color: #4f46e5; font-size: 14px; font-weight: bold;');
+                    console.log(`Construcción: ${data.buildDate}`);
+                })
+                .catch(err => {
+                    console.error('Error cargando versión:', err);
+                    document.getElementById('version-badge').textContent = 'v?.?.?';
+                });
+        }
 
         function playSound(type) {
             if (isMuted) return;
