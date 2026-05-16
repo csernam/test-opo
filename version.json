@@ -1,17 +1,25 @@
 {
-  "version": "1.2.1",
-  "buildDate": "2026-03-30",
+  "version": "1.2.2",
+  "buildDate": "2026-03-31",
   "name": "PrepApp - Auxiliar Administrativo Málaga",
   "features": [
     "Sistema de estadísticas completo",
-    "Debounce de navegación (500ms)",
-    "Swipe gestures menos sensibles (120px)",
+    "Debounce de navegación (800ms)",
+    "Swipe gestures muy estrictos (200px)",
     "PWA offline support",
     "Dark mode",
     "Búsqueda de preguntas",
     "Spaced repetition (modo inteligente)"
   ],
   "changelog": {
+    "1.2.2": {
+      "date": "2026-03-31",
+      "changes": [
+        "ENHANCED: Aumentado debounce a 800ms (antiaccidentes)",
+        "ENHANCED: Aumentado minSwipeDistance a 200px (control estricto)",
+        "Navegación ahora mucho más deliberada y resistente"
+      ]
+    },
     "1.2.1": {
       "date": "2026-03-30",
       "changes": [
