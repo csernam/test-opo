@@ -1117,7 +1117,7 @@
             const examTemaList = document.getElementById('exam-tema-list');
             examTemaList.innerHTML = '';
 
-            const temasWithQuestions = [1, 2, 3, 8, 13, 14, 15, 16];
+            const temasWithQuestions = [1, 2, 3, 4, 6, 8, 9, 11, 13, 14, 15, 16];
             
             temasWithQuestions.forEach(tema => {
                 const count = db.filter(q => q.tema === tema).length;
@@ -1136,7 +1136,7 @@
                 const textDiv = document.createElement('div');
                 textDiv.className = 'flex-1 min-w-0';
                 textDiv.innerHTML = `
-                    <div class="font-semibold text-slate-700 dark:text-slate-200 text-sm">Tema ${tema}</div>
+                    <div class="font-semibold text-slate-700 dark:text-slate-200 text-sm">${temaDisplayName(tema)}</div>
                     <div class="text-xs text-slate-500 dark:text-slate-400">${count} preguntas</div>
                 `;
                 
