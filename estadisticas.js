@@ -4,9 +4,18 @@
  */
 
 class EstadisticasManager {
-    constructor() {
-        this.storageKey = 'malaga_stats';
-        this.sessionKey = 'malaga_session';
+    constructor(blockId = 'teorico') {
+        this.blockId = blockId;
+        this.storageKey = `malaga_stats_${this.blockId}`;
+        this.sessionKey = `malaga_session_${this.blockId}`;
+        this.stats = this.loadStats();
+        this.sessionStats = this.loadSessionStats();
+    }
+
+    setBlock(blockId) {
+        this.blockId = blockId;
+        this.storageKey = `malaga_stats_${this.blockId}`;
+        this.sessionKey = `malaga_session_${this.blockId}`;
         this.stats = this.loadStats();
         this.sessionStats = this.loadSessionStats();
     }

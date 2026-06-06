@@ -1,9 +1,11 @@
-const CACHE_NAME = 'prepapp-malaga-v2';
+const CACHE_NAME = 'prepapp-malaga-v3';
 const urlsToCache = [
     './',
     './index.html',
     './preguntas.js',
+    './preguntas_practico.js',
     './temas.js',
+    './temas_practico.js',
     './estadisticas.js',
     './manifest.json',
     './icono-192.svg',
