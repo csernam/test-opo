@@ -1,4 +1,4 @@
-const CACHE_NAME = 'prepapp-malaga-v3';
+const CACHE_NAME = 'prepapp-malaga-v4';
 const urlsToCache = [
     './',
     './index.html',
