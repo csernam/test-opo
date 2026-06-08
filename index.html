@@ -594,6 +594,7 @@
 
         // Obtiene la lista base filtrada (sin ordenar secuencial o aleatoriamente)
         function getFilteredList() {
+            if (isExamMode) return examQuestions;
             let list = currentDb;
             if (temaFilter !== null) {
                 list = list.filter(q => temaFilter.includes(q.tema));
@@ -972,8 +973,10 @@
                 .map(cb => parseInt(cb.getAttribute('data-tema')))
                 .sort((a, b) => a - b);
 
-            // Filter to only temas with questions
-            const temasWithQuestions = [1, 2, 3, 4, 6, 8, 9, 11, 13, 14, 15, 16];
+            // Filter to only temas with questions (dynamic based on current block)
+            const temasWithQuestions = currentTemasData.temas
+                .filter(t => t.hasQuestions)
+                .map(t => t.id);
             const selectedWithQuestions = selected.filter(t => temasWithQuestions.includes(t));
 
             if (selectedWithQuestions.length === 0) {
@@ -1254,11 +1257,12 @@
             const examTemaList = document.getElementById('exam-tema-list');
             examTemaList.innerHTML = '';
 
-            const temasWithQuestions = [1, 2, 3, 4, 6, 8, 9, 11, 13, 14, 15, 16];
+            // Use current block's temas dynamically
+            const temasWithQuestions = currentTemasData.temas.filter(t => t.hasQuestions);
             
-            temasWithQuestions.forEach(tema => {
-                const count = db.filter(q => q.tema === tema).length;
-                const tema_title = db.find(q => q.tema === tema)?.tema_title || `Tema ${tema}`;
+            temasWithQuestions.forEach(temaInfo => {
+                const tema = temaInfo.id;
+                const count = currentDb.filter(q => q.tema === tema).length;
                 
                 const label = document.createElement('label');
                 label.className = 'flex items-center gap-2 p-2 bg-white dark:bg-slate-700 rounded cursor-pointer hover:bg-indigo-50 dark:hover:bg-slate-600 transition';
@@ -1405,7 +1409,7 @@
             // Seleccionar preguntas aleatorias por tema
             const selected = [];
             for (const [tema, count] of Object.entries(questionsPerTema)) {
-                const temaQuestions = db.filter(q => q.tema === parseInt(tema));
+                const temaQuestions = currentDb.filter(q => q.tema === parseInt(tema));
                 const shuffled = shuffleArray(temaQuestions);
                 selected.push(...shuffled.slice(0, count));
             }
@@ -1414,29 +1418,8 @@
             return shuffleArray(selected);
         }
 
-        function getFilteredList() {
-            if (isExamMode) {
-                return examQuestions;
-            }
-            
-            let list = db;
-            if (temaFilter !== null) {
-                list = list.filter(q => temaFilter.includes(q.tema));
-            }
-            if (reviewMode === 'fails') {
-                list = list.filter(q => fails.includes(q.id));
-            }
-            if (textSearchQuery !== '') {
-                list = list.filter(q => {
-                    return normalizeText(q.q).includes(textSearchQuery) ||
-                        normalizeText(q.a).includes(textSearchQuery) ||
-                        normalizeText(q.b).includes(textSearchQuery) ||
-                        normalizeText(q.c).includes(textSearchQuery) ||
-                        normalizeText(q.d).includes(textSearchQuery);
-                });
-            }
-            return list;
-        }
+        // NOTE: getFilteredList is defined above (line ~596) and uses currentDb correctly.
+        // A duplicate was removed here that incorrectly referenced 'db' instead of 'currentDb'.
 
     </script>
 </body>
